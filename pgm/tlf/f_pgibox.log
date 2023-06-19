@@ -1,0 +1,2744 @@
+1                                                          The SAS System                            10:19 Tuesday, January 31, 2023
+
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+NOTE: Copyright (c) 2002-2012 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.4 (TS1M4) 
+      Licensed to JAZZ PHARMACEUTICALS INC - D-WISE, Site 70203642.
+NOTE: This session is executing on the X64_SR12R2  platform.
+
+
+
+NOTE: Updated analytical products:
+      
+      SAS/STAT 14.2
+      SAS/IML 14.2
+
+NOTE: Additional host information:
+
+ X64_SR12R2 WIN 6.3.9600  Server
+
+NOTE: SAS initialization used:
+      real time           6.00 seconds
+      cpu time            0.10 seconds
+      
+
+NOTE: AUTOEXEC processing beginning; file is 
+      C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\autoexec.sas.
+
+MLOGIC(AUTOEXEC):  Beginning execution.
+MPRINT(AUTOEXEC):   libname here " ";
+NOTE: Libref HERE was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\
+MLOGIC(AUTOEXEC):  %GLOBAL  GTOPLEVEL
+MPRINT(AUTOEXEC):   data _null_;
+MPRINT(AUTOEXEC):   path=pathname("here");
+MPRINT(AUTOEXEC):   pos=index(path,"\stat\")+5;
+MPRINT(AUTOEXEC):   gtoplevel=substr(path,1,pos);
+MPRINT(AUTOEXEC):   call symputx("gtoplevel",gtoplevel);
+MPRINT(AUTOEXEC):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.27 seconds
+      cpu time            0.00 seconds
+      
+
+MLOGIC(AUTOEXEC):  %PUT &gtoplevel.
+SYMBOLGEN:  Macro variable GTOPLEVEL resolves to C:\SASData\JZP-150\150-201\stat\
+C:\SASData\JZP-150\150-201\stat\
+MPRINT(AUTOEXEC):   libname here clear;
+NOTE: Libref HERE has been deassigned.
+2                                           The SAS System             10:19 Tuesday, January 31, 2023
+
+MPRINT(AUTOEXEC):   *** Identify the utilities folder ***;
+MPRINT(AUTOEXEC):   filename util1 "..\..\..\..\utilities";
+MPRINT(AUTOEXEC):   filename util2 "..\..\..\utilities";
+MPRINT(AUTOEXEC):   filename util3 "..\..\utilities";
+MPRINT(AUTOEXEC):   filename util4 "..\utilities";
+MPRINT(AUTOEXEC):   filename util5 ".\utilities";
+MPRINT(AUTOEXEC):   *** Identify setup.sas programs ***;
+MPRINT(AUTOEXEC):   filename setup1 "..\..\..\..\utilities\setup.sas";
+MPRINT(AUTOEXEC):   filename setup2 "..\..\..\utilities\setup.sas";
+MPRINT(AUTOEXEC):   filename setup3 "..\..\utilities\setup.sas";
+MPRINT(AUTOEXEC):   filename setup4 "..\utilities\setup.sas";
+MPRINT(AUTOEXEC):   filename setup5 ".\utilities\setup.sas";
+MPRINT(AUTOEXEC):   data _null_;
+MPRINT(AUTOEXEC):   *** Identify the closest utility path ***;
+MPRINT(AUTOEXEC):   path1 = pathname('util1');
+MPRINT(AUTOEXEC):   path2 = pathname('util2');
+MPRINT(AUTOEXEC):   path3 = pathname('util3');
+MPRINT(AUTOEXEC):   path4 = pathname('util4');
+MPRINT(AUTOEXEC):   path5 = pathname('util5');
+MPRINT(AUTOEXEC):   if fileexist(path1) then call symput('utilpath',strip(path1));
+MPRINT(AUTOEXEC):   if fileexist(path2) then call symput('utilpath',strip(path2));
+MPRINT(AUTOEXEC):   if fileexist(path3) then call symput('utilpath',strip(path3));
+MPRINT(AUTOEXEC):   if fileexist(path4) then call symput('utilpath',strip(path4));
+MPRINT(AUTOEXEC):   if fileexist(path5) then call symput('utilpath',strip(path5));
+MPRINT(AUTOEXEC):   *** Idetify the closest setup.sas program ***;
+MPRINT(AUTOEXEC):   setup1 = pathname('setup1');
+MPRINT(AUTOEXEC):   setup2 = pathname('setup2');
+MPRINT(AUTOEXEC):   setup3 = pathname('setup3');
+MPRINT(AUTOEXEC):   setup4 = pathname('setup4');
+MPRINT(AUTOEXEC):   setup5 = pathname('setup5');
+MPRINT(AUTOEXEC):   if fileexist(setup1) then call symput('setupprog',strip(setup1));
+MPRINT(AUTOEXEC):   if fileexist(setup2) then call symput('setupprog',strip(setup2));
+MPRINT(AUTOEXEC):   if fileexist(setup3) then call symput('setupprog',strip(setup3));
+MPRINT(AUTOEXEC):   if fileexist(setup4) then call symput('setupprog',strip(setup4));
+MPRINT(AUTOEXEC):   if fileexist(setup5) then call symput('setupprog',strip(setup5));
+MPRINT(AUTOEXEC):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(AUTOEXEC):   *** Clear temporary filenames ***;
+MPRINT(AUTOEXEC):   filename util1;
+NOTE: Fileref UTIL1 has been deassigned.
+MPRINT(AUTOEXEC):   filename util2;
+NOTE: Fileref UTIL2 has been deassigned.
+MPRINT(AUTOEXEC):   filename util3;
+NOTE: Fileref UTIL3 has been deassigned.
+MPRINT(AUTOEXEC):   filename util4;
+NOTE: Fileref UTIL4 has been deassigned.
+MPRINT(AUTOEXEC):   filename util5;
+NOTE: Fileref UTIL5 has been deassigned.
+SYMBOLGEN:  Macro variable UTILPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+3                                           The SAS System             10:19 Tuesday, January 31, 2023
+
+MPRINT(AUTOEXEC):   options Mautosource sasautos=(sasautos 
+"C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities");
+SYMBOLGEN:  Macro variable SETUPPROG resolves to 
+            C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities\setup.sas
+MPRINT(AUTOEXEC):   dm "continue";
+MPRINT(AUTOEXEC):   dm "out;clear;log;clear;";
+MPRINT(AUTOEXEC):   data _x_;
+MPRINT(AUTOEXEC):   set sashelp.vmacro;
+MPRINT(AUTOEXEC):   where scope = "GLOBAL" and name not in : ( "SYS" "DUPS" "DUPLS");
+MPRINT(AUTOEXEC):   run;
+
+NOTE: There were 3 observations read from the data set SASHELP.VMACRO.
+      WHERE (scope='GLOBAL') and name not in: ('DUPLS', 'DUPS', 'SYS');
+NOTE: The data set WORK._X_ has 3 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.23 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(AUTOEXEC):   data _null_;
+MPRINT(AUTOEXEC):   set _x_;
+MPRINT(AUTOEXEC):   call execute('%symdel ' || name || ';');
+MPRINT(AUTOEXEC):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+NOTE: There were 3 observations read from the data set WORK._X_.
+
+NOTE: CALL EXECUTE routine executed successfully, but no SAS statements were generated.
+MPRINT(AUTOEXEC):   proc datasets library=work memtype = data nolist kill;
+NOTE: Deleting WORK._X_ (memtype=DATA).
+MPRINT(AUTOEXEC):   quit;
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(AUTOEXEC):   proc datasets library=work memtype = cat nolist;
+MPRINT(AUTOEXEC):   delete formats;
+MPRINT(AUTOEXEC):   quit;
+
+NOTE: The file WORK.FORMATS (memtype=CATALOG) was not found, but appears on a DELETE statement.
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(AUTOEXEC):   libname _all_;
+MPRINT(AUTOEXEC):   filename _all_;
+NOTE: Fileref SETUP1 has been deassigned.
+NOTE: Fileref SETUP2 has been deassigned.
+4                                           The SAS System             10:19 Tuesday, January 31, 2023
+
+NOTE: Fileref SETUP3 has been deassigned.
+NOTE: Fileref SETUP4 has been deassigned.
+NOTE: Fileref SETUP5 has been deassigned.
+MPRINT(AUTOEXEC):   title;
+MPRINT(AUTOEXEC):   footnote;
+MPRINT(AUTOEXEC):   ods output close;
+MPRINT(AUTOEXEC):   ods listing;
+MPRINT(AUTOEXEC):   ************************************;
+MPRINT(AUTOEXEC):   *** STANDARD MACRO VARIABLES ***;
+MPRINT(AUTOEXEC):   ************************************;
+MPRINT(AUTOEXEC):   data _null_;
+MPRINT(AUTOEXEC):   call symput("RUNDTM",trim(left(put(datetime(),datetime.))));
+MPRINT(AUTOEXEC):   call symput('date', put(today(), date9.));
+MPRINT(AUTOEXEC):   call symput('time', put(time(), hhmm.));
+MPRINT(AUTOEXEC):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.19 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable RUNUSR resolves to KMUMMALANENI
+SYMBOLGEN:  Macro variable RUNDTM resolves to 31JAN23:10:19:42
+Run by: KMUMMALANENI 31JAN23:10:19:42
+SYMBOLGEN:  Macro variable VOLUME resolves to C:\SASData\JZP-150
+SYMBOLGEN:  Macro variable PROTOCOL resolves to 150-201
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+MPRINT(AUTOEXEC):   *%let hocpath = &path.\adhoc;
+SYMBOLGEN:  Macro variable SYSHOSTNAME resolves to JazzProd
+SYMBOLGEN:  Macro variable COMPANY resolves to Jazz Pharmaceutical
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have been unquoted 
+            for printing.
+SYMBOLGEN:  Macro variable PROTOCOL resolves to 150-201
+MPRINT(AUTOEXEC):   ************************************;
+MPRINT(AUTOEXEC):   *** Include Utility Macro ***;
+MPRINT(AUTOEXEC):   ************************************;
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+MPRINT(AUTOEXEC):   ************************************************************************* * STUDY 
+DRUG : * PROTOCOL NO : * PROGRAMMER : Indraneel * DATE CREATED : 03FEB2022 * PROGRAM NAME : get_attr 
+* DESCRIPTION : To get the attributes on the validation side programs * DATA SETS USED: 
+*************************************************************************** PROGRAM MODIFICATION LOG 
+*************************************************************************** Programmer: Date: 
+Description: ***************************************************************************;
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+MPRINT(AUTOEXEC):   ***********************************;
+5                                           The SAS System             10:19 Tuesday, January 31, 2023
+
+MPRINT(AUTOEXEC):   *** LIBRARY REFERENCES ***;
+MPRINT(AUTOEXEC):   ***********************************;
+MPRINT(AUTOEXEC):   *libname raw1 "&rawpath.\" access=readonly;
+SYMBOLGEN:  Macro variable RAWPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata
+MPRINT(AUTOEXEC):   libname raw "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata\";
+NOTE: Libref RAW was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata
+MPRINT(AUTOEXEC):   *parent studies records for group A subject are from raw data*;
+SYMBOLGEN:  Macro variable RAWPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata
+MPRINT(AUTOEXEC):   libname rawvend "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata\vendor" 
+access=readonly;
+NOTE: Library RAWVEND does not exist.
+MPRINT(AUTOEXEC):   *libname sdtm1 "&anapath\SDTM" access=readonly;
+SYMBOLGEN:  Macro variable ANAPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata
+MPRINT(AUTOEXEC):   libname sdtm "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\SDTM";
+NOTE: Libref SDTM was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\SDTM
+SYMBOLGEN:  Macro variable VALPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate
+MPRINT(AUTOEXEC):   libname sdtmout 
+"C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\SDTM\QCdata";
+NOTE: Libref SDTMOUT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\SDTM\QCdata
+SYMBOLGEN:  Macro variable ANAPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata
+MPRINT(AUTOEXEC):   libname cdf "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\cdf";
+NOTE: Libref CDF was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\cdf
+MPRINT(AUTOEXEC):   *libname adam1 "&anapath\\ADaM\" access=readonly;
+SYMBOLGEN:  Macro variable ANAPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata
+MPRINT(AUTOEXEC):   libname adam "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\ADaM\";
+NOTE: Libref ADAM was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\ADaM
+SYMBOLGEN:  Macro variable VALPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate
+MPRINT(AUTOEXEC):   libname adamout 
+"C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\ADaM\QCdata";
+NOTE: Libref ADAMOUT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\ADaM\QCdata
+MPRINT(AUTOEXEC):   *libname adhoc "&hocpath";
+MPRINT(AUTOEXEC):   *TLF output folder;
+SYMBOLGEN:  Macro variable VALPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate
+SYMBOLGEN:  Macro variable TLFOUT resolves to 
+            C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\tfls\results
+MPRINT(AUTOEXEC):   libname tlfout 
+"C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\tfls\results";
+NOTE: Library TLFOUT does not exist.
+SYMBOLGEN:  Macro variable RSLTPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results
+MPRINT(AUTOEXEC):   libname tlfdata "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\tlfdata";
+NOTE: Libref TLFDATA was successfully assigned as follows: 
+      Engine:        V9 
+6                                           The SAS System             10:19 Tuesday, January 31, 2023
+
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\tlfdata
+MPRINT(AUTOEXEC):   libname tlfdata2 'C:\SASData\JZP-150\201\stat\csr_dryrun1\anadata';
+NOTE: Library TLFDATA2 does not exist.
+MPRINT(AUTOEXEC):   *Patient Profiles;
+MPRINT(AUTOEXEC):   libname ppdata 'C:\SASData\JZP-150\201\stat\csr_dryrun1\Patient Profiles\data';
+NOTE: Library PPDATA does not exist.
+MPRINT(AUTOEXEC):   *Patient Profiles_;
+MPRINT(AUTOEXEC):   libname pfdata 'C:\SASData\JZP-150\201\stat\csr_dryrun1\Patient 
+Profiles\data\profile';
+NOTE: Library PFDATA does not exist.
+SYMBOLGEN:  Macro variable PGMPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm
+MPRINT(AUTOEXEC):   ******************************;
+MPRINT(AUTOEXEC):   *** DEFINE GLOBAL SETTINGS ***;
+MPRINT(AUTOEXEC):   ******************************;
+MPRINT(AUTOEXEC):   options nodate center pageno=1 ls=152 ps=47 nofmterr mrecall msglevel=I ;
+MLOGIC(AUTOEXEC):  Ending execution.
+
+NOTE: AUTOEXEC processing completed.
+
+1          /*************************************************************************
+2          * STUDY DRUG:     	JZP150-201
+3          * PROTOCOL NO:    	JZP150-201
+4          * PROGRAMMER:       krishnaprasad Mummalaneni
+5          * DATE CREATED:   	22NOV2022
+6          * PROGRAM NAME:   	f-pgibox
+7          * DESCRIPTION:    	Creating Adverse Events listing
+8          * DATA SETS USED: 	adsl adae
+9          ***************************************************************************
+10         PROGRAM MODIFICATION LOG
+11         ***************************************************************************
+12         Programmer:
+13         Date:
+14         Description:
+15         *************************************************************************/
+16         
+17         options nofmterr noxwait  missing='';
+18         /*****/options mprint mlogic symbolgen;
+19         options formchar="|----|+|---+=|-/\<>*";
+20         options varlenchk=nowarn;
+21         
+22         proc datasets lib=work memtype=data nolist kill;
+23         quit;
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.00 seconds
+7                                                                    The SAS System
+
+      cpu time            0.00 seconds
+      
+
+24         
+25         %let PROTOCOL=150-201;
+26         ods escapechar="^";
+27         
+28         %let default_fontsize=9;
+29         %let RSLTPATH=C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results;
+30         
+31         data _null_;
+32            call symputx('mypgmname',scan("%sysget(SAS_EXECFILENAME)",1,'.'));
+WARNING: The argument to macro function %SYSGET is not defined as a system variable.
+33         run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable MYPGMNAME resolves to 
+34         %put &mypgmname;
+ 
+35         
+36         *-----------------------------------------------------------------;
+37         
+38         *TITLE AND FOOTNOTES
+39         *-----------------------------------------------------------------;
+40         %JM_TF (jm_infile=C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap, JM_PROG_NAME= &mypgmname.,
+MLOGIC:  Beginning compilation of JM_TF using the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_tf.sas.
+MLOGIC:  Ending compilation of JM_TF.
+MLOGIC(JM_TF):  Beginning execution.
+MLOGIC(JM_TF):  This macro was compiled from the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_tf.sas
+SYMBOLGEN:  Macro variable MYPGMNAME resolves to 
+41         	JM_PRODUCE_STATEMENTS=Y);
+MLOGIC(JM_TF):  Parameter JM_INFILE has value C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap
+MLOGIC(JM_TF):  Parameter JM_PROG_NAME has value 
+MLOGIC(JM_TF):  Parameter JM_PRODUCE_STATEMENTS has value Y
+MLOGIC(JM_TF):  Parameter JM_OUT_NUMBER has value 
+MLOGIC(JM_TF):  Parameter JM_VERSION has value 1.0
+MLOGIC(JM_TF):  Parameter JM_DEBUG has value 
+MLOGIC(JM_TF):  Parameter JM_TITLE_OPT has value 
+MLOGIC(JM_TF):  Parameter JM_TITLE_FONT has value 
+MLOGIC(JM_TF):  Parameter JM_FOOT_OPT has value 
+MLOGIC(JM_TF):  Parameter JM_FOOT_FONT has value 
+8                                                                    The SAS System
+
+MLOGIC(JM_TF):  Parameter JM_HEADER has value &DEFAULT_HEADER
+MPRINT(JM_TF):   *** Initialize DEFAULT_HEADER if not defined ***;
+MLOGIC(JM_TF):  %IF condition %symexist(DEFAULT_HEADER)=0 is TRUE
+MLOGIC(JM_TF):  %LET (variable name is DEFAULT_HEADER)
+MPRINT(JM_TF):   *** Document in log what parameter value specified ***;
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   put ' ';
+MPRINT(JM_TF):   put "******************* Parameter Values *******************";
+SYMBOLGEN:  Macro variable JM_INFILE resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap
+MPRINT(JM_TF):   PUT "ALERT:I: JM_INFILE PROCESSED - C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap";
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to 
+MPRINT(JM_TF):   PUT "ALERT:I: JM_PROG_NAME PROCESSED - ";
+SYMBOLGEN:  Macro variable JM_OUT_NUMBER resolves to 
+MPRINT(JM_TF):   PUT "ALERT:I: JM_OUT_NUMBER PROCESSED - ";
+SYMBOLGEN:  Macro variable JM_VERSION resolves to 1.0
+MPRINT(JM_TF):   PUT "ALERT:I: JM_VERSION PROCESSED - 1.0";
+SYMBOLGEN:  Macro variable JM_DEBUG resolves to 
+MPRINT(JM_TF):   PUT "ALERT:I: JM_DEBUG PROCESSED - ";
+SYMBOLGEN:  Macro variable JM_PRODUCE_STATEMENTS resolves to Y
+MPRINT(JM_TF):   PUT "ALERT:I: JM_PRODUCE_STATEMENTS PROCESSED - Y";
+SYMBOLGEN:  Macro variable JM_TITLE_OPT resolves to 
+MPRINT(JM_TF):   PUT "ALERT:I: JM_TITLE_OPT PROCESSED - ";
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to 
+MPRINT(JM_TF):   PUT "ALERT:I: JM_TITLE_FONT PROCESSED - ";
+SYMBOLGEN:  Macro variable JM_FOOT_OPT resolves to 
+MPRINT(JM_TF):   PUT "ALERT:I: JM_FOOT_OPT PROCESSED - ";
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+MPRINT(JM_TF):   PUT "ALERT:I: JM_FOOT_FONT PROCESSED - ";
+SYMBOLGEN:  Macro variable JM_HEADER resolves to &DEFAULT_HEADER
+SYMBOLGEN:  Macro variable DEFAULT_HEADER resolves to 
+MPRINT(JM_TF):   PUT "ALERT:I: JM_HEADER PROCESSED - ";
+MPRINT(JM_TF):   put "********************************************************";
+MPRINT(JM_TF):   put " ";
+MPRINT(JM_TF):   put 'NOTE: [JM_TF] is currently running macro %jm_tf version 1.0.';
+MPRINT(JM_TF):   put " ";
+MPRINT(JM_TF):   run;
+
+
+******************* Parameter Values *******************
+ALERT:I: JM_INFILE PROCESSED - C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap
+ALERT:I: JM_PROG_NAME PROCESSED - 
+ALERT:I: JM_OUT_NUMBER PROCESSED - 
+ALERT:I: JM_VERSION PROCESSED - 1.0
+ALERT:I: JM_DEBUG PROCESSED - 
+ALERT:I: JM_PRODUCE_STATEMENTS PROCESSED - Y
+9                                                                    The SAS System
+
+ALERT:I: JM_TITLE_OPT PROCESSED - 
+ALERT:I: JM_TITLE_FONT PROCESSED - 
+ALERT:I: JM_FOOT_OPT PROCESSED - 
+ALERT:I: JM_FOOT_FONT PROCESSED - 
+ALERT:I: JM_HEADER PROCESSED - 
+********************************************************
+
+NOTE: [JM_TF] is currently running macro %jm_tf version 1.0.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(JM_TF):   *** Verify if the SYMBOLGEN options is set ***;
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   set sashelp.voption;
+MPRINT(JM_TF):   where optname = 'SYMBOLGEN';
+MPRINT(JM_TF):   call symputx('c_symbolgen',setting);
+MPRINT(JM_TF):   run;
+
+NOTE: There were 1 observations read from the data set SASHELP.VOPTION.
+      WHERE optname='SYMBOLGEN';
+NOTE: DATA statement used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+      
+
+MLOGIC(JM_TF):  %GLOBAL  JM_G_PROGNAME
+MLOGIC(JM_TF):  %LET (variable name is JM_G_PROGNAME)
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to 
+MLOGIC(JM_TF):  %LET (variable name is _ERR)
+MPRINT(JM_TF):   *** Default JM_INFILE to DOCPATH if it is specified ***;
+MLOGIC(JM_TF):  %IF condition %symexist(docpath) is TRUE
+MPRINT(JM_TF):   data _null_;
+SYMBOLGEN:  Macro variable JM_INFILE resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap
+MPRINT(JM_TF):   jm_infile = strip("C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap");
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+MPRINT(JM_TF):   docpath = strip("C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc");
+MPRINT(JM_TF):   if jm_infile = '' and docpath ne '' then do;
+MPRINT(JM_TF):   call symputx('jm_infile',docpath);
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+10                                                                   The SAS System
+
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** 1) Macro will check whether &JM_INFILE exists. If not, macro will issue er ror message ***;
+MPRINT(JM_TF):   data _null_;
+SYMBOLGEN:  Macro variable JM_INFILE resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap
+MPRINT(JM_TF):   if fileexist("C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap\candid_TOC.xlsx") = 0 then do;
+MPRINT(JM_TF):   put ' ';
+SYMBOLGEN:  Macro variable JM_INFILE resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap
+MPRINT(JM_TF):   put "ER" "ROR:[jm_tf] The external file candid_TOC.xlsx is required and does not exist. " "This Excel file should be at: 
+C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap.";
+MPRINT(JM_TF):   call symput('_err','yes');
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_TF):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_TF):   *** Copy the Excel to temporary location incase it is locked ***;
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   length jm_file copycmd curpath $300;
+MPRINT(JM_TF):   curpath = pathname('work');
+SYMBOLGEN:  Macro variable JM_INFILE resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap
+MPRINT(JM_TF):   jm_file = strip("C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap");
+MPRINT(JM_TF):   *** Enhanced to use SYSTASK to prevent current window to display in background ***;
+MPRINT(JM_TF):   *** copycmd = "x '" || 'copy "' || strip(jm_file) || '\candid_TOC.xlsx" "' || strip(curpath) || '\candid_TOC.xlsx"' || "'";
+MPRINT(JM_TF):   copycmd = "systask command '" || 'copy "' || strip(jm_file) || '\candid_TOC.xlsx" "' || strip(curpath) || '\candid_TOC.xlsx"' || "' 
+WAIT";
+MPRINT(JM_TF):   call symputx('copycmd',copycmd);
+MPRINT(JM_TF):   jm_file2 = strip(curpath) || '\candid_TOC.xlsx';
+MPRINT(JM_TF):   call symputx('jm_file2',jm_file2);
+MPRINT(JM_TF):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   option noxwait xsync;
+SYMBOLGEN:  Macro variable COPYCMD resolves to systask command 'copy "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap\candid_TOC.xlsx" "E:\SAS 
+            Temporary Files\kmummalaneni\_TD114176_JAZZPROD_\candid_TOC.xlsx"' WAIT
+11                                                                   The SAS System
+
+MPRINT(JM_TF):   systask command 'copy "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap\candid_TOC.xlsx" "E:\SAS Temporary 
+Files\kmummalaneni\_TD114176_JAZZPROD_\candid_TOC.xlsx"' WAIT;
+NOTE: Task "task0" produced no LOG/Output.
+MPRINT(JM_TF):   *** Set Symbolgen to no for PROC IMPORT ***;
+SYMBOLGEN:  Macro variable C_SYMBOLGEN resolves to SYMBOLGEN
+MLOGIC(JM_TF):  %IF condition "&c_symbolgen" = "SYMBOLGEN" is TRUE
+MPRINT(JM_TF):   options nosymbolgen;
+MPRINT(JM_TF):   proc import dbms=xlsx datafile="E:\SAS Temporary Files\kmummalaneni\_TD114176_JAZZPROD_\candid_TOC.xlsx" replace out=jm_tf_titft;
+MPRINT(JM_TF):   RXLX;
+MPRINT(JM_TF):   getnames=yes;
+MPRINT(JM_TF):   datarow=2;
+MPRINT(JM_TF):   sheet="TFLs";
+MPRINT(JM_TF):   run;
+
+NOTE:    Variable Name Change.  Default Test Program -> Default_Test_Program            
+NOTE:    Variable Name Change.  Default Test Method -> Default_Test_Method             
+NOTE:    Variable Name Change.  Initial Instructions -> Initial_Instructions            
+WARNING: Some character data was lost during transcoding in column: Title2 at obs 64.
+WARNING: Some character data was lost during transcoding in column: Title2 at obs 66.
+WARNING: Some character data was lost during transcoding in column: Title2 at obs 86.
+WARNING: Some character data was lost during transcoding in column: Title2 at obs 171.
+WARNING: Some character data was lost during transcoding in column: Title2 at obs 172.
+NOTE: The import data set has 187 observations and 65 variables.
+NOTE: WORK.JM_TF_TITFT data set was successfully created.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.31 seconds
+      cpu time            0.07 seconds
+      
+
+MPRINT(JM_TF):   *** Set Symbolgen back for PROC IMPORT ***;
+MLOGIC(JM_TF):  %IF condition "&c_symbolgen" = "SYMBOLGEN" is TRUE
+MPRINT(JM_TF):   options symbolgen;
+MPRINT(JM_TF):   *** Verify if optional JM_OUT_NUMBER is specified and exist ***;
+SYMBOLGEN:  Macro variable JM_OUT_NUMBER resolves to 
+MLOGIC(JM_TF):  %IF condition "&jm_out_number" ne "" is FALSE
+MPRINT(JM_TF):   *** 2) check for duplicates in column E (name), G (Program name) and F (number), for *all* rows, not just for specific output ***;
+MPRINT(JM_TF):   data jm_tf_titft;
+MPRINT(JM_TF):   set jm_tf_titft;
+MPRINT(JM_TF):   *** Remove emptry rows ***;
+MPRINT(JM_TF):   if program = '' then delete;
+MPRINT(JM_TF):   run;
+
+NOTE: There were 187 observations read from the data set WORK.JM_TF_TITFT.
+NOTE: The data set WORK.JM_TF_TITFT has 121 observations and 65 variables.
+NOTE: DATA statement used (Total process time):
+12                                                                   The SAS System
+
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(JM_TF):   proc sort data = jm_tf_titft;
+MPRINT(JM_TF):   by name program number title1;
+MPRINT(JM_TF):   run;
+
+NOTE: There were 121 observations read from the data set WORK.JM_TF_TITFT.
+NOTE: SAS sort was used.
+NOTE: The data set WORK.JM_TF_TITFT has 121 observations and 65 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.00 seconds
+      
+
+MLOGIC(JM_TF):  %LET (variable name is ISDUP)
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   set jm_tf_titft;
+MPRINT(JM_TF):   by name program number title1;
+MPRINT(JM_TF):   lagname = lag(name);
+MPRINT(JM_TF):   lagprog = lag(program);
+MPRINT(JM_TF):   lagnum = lag(number);
+MPRINT(JM_TF):   if _n_ > 1 then do;
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to 
+MPRINT(JM_TF):   if (lagname = name) and (lowcase(program)=lowcase("")) then do;
+MPRINT(JM_TF):   put ' ';
+MPRINT(JM_TF):   put "WAR" "NING:[jm_tf] There are duplicate values for the name: '" name +(-1) "'. " "This value is specified in column 'E' within the 
+Candid_TOC Excel file.";
+MPRINT(JM_TF):   end;
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to 
+MPRINT(JM_TF):   if (lagprog = program) and (lowcase(program)=lowcase("")) then do;
+MPRINT(JM_TF):   put ' ';
+MPRINT(JM_TF):   put "WAR" "NING:[jm_tf] There are duplicate values for the program: '" program +(-1) "'. " "This value is specified in column 'G' 
+within the Candid_TOC Excel file.";
+MPRINT(JM_TF):   end;
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to 
+MPRINT(JM_TF):   if (lagnum = number) and (lowcase(program)=lowcase("")) then do;
+MPRINT(JM_TF):   put ' ';
+MPRINT(JM_TF):   put "WAR" "NING:[jm_tf] There are duplicate values for the number: '" number +(-1) "'. " "This value is specified in column 'F' within 
+the Candid_TOC Excel file.";
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   *** Identify if both the 'name' and 'number' are duplicate ***;
+MPRINT(JM_TF):   if (lagname = name) and (lagnum = number) then call symputx('isdup','yes');
+MPRINT(JM_TF):   end;
+13                                                                   The SAS System
+
+MPRINT(JM_TF):   run;
+
+NOTE: There were 121 observations read from the data set WORK.JM_TF_TITFT.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** In the event of duplicate, get the first instance ***;
+SYMBOLGEN:  Macro variable ISDUP resolves to no
+MLOGIC(JM_TF):  %IF condition "&isdup" = "yes" is FALSE
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_TF):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_TF):   *** Verify invalid parameters ***;
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   *** Set default value ***;
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to 
+MPRINT(JM_TF):   if compress("") = "" then call symputx('JM_TITLE_FONT','fontstyle=ROMAN fontsize=10pt font_weight=bold');
+SYMBOLGEN:  Macro variable JM_DEBUG resolves to 
+MPRINT(JM_TF):   debug=upcase(strip(""));
+MPRINT(JM_TF):   if compress(debug) = '' then do;
+MPRINT(JM_TF):   debug='N';
+MPRINT(JM_TF):   call symputx('jm_debug','N');
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if debug not in("N","Y") then do;
+MPRINT(JM_TF):   put ' ';
+SYMBOLGEN:  Macro variable JM_DEBUG resolves to 
+MPRINT(JM_TF):   put "ER" "ROR:[jm_tf] An invalid character has specified to the parameter JM_DEBUG=. " 'Only "Y" or "N" are permitted. Please specify 
+proper JM_DEBUG.';
+MPRINT(JM_TF):   call symput('_err','yes');
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_TF):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_TF):   *** Apply debugging er ror checking if specified ***;
+SYMBOLGEN:  Macro variable JM_DEBUG resolves to N
+SYMBOLGEN:  Macro variable JM_DEBUG resolves to N
+MLOGIC(JM_TF):  %IF condition %upcase("&jm_debug") = "Y" or %upcase("&jm_debug") = "YES" is FALSE
+MPRINT(JM_TF):   *** Identify the current program name if not specified ***;
+14                                                                   The SAS System
+
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   set sashelp.vextfl;
+MPRINT(JM_TF):   if (substr(fileref,1,3)='_LN' or substr (fileref,1,3)='#LN' or substr(fileref,1,3)='SYS') and index(upcase(xpath),'.SAS')>0 then do;
+MPRINT(JM_TF):   slashpos = 1;
+MPRINT(JM_TF):   do i = 1 to length(xpath);
+MPRINT(JM_TF):   if substr(xpath,i,1) = '\' then slashpos = i;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   curprog = substr(xpath,slashpos+1);
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to 
+MPRINT(JM_TF):   if compress("") = "" then do;
+MPRINT(JM_TF):   if index(lowcase(curprog),'.sas') = 0 then do;
+MPRINT(JM_TF):   curprog = trim(curprog) || ".sas";
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   call symput("jm_prog_name",trim(curprog));
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   else do;
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to 
+MPRINT(JM_TF):   curprog = strip("");
+MPRINT(JM_TF):   if index(lowcase(curprog),'.sas') = 0 then do;
+MPRINT(JM_TF):   curprog = trim(curprog) || ".sas";
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   call symput("jm_prog_name",trim(curprog));
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   stop;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   run;
+
+NOTE: There were 3 observations read from the data set SASHELP.VEXTFL.
+NOTE: DATA statement used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** 3) Verify match current SAS program name or user specified program name “JM_G_PROGNAME=& JM_G_PROGNAME=” with column G in Candid 
+excel doc ***;
+MLOGIC(JM_TF):  %LET (variable name is PROGEXIST)
+MPRINT(JM_TF):   data test;
+MPRINT(JM_TF):   length program $80;
+MPRINT(JM_TF):   set jm_tf_titft;
+MPRINT(JM_TF):   *** Add extension if missing ***;
+MPRINT(JM_TF):   if index(lowcase(program),'.sas') = 0 then do;
+MPRINT(JM_TF):   program = trim(program) || ".sas";
+MPRINT(JM_TF):   format program;
+MPRINT(JM_TF):   end;
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to f_pgibox.sas
+15                                                                   The SAS System
+
+MPRINT(JM_TF):   if upcase(program) = upcase("f_pgibox.sas") then call symput('progexist','yes');
+MPRINT(JM_TF):   run;
+
+NOTE: There were 121 observations read from the data set WORK.JM_TF_TITFT.
+NOTE: The data set WORK.TEST has 121 observations and 65 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   data _null_;
+SYMBOLGEN:  Macro variable PROGEXIST resolves to yes
+MPRINT(JM_TF):   if "yes" = "no" then do;
+MPRINT(JM_TF):   put ' ';
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to f_pgibox.sas
+MPRINT(JM_TF):   put "ER" "ROR:[jm_tf] Program name 'f_pgibox.sas' does not match " "with the Column G (program) in candid, Please provide a correct 
+program name.";
+MPRINT(JM_TF):   call symput('_err','yes');
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_TF):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_TF):   *** 4) Verify If &JM_PRODUCE_STATEMENTS is not Y/Yes or N/No ***;
+MPRINT(JM_TF):   data _null_;
+SYMBOLGEN:  Macro variable JM_PRODUCE_STATEMENTS resolves to Y
+MPRINT(JM_TF):   jm_produce = upcase(strip("Y"));
+MPRINT(JM_TF):   if jm_produce = '' then do;
+MPRINT(JM_TF):   jm_produce='Y';
+MPRINT(JM_TF):   call symputx('JM_PRODUCE_STATEMENTS','Y');
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if jm_produce not in("Y","YES","N","NO") then do;
+MPRINT(JM_TF):   put ' ';
+SYMBOLGEN:  Macro variable JM_PRODUCE_STATEMENTS resolves to Y
+MPRINT(JM_TF):   put "ER" "ROR:[jm_tf] invalid character has specified to the parameter " "JM_PRODUCE_STATEMENTS='Y'. Only 'Y' or 'N' is permitted. " 
+"Please specify proper JM_PRODUCE_STATEMENTS.";
+MPRINT(JM_TF):   call symput('_err','yes');
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   run;
+
+16                                                                   The SAS System
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_TF):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_TF):   *** 5) Verify instances where ampersand (&) is directly followed by other chars ***;
+MPRINT(JM_TF):   data v_amper;
+MPRINT(JM_TF):   length Footnote1Ref Footnote2Ref Footnote3Ref Footnote4Ref Footnote5Ref Footnote6Ref Footnote7Ref Footnote8Ref SourceDataRef Title1Ref 
+Title2Ref Title3Ref Title4Ref Title5Ref Title6Ref Title7Ref Title8Ref templateoutputitemid $200;
+MPRINT(JM_TF):   *** Initialize variables ***;
+MPRINT(JM_TF):   Footnote1Ref=" ";
+MPRINT(JM_TF):   Footnote2Ref=" ";
+MPRINT(JM_TF):   Footnote3Ref=" ";
+MPRINT(JM_TF):   Footnote4Ref=" ";
+MPRINT(JM_TF):   Footnote5Ref=" ";
+MPRINT(JM_TF):   Footnote6Ref=" ";
+MPRINT(JM_TF):   Footnote7Ref=" ";
+MPRINT(JM_TF):   Footnote8Ref=" ";
+MPRINT(JM_TF):   SourceDataRef=" ";
+MPRINT(JM_TF):   Title1Ref=" ";
+MPRINT(JM_TF):   Title2Ref=" ";
+MPRINT(JM_TF):   Title3Ref=" ";
+MPRINT(JM_TF):   Title4Ref=" ";
+MPRINT(JM_TF):   Title5Ref=" ";
+MPRINT(JM_TF):   Title6Ref=" ";
+MPRINT(JM_TF):   Title7Ref=" ";
+MPRINT(JM_TF):   Title8Ref=" ";
+MPRINT(JM_TF):   templateoutputitemid=" ";
+MPRINT(JM_TF):   set jm_tf_titft;
+MPRINT(JM_TF):   length badvalue $100;
+MPRINT(JM_TF):   if index(Class,'&') > 0 and index(Class,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Class);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote1,'&') > 0 and index(Footnote1,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote1);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote1Created,'&') > 0 and index(Footnote1Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote1Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote1Ref,'&') > 0 and index(Footnote1Ref,'& ') = 0 then do;
+17                                                                   The SAS System
+
+MPRINT(JM_TF):   badvalue=strip(Footnote1Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote2,'&') > 0 and index(Footnote2,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote2);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote2Created,'&') > 0 and index(Footnote2Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote2Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote2Ref,'&') > 0 and index(Footnote2Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote2Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote3,'&') > 0 and index(Footnote3,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote3);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote3Created,'&') > 0 and index(Footnote3Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote3Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote3Ref,'&') > 0 and index(Footnote3Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote3Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote4,'&') > 0 and index(Footnote4,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote4);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote4Created,'&') > 0 and index(Footnote4Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote4Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote4Ref,'&') > 0 and index(Footnote4Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote4Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote5,'&') > 0 and index(Footnote5,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote5);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote5Created,'&') > 0 and index(Footnote5Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote5Created);
+18                                                                   The SAS System
+
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote5Ref,'&') > 0 and index(Footnote5Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote5Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote6,'&') > 0 and index(Footnote6,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote6);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote6Created,'&') > 0 and index(Footnote6Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote6Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote6Ref,'&') > 0 and index(Footnote6Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote6Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote7,'&') > 0 and index(Footnote7,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote7);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote7Created,'&') > 0 and index(Footnote7Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote7Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote7Ref,'&') > 0 and index(Footnote7Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote7Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote8,'&') > 0 and index(Footnote8,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote8);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote8Created,'&') > 0 and index(Footnote8Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote8Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Footnote8Ref,'&') > 0 and index(Footnote8Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Footnote8Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Hash,'&') > 0 and index(Hash,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Hash);
+MPRINT(JM_TF):   output;
+19                                                                   The SAS System
+
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Initial_Instructions,'&') > 0 and index(Initial_Instructions,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Initial_Instructions);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Name,'&') > 0 and index(Name,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Name);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Number,'&') > 0 and index(Number,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Number);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Program,'&') > 0 and index(Program,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Program);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(SourceData,'&') > 0 and index(SourceData,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(SourceData);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(SourceDataCreated,'&') > 0 and index(SourceDataCreated,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(SourceDataCreated);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(SourceDataRef,'&') > 0 and index(SourceDataRef,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(SourceDataRef);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Status,'&') > 0 and index(Status,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Status);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(TemplateOutputItemId,'&') > 0 and index(TemplateOutputItemId,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(TemplateOutputItemId);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title1,'&') > 0 and index(Title1,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title1);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title1Ref,'&') > 0 and index(Title1Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title1Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+20                                                                   The SAS System
+
+MPRINT(JM_TF):   if index(Title2,'&') > 0 and index(Title2,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title2);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title2Ref,'&') > 0 and index(Title2Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title2Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title3,'&') > 0 and index(Title3,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title3);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title3Created,'&') > 0 and index(Title3Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title3Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title3Ref,'&') > 0 and index(Title3Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title3Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title4,'&') > 0 and index(Title4,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title4);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title4Created,'&') > 0 and index(Title4Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title4Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title4Ref,'&') > 0 and index(Title4Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title4Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title5,'&') > 0 and index(Title5,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title5);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title5Created,'&') > 0 and index(Title5Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title5Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title5Ref,'&') > 0 and index(Title5Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title5Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title6,'&') > 0 and index(Title6,'& ') = 0 then do;
+21                                                                   The SAS System
+
+MPRINT(JM_TF):   badvalue=strip(Title6);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title6Created,'&') > 0 and index(Title6Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title6Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title6Ref,'&') > 0 and index(Title6Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title6Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title7,'&') > 0 and index(Title7,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title7);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title7Created,'&') > 0 and index(Title7Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title7Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title7Ref,'&') > 0 and index(Title7Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title7Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title8,'&') > 0 and index(Title8,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title8);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title8Created,'&') > 0 and index(Title8Created,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title8Created);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Title8Ref,'&') > 0 and index(Title8Ref,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Title8Ref);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   if index(Type,'&') > 0 and index(Type,'& ') = 0 then do;
+MPRINT(JM_TF):   badvalue=strip(Type);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   run;
+
+NOTE: There were 121 observations read from the data set WORK.JM_TF_TITFT.
+NOTE: The data set WORK.V_AMPER has 0 observations and 84 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+22                                                                   The SAS System
+
+      cpu time            0.01 seconds
+      
+
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   set v_amper;
+MPRINT(JM_TF):   put ' ';
+SYMBOLGEN:  Macro variable JM_INFILE resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap
+MPRINT(JM_TF):   put "WAR" "NING:[jm_tf] In the excel file: " "(C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sap\candid_TOC.xlsx), an ampersand 
+" "is placed in front of the following character string(s): " badvalue +(-1) ". " "SAS will assume that these character strings are **global** macro 
+variables (since there " "is an ampersand before them). However, they do not exist in global macro library. " "Please either declare these character 
+strings as global macro var-s before calling " "this macro, or replace ampersand with its unicode equivalent ^{unicode 0026} in excel doc.";
+MPRINT(JM_TF):   run;
+
+NOTE: There were 0 observations read from the data set WORK.V_AMPER.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_TF):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_TF):   *** Create macro variables for TITLE1, NUMBER and TYPE based on TOC ***;
+MPRINT(JM_TF):   data tf;
+MPRINT(JM_TF):   set jm_tf_titft;
+MPRINT(JM_TF):   *** Remove file extension if specified ***;
+MPRINT(JM_TF):   if index(lowcase(program),'.sas') > 0 then do;
+MPRINT(JM_TF):   program = substr(program,1,index(lowcase(program),'.sas')-1);
+MPRINT(JM_TF):   format program;
+MPRINT(JM_TF):   end;
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to f_pgibox.sas
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to f_pgibox.sas
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to f_pgibox.sas
+SYMBOLGEN:  Macro variable JM_OUT_NUMBER resolves to 
+MLOGIC(JM_TF):  %IF condition "&jm_out_number" ne "" is FALSE
+MPRINT(JM_TF):   if lowcase(program)=lowcase("f_pgibox.sas") or lowcase(program)=lowcase("f_pgibox.sas.sas") or (trim(lowcase(program)) || 
+".sas"=lowcase("f_pgibox.sas")) then do;
+MPRINT(JM_TF):   call symputx("title1",title1);
+MPRINT(JM_TF):   call symputx("title2",title2);
+MPRINT(JM_TF):   call symputx("title3",title3);
+MPRINT(JM_TF):   call symputx("title4",title4);
+MPRINT(JM_TF):   call symputx("title5",title5);
+MPRINT(JM_TF):   call symputx("title6",title6);
+MPRINT(JM_TF):   call symputx("title7",title7);
+MPRINT(JM_TF):   call symputx("title8",title8);
+MPRINT(JM_TF):   call symputx("number",number);
+23                                                                   The SAS System
+
+MPRINT(JM_TF):   call symputx("type",type);
+MPRINT(JM_TF):   output;
+MPRINT(JM_TF):   *** Verify if all titles are defined ***;
+MPRINT(JM_TF):   if compress(title1) ne '' and compress(title2) ne '' and compress(title3) ne '' and compress(title4) ne '' and compress(title5) ne '' 
+and compress(title6) ne '' and compress(title7) ne '' and compress(title8) ne '' then do;
+MPRINT(JM_TF):   put ' ';
+MPRINT(JM_TF):   put 'WAR' 'NING: [jf_tf] has defined all title1-title8 in TOC Excel.  The title8 will be excluded due to maximum title counts.';
+MPRINT(JM_TF):   put ' ';
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   run;
+
+NOTE: There were 121 observations read from the data set WORK.JM_TF_TITFT.
+NOTE: The data set WORK.TF has 1 observations and 65 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** Transpose all the footnotes into one variable for data step processing ***;
+MPRINT(JM_TF):   proc transpose data=tf out=tf_foot;
+MPRINT(JM_TF):   var footnote1-footnote8;
+MPRINT(JM_TF):   run;
+
+NOTE: There were 1 observations read from the data set WORK.TF.
+NOTE: The data set WORK.TF_FOOT has 8 observations and 3 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(JM_TF):   *** Only process those with footnote text defined ***;
+MPRINT(JM_TF):   data tf_foot;
+MPRINT(JM_TF):   set tf_foot;
+MPRINT(JM_TF):   if ^missing(col1);
+MPRINT(JM_TF):   run;
+
+NOTE: There were 8 observations read from the data set WORK.TF_FOOT.
+NOTE: The data set WORK.TF_FOOT has 8 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** Define separate macro variable FOOTNOTEn for each one defined in TOC ***;
+24                                                                   The SAS System
+
+MLOGIC(JM_TF):  %LET (variable name is TFOOT)
+MLOGIC(JM_TF):  %LET (variable name is LFOOT)
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   set tf_foot end=eof;
+MPRINT(JM_TF):   call symputx(catt("footnote",_n_),col1);
+MPRINT(JM_TF):   if eof then do;
+MPRINT(JM_TF):   call symputx("tfoot",_n_);
+MPRINT(JM_TF):   lastfoot = _n_ + 1;
+MPRINT(JM_TF):   call symputx("lfoot",lastfoot);
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   run;
+
+NOTE: There were 8 observations read from the data set WORK.TF_FOOT.
+NOTE: DATA statement used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.00 seconds
+      
+
+MLOGIC(JM_TF):  %GLOBAL  OUTPUTNM
+MPRINT(JM_TF):   *** Define the TLF number based upon 'Number' column and 'Type' in TOC ***;
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   length number1 $50;
+SYMBOLGEN:  Macro variable NUMBER resolves to 9.2.3.1
+MPRINT(JM_TF):   number="9.2.3.1";
+SYMBOLGEN:  Macro variable TYPE resolves to Figure
+MPRINT(JM_TF):   type1="Figure";
+MPRINT(JM_TF):   if type1="Table" then number1=catt("t-",tranwrd(number,".","-0"));
+MPRINT(JM_TF):   if type1="Figure" then number1=catt("f-",tranwrd(number,".","-0"));
+MPRINT(JM_TF):   if type1="Listing" then number1=catt("l-",tranwrd(number,".","-0"));
+MPRINT(JM_TF):   call symputx("outputnm",number1);
+MPRINT(JM_TF):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** Only define Output Number if the TLF number contains a value ***;
+SYMBOLGEN:  Macro variable NUMBER resolves to 9.2.3.1
+MLOGIC(JM_TF):  %IF condition &number eq is FALSE
+MLOGIC(JM_TF):  %GLOBAL  VALOUTNM
+MPRINT(JM_TF):   *** Define standard validation program name based upon 'Number' column and 'Type' in TOC ***;
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   length number2 $50;
+SYMBOLGEN:  Macro variable NUMBER resolves to 9.2.3.1
+25                                                                   The SAS System
+
+MPRINT(JM_TF):   number="9.2.3.1";
+SYMBOLGEN:  Macro variable TYPE resolves to Figure
+MPRINT(JM_TF):   type1="Figure";
+MPRINT(JM_TF):   if type1="Table" then number2=catt("t_",tranwrd(number,".","_0"));
+MPRINT(JM_TF):   if type1="Figure" then number2=catt("f_",tranwrd(number,".","_0"));
+MPRINT(JM_TF):   if type1="Listing" then number2=catt("l_",tranwrd(number,".","_0"));
+MPRINT(JM_TF):   call symputx("valoutnm",number2);
+MPRINT(JM_TF):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable NUMBER resolves to 9.2.3.1
+MLOGIC(JM_TF):  %IF condition &number eq is FALSE
+MPRINT(JM_TF):   libname curlib '.';
+NOTE: Libref CURLIB was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf
+MPRINT(JM_TF):   *** Identify the deliverable ***;
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   curpath = pathname('curlib');
+MPRINT(JM_TF):   *** Document the current path as the program path ***;
+MPRINT(JM_TF):   call symputx('pgmpath',curpath);
+MPRINT(JM_TF):   slashpos = length(curpath);
+MPRINT(JM_TF):   slashcnt = 0;
+MPRINT(JM_TF):   do i = length(curpath) to 1 by -1;
+MPRINT(JM_TF):   curchar = substr(curpath,i,1);
+MPRINT(JM_TF):   if curchar in('\','/') then do;
+MPRINT(JM_TF):   slashcnt = slashcnt + 1;
+MPRINT(JM_TF):   slashpos = i;
+MPRINT(JM_TF):   if slashcnt = 2 then i = 1;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   end;
+MPRINT(JM_TF):   *** Identify the deliverable as the folder above the program folder ***;
+MPRINT(JM_TF):   task = substr(curpath,slashpos+1);
+MPRINT(JM_TF):   task2 = substr(task,1,index(task,'\')-1);
+MPRINT(JM_TF):   call symputx('deliverable',task2);
+MPRINT(JM_TF):   run;
+
+INFO: Character variables have defaulted to a length of 200 at the places given by: (Line):(Column). Truncation can result.
+      41:90    curpath
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+26                                                                   The SAS System
+
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** Identify the data base cut off date ***;
+MPRINT(JM_TF):   data rawdata;
+MPRINT(JM_TF):   set sashelp.vtable;
+MPRINT(JM_TF):   where libname = "RAW";
+MPRINT(JM_TF):   run;
+
+NOTE: The map data sets in library MAPSGFK are based on the digital maps from GfK GeoMarketing and are covered by their Copyright. For additional 
+      information, see http://support.sas.com/mapsonline/gfklicense.
+NOTE: There were 71 observations read from the data set SASHELP.VTABLE.
+      WHERE libname='RAW';
+NOTE: The data set WORK.RAWDATA has 71 observations and 41 variables.
+NOTE: DATA statement used (Total process time):
+      real time           42.61 seconds
+      cpu time            0.81 seconds
+      
+
+MPRINT(JM_TF):   proc sort data = rawdata;
+MPRINT(JM_TF):   by modate;
+MPRINT(JM_TF):   run;
+
+NOTE: There were 71 observations read from the data set WORK.RAWDATA.
+NOTE: SAS sort was used.
+NOTE: The data set WORK.RAWDATA has 71 observations and 41 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   set rawdata;
+MPRINT(JM_TF):   by modate;
+MPRINT(JM_TF):   datadate = datepart(modate);
+MPRINT(JM_TF):   format datadate date9.;
+MPRINT(JM_TF):   call symputx('datadate',put(datadate,date9.));
+MPRINT(JM_TF):   run;
+
+NOTE: There were 71 observations read from the data set WORK.RAWDATA.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+27                                                                   The SAS System
+
+MPRINT(JM_TF):   *** Hold onto headers for in-text table uses ***;
+MPRINT(JM_TF):   data inheaders;
+MPRINT(JM_TF):   length header1 header2 $200;
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to fontstyle=ROMAN fontsize=10pt font_weight=bold
+SYMBOLGEN:  Macro variable JM_HEADER resolves to &DEFAULT_HEADER
+SYMBOLGEN:  Macro variable DEFAULT_HEADER resolves to 
+MLOGIC(JM_TF):  %IF condition "&JM_HEADER" ne "" is FALSE
+MPRINT(JM_TF):   header1 = 'j=l "^S={' || "fontstyle=ROMAN fontsize=10pt font_weight=bold" || '}Jazz Pharmaceuticals"' || 'j=r "Page ^{pageof}"' ;
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to fontstyle=ROMAN fontsize=10pt font_weight=bold
+SYMBOLGEN:  Macro variable PROTOCOL resolves to 150-201
+MPRINT(JM_TF):   header2="^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201";
+MPRINT(JM_TF):   run;
+
+NOTE: The data set WORK.INHEADERS has 1 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** Hold onto titles for in-text table uses ***;
+MPRINT(JM_TF):   data intitles;
+MPRINT(JM_TF):   length title $200;
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to fontstyle=ROMAN fontsize=10pt font_weight=bold
+SYMBOLGEN:  Macro variable TYPE resolves to Figure
+SYMBOLGEN:  Macro variable NUMBER resolves to 9.2.3.1
+SYMBOLGEN:  Macro variable TITLE1 resolves to 
+MPRINT(JM_TF):   title = "^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Figure 9.2.3.1  ";
+MPRINT(JM_TF):   output;
+SYMBOLGEN:  Macro variable TITLE2 resolves to 
+Key Secondary Efficacy Endpoint: Box Plot of the Change in PGI-S from Baseline to Week 12 by Randomized 
+            Treatment Group
+
+MLOGIC(JM_TF):  %IF condition "&title2" ne "" is TRUE
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to fontstyle=ROMAN fontsize=10pt font_weight=bold
+SYMBOLGEN:  Macro variable TITLE2 resolves to 
+Key Secondary Efficacy Endpoint: Box Plot of the Change in PGI-S from Baseline to Week 12 by Randomized 
+            Treatment Group
+
+MPRINT(JM_TF):   title ="^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Secondary Efficacy Endpoint: Box Plot of the Change in PGI-S from 
+Baseline to Week 12 by Randomized Treatment Group
+";
+MPRINT(JM_TF):   output;
+SYMBOLGEN:  Macro variable TITLE3 resolves to (Modified Full Analysis Set)
+MLOGIC(JM_TF):  %IF condition "&title3" ne "" is TRUE
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to fontstyle=ROMAN fontsize=10pt font_weight=bold
+SYMBOLGEN:  Macro variable TITLE3 resolves to (Modified Full Analysis Set)
+MPRINT(JM_TF):   title ="^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)";
+MPRINT(JM_TF):   output;
+SYMBOLGEN:  Macro variable TITLE4 resolves to 
+MLOGIC(JM_TF):  %IF condition "&title4" ne "" is FALSE
+28                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable TITLE5 resolves to 
+MLOGIC(JM_TF):  %IF condition "&title5" ne "" is FALSE
+SYMBOLGEN:  Macro variable TITLE6 resolves to 
+MLOGIC(JM_TF):  %IF condition "&title6" ne "" is FALSE
+SYMBOLGEN:  Macro variable TITLE7 resolves to 
+MLOGIC(JM_TF):  %IF condition "&title7" ne "" is FALSE
+SYMBOLGEN:  Macro variable TITLE8 resolves to 
+MLOGIC(JM_TF):  %IF condition "&title8" ne "" is FALSE
+MPRINT(JM_TF):   run;
+
+NOTE: The data set WORK.INTITLES has 3 observations and 1 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** Only produce the titles and footnote if option is specified as yes ***;
+SYMBOLGEN:  Macro variable JM_PRODUCE_STATEMENTS resolves to Y
+SYMBOLGEN:  Macro variable JM_PRODUCE_STATEMENTS resolves to Y
+MLOGIC(JM_TF):  %IF condition %upcase("&jm_produce_statements") = "Y" or %upcase("&jm_produce_statements") = "YES" is TRUE
+MPRINT(JM_TF):   *** Allow for long quoted titles and footnotes ***;
+MPRINT(JM_TF):   option noquotelenmax;
+MPRINT(JM_TF):   *** Define actual SAS titles based on derived TOC information ***;
+SYMBOLGEN:  Macro variable JM_TITLE_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to fontstyle=ROMAN fontsize=10pt font_weight=bold
+SYMBOLGEN:  Macro variable JM_HEADER resolves to &DEFAULT_HEADER
+SYMBOLGEN:  Macro variable DEFAULT_HEADER resolves to 
+MLOGIC(JM_TF):  %IF condition "&JM_HEADER" ne "" is FALSE
+MPRINT(JM_TF):   title1 j=l "^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmaceuticals" j=r "Page ^{pageof}";
+SYMBOLGEN:  Macro variable JM_TITLE_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to fontstyle=ROMAN fontsize=10pt font_weight=bold
+SYMBOLGEN:  Macro variable PROTOCOL resolves to 150-201
+MPRINT(JM_TF):   title2 j=l "^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201";
+SYMBOLGEN:  Macro variable JM_TITLE_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to fontstyle=ROMAN fontsize=10pt font_weight=bold
+SYMBOLGEN:  Macro variable TYPE resolves to Figure
+SYMBOLGEN:  Macro variable NUMBER resolves to 9.2.3.1
+SYMBOLGEN:  Macro variable TITLE1 resolves to 
+MPRINT(JM_TF):   title3 "^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Figure 9.2.3.1  ";
+SYMBOLGEN:  Macro variable TITLE2 resolves to 
+Key Secondary Efficacy Endpoint: Box Plot of the Change in PGI-S from Baseline to Week 12 by Randomized 
+            Treatment Group
+
+MLOGIC(JM_TF):  %IF condition "&title2" ne "" is TRUE
+SYMBOLGEN:  Macro variable JM_TITLE_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to fontstyle=ROMAN fontsize=10pt font_weight=bold
+SYMBOLGEN:  Macro variable TITLE2 resolves to 
+Key Secondary Efficacy Endpoint: Box Plot of the Change in PGI-S from Baseline to Week 12 by Randomized 
+29                                                                   The SAS System
+
+            Treatment Group
+
+MPRINT(JM_TF):   title4 j=c "^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Secondary Efficacy Endpoint: Box Plot of the Change in PGI-S from 
+Baseline to Week 12 by Randomized Treatment Group
+";
+SYMBOLGEN:  Macro variable TITLE3 resolves to (Modified Full Analysis Set)
+MLOGIC(JM_TF):  %IF condition "&title3" ne "" is TRUE
+SYMBOLGEN:  Macro variable JM_TITLE_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_TITLE_FONT resolves to fontstyle=ROMAN fontsize=10pt font_weight=bold
+SYMBOLGEN:  Macro variable TITLE3 resolves to (Modified Full Analysis Set)
+MPRINT(JM_TF):   title5 j=c "^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)";
+SYMBOLGEN:  Macro variable TITLE4 resolves to 
+MLOGIC(JM_TF):  %IF condition "&title4" ne "" is FALSE
+SYMBOLGEN:  Macro variable TITLE5 resolves to 
+MLOGIC(JM_TF):  %IF condition "&title5" ne "" is FALSE
+SYMBOLGEN:  Macro variable TITLE6 resolves to 
+MLOGIC(JM_TF):  %IF condition "&title6" ne "" is FALSE
+SYMBOLGEN:  Macro variable TITLE7 resolves to 
+MLOGIC(JM_TF):  %IF condition "&title7" ne "" is FALSE
+SYMBOLGEN:  Macro variable TITLE8 resolves to 
+MLOGIC(JM_TF):  %IF condition "&title8" ne "" is FALSE
+MPRINT(JM_TF):   *** Define actual SAS footnotes based upon macro variable derived from TOC ***;
+SYMBOLGEN:  Macro variable TFOOT resolves to 8
+MLOGIC(JM_TF):  %DO loop beginning; index variable I; start value is 1; stop value is 8; by value is 1.  
+SYMBOLGEN:  Macro variable I resolves to 1
+SYMBOLGEN:  Macro variable JM_FOOT_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 1
+SYMBOLGEN:  Macro variable FOOTNOTE1 resolves to PGI-S: Patient Global Impression of Severity.
+MPRINT(JM_TF):   footnote1 j=l "^S={}PGI-S: Patient Global Impression of Severity.";
+MLOGIC(JM_TF):  %DO loop index variable I is now 2; loop will iterate again.
+SYMBOLGEN:  Macro variable I resolves to 2
+SYMBOLGEN:  Macro variable JM_FOOT_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 2
+SYMBOLGEN:  Macro variable FOOTNOTE2 resolves to Note:The Modified Full Analysis Set includes all participants who were randomized,took at least 1 dose 
+            of study intervention,and
+MPRINT(JM_TF):   footnote2 j=l "^S={}Note:The Modified Full Analysis Set includes all participants who were randomized,took at least 1 dose of study 
+intervention,and";
+MLOGIC(JM_TF):  %DO loop index variable I is now 3; loop will iterate again.
+SYMBOLGEN:  Macro variable I resolves to 3
+SYMBOLGEN:  Macro variable JM_FOOT_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 3
+30                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable FOOTNOTE3 resolves to have baseline and at least one post-baseline assessment of CAPS-5 total score,CGI-S,or PGI-S 
+            score,excluding ineligible
+MPRINT(JM_TF):   footnote3 j=l "^S={}have baseline and at least one post-baseline assessment of CAPS-5 total score,CGI-S,or PGI-S score,excluding 
+ineligible";
+MLOGIC(JM_TF):  %DO loop index variable I is now 4; loop will iterate again.
+SYMBOLGEN:  Macro variable I resolves to 4
+SYMBOLGEN:  Macro variable JM_FOOT_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 4
+SYMBOLGEN:  Macro variable FOOTNOTE4 resolves to participants that were randomized.
+MPRINT(JM_TF):   footnote4 j=l "^S={}participants that were randomized.";
+MLOGIC(JM_TF):  %DO loop index variable I is now 5; loop will iterate again.
+SYMBOLGEN:  Macro variable I resolves to 5
+SYMBOLGEN:  Macro variable JM_FOOT_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 5
+SYMBOLGEN:  Macro variable FOOTNOTE5 resolves to Note:The bottom and top edges of the box indicate the 1st and 3rd quartiles [Q1 and Q3]. The 
+            difference between Q3 and Q1 is the
+MPRINT(JM_TF):   footnote5 j=l "^S={}Note:The bottom and top edges of the box indicate the 1st and 3rd quartiles [Q1 and Q3]. The difference between Q3 
+and Q1 is the";
+MLOGIC(JM_TF):  %DO loop index variable I is now 6; loop will iterate again.
+SYMBOLGEN:  Macro variable I resolves to 6
+SYMBOLGEN:  Macro variable JM_FOOT_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 6
+SYMBOLGEN:  Macro variable FOOTNOTE6 resolves to interquartile range (IQR).The line inside the box is the median and the marker inside the box is the 
+            mean.The upper and lower
+MPRINT(JM_TF):   footnote6 j=l "^S={}interquartile range (IQR).The line inside the box is the median and the marker inside the box is the mean.The 
+upper and lower";
+MLOGIC(JM_TF):  %DO loop index variable I is now 7; loop will iterate again.
+SYMBOLGEN:  Macro variable I resolves to 7
+SYMBOLGEN:  Macro variable JM_FOOT_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 7
+SYMBOLGEN:  Macro variable FOOTNOTE7 resolves to whisker extend Q3 + 1.5*IQR and Q1- 1.5*IQR,respectively.Any points that are a distance of more than 
+            1.5*IQR from the box
+MPRINT(JM_TF):   footnote7 j=l "^S={}whisker extend Q3 + 1.5*IQR and Q1- 1.5*IQR,respectively.Any points that are a distance of more than 1.5*IQR from 
+the box";
+MLOGIC(JM_TF):  %DO loop index variable I is now 8; loop will iterate again.
+SYMBOLGEN:  Macro variable I resolves to 8
+SYMBOLGEN:  Macro variable JM_FOOT_OPT resolves to 
+31                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 8
+SYMBOLGEN:  Macro variable FOOTNOTE8 resolves to considered outliers and are represented as a 'o'.
+MPRINT(JM_TF):   footnote8 j=l "^S={}considered outliers and are represented as a 'o'.";
+MLOGIC(JM_TF):  %DO loop index variable I is now 9; loop will not iterate again.
+MLOGIC(JM_TF):  %LET (variable name is SYSIN)
+MPRINT(JM_TF):   *** Add extension if it does not exist ***;
+MPRINT(JM_TF):   data _null_;
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to f_pgibox.sas
+MPRINT(JM_TF):   curprog = strip("f_pgibox.sas");
+MPRINT(JM_TF):   if index(lowcase(curprog),'.sas') = 0 then call symputx('prog_name',strip(curprog) || ".sas");
+MPRINT(JM_TF):   else call symputx('prog_name',curprog);
+MPRINT(JM_TF):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** Create data extract if specified ***;
+MLOGIC(JM_TF):  %IF condition %symexist(datextr) and %symexist(datatyp) is FALSE
+MLOGIC(JM_TF):  %IF condition %symexist(datextr) is FALSE
+MLOGIC(JM_TF):  %LET (variable name is DATA_EXTRACT)
+MPRINT(JM_TF):   *** Define the final footnote according to Step 7 in specification ***;
+SYMBOLGEN:  Macro variable LFOOT resolves to 9
+SYMBOLGEN:  Macro variable JM_FOOT_OPT resolves to 
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+SYMBOLGEN:  Macro variable PGMPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf
+SYMBOLGEN:  Macro variable PROG_NAME resolves to f_pgibox.sas
+SYMBOLGEN:  Macro variable DATA_EXTRACT resolves to 
+SYMBOLGEN:  Macro variable SYSDATE9 resolves to 31JAN2023
+SYMBOLGEN:  Macro variable SYSTIME resolves to 10:19
+MPRINT(JM_TF):   footnote9 j=l "^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\f_pgibox.sas   " "  DATE: 31JAN2023:10:19";
+MPRINT(JM_TF):   *** footnote10 j=l &JM_FOOT_OPT "^S={&JM_FOOT_FONT} &sysin " ;
+MPRINT(JM_TF):   *** Hold onto footers for in-text table uses ***;
+MPRINT(JM_TF):   data infoots;
+MPRINT(JM_TF):   length foot progfoot $800;
+SYMBOLGEN:  Macro variable JM_FOOT_FONT resolves to 
+SYMBOLGEN:  Macro variable PGMPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf
+SYMBOLGEN:  Macro variable PROG_NAME resolves to f_pgibox.sas
+SYMBOLGEN:  Macro variable DATA_EXTRACT resolves to 
+SYMBOLGEN:  Macro variable SYSDATE9 resolves to 31JAN2023
+SYMBOLGEN:  Macro variable SYSTIME resolves to 10:19
+MPRINT(JM_TF):   progfoot = "^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\f_pgibox.sas   " || "  DATE: 31JAN2023:10:19";
+32                                                                   The SAS System
+
+MPRINT(JM_TF):   foot = " ";
+SYMBOLGEN:  Macro variable TFOOT resolves to 8
+MLOGIC(JM_TF):  %DO loop beginning; index variable I; start value is 1; stop value is 8; by value is 1.  
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 1
+SYMBOLGEN:  Macro variable FOOTNOTE1 resolves to PGI-S: Patient Global Impression of Severity.
+MPRINT(JM_TF):   foot= "PGI-S: Patient Global Impression of Severity.";
+MPRINT(JM_TF):   output;
+MLOGIC(JM_TF):  %DO loop index variable I is now 2; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 2
+SYMBOLGEN:  Macro variable FOOTNOTE2 resolves to Note:The Modified Full Analysis Set includes all participants who were randomized,took at least 1 dose 
+            of study intervention,and
+MPRINT(JM_TF):   foot= "Note:The Modified Full Analysis Set includes all participants who were randomized,took at least 1 dose of study 
+intervention,and";
+MPRINT(JM_TF):   output;
+MLOGIC(JM_TF):  %DO loop index variable I is now 3; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 3
+SYMBOLGEN:  Macro variable FOOTNOTE3 resolves to have baseline and at least one post-baseline assessment of CAPS-5 total score,CGI-S,or PGI-S 
+            score,excluding ineligible
+MPRINT(JM_TF):   foot= "have baseline and at least one post-baseline assessment of CAPS-5 total score,CGI-S,or PGI-S score,excluding ineligible";
+MPRINT(JM_TF):   output;
+MLOGIC(JM_TF):  %DO loop index variable I is now 4; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 4
+SYMBOLGEN:  Macro variable FOOTNOTE4 resolves to participants that were randomized.
+MPRINT(JM_TF):   foot= "participants that were randomized.";
+MPRINT(JM_TF):   output;
+MLOGIC(JM_TF):  %DO loop index variable I is now 5; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 5
+SYMBOLGEN:  Macro variable FOOTNOTE5 resolves to Note:The bottom and top edges of the box indicate the 1st and 3rd quartiles [Q1 and Q3]. The 
+            difference between Q3 and Q1 is the
+MPRINT(JM_TF):   foot= "Note:The bottom and top edges of the box indicate the 1st and 3rd quartiles [Q1 and Q3]. The difference between Q3 and Q1 is 
+the";
+MPRINT(JM_TF):   output;
+MLOGIC(JM_TF):  %DO loop index variable I is now 6; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 6
+SYMBOLGEN:  Macro variable FOOTNOTE6 resolves to interquartile range (IQR).The line inside the box is the median and the marker inside the box is the 
+            mean.The upper and lower
+MPRINT(JM_TF):   foot= "interquartile range (IQR).The line inside the box is the median and the marker inside the box is the mean.The upper and lower";
+MPRINT(JM_TF):   output;
+MLOGIC(JM_TF):  %DO loop index variable I is now 7; loop will iterate again.
+33                                                                   The SAS System
+
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 7
+SYMBOLGEN:  Macro variable FOOTNOTE7 resolves to whisker extend Q3 + 1.5*IQR and Q1- 1.5*IQR,respectively.Any points that are a distance of more than 
+            1.5*IQR from the box
+MPRINT(JM_TF):   foot= "whisker extend Q3 + 1.5*IQR and Q1- 1.5*IQR,respectively.Any points that are a distance of more than 1.5*IQR from the box";
+MPRINT(JM_TF):   output;
+MLOGIC(JM_TF):  %DO loop index variable I is now 8; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 8
+SYMBOLGEN:  Macro variable FOOTNOTE8 resolves to considered outliers and are represented as a 'o'.
+MPRINT(JM_TF):   foot= "considered outliers and are represented as a 'o'.";
+MPRINT(JM_TF):   output;
+MLOGIC(JM_TF):  %DO loop index variable I is now 9; loop will not iterate again.
+MPRINT(JM_TF):   run;
+
+NOTE: The data set WORK.INFOOTS has 8 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(JM_TF):   *** Verify if the standard macro variable is defined ***;
+MPRINT(JM_TF):   data _null_;
+MLOGIC(JM_TF):  %IF condition %symexist(datextr)=0 is TRUE
+MPRINT(JM_TF):   put ' ';
+MPRINT(JM_TF):   put "WAR" "NING:[jm_tf] was not able to resolve the macro variable DATEXTR. " "This is a standard variable that defines the date of 
+data extract for the input data. ";
+MPRINT(JM_TF):   put ' ';
+MPRINT(JM_TF):   run;
+
+
+WARNING:[jm_tf] was not able to resolve the macro variable DATEXTR. 
+This is a standard variable that defines the date of data extract for the input data. 
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** Purpose Step 3: Macro finds row containing SAS program name – from Step 1 - and produces global macro variable & JM_G_OUTPUT. ***;
+MLOGIC(JM_TF):  %GLOBAL  JM_G_OUTPUT 
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   length jm_g_output $300;
+SYMBOLGEN:  Macro variable JM_PROG_NAME resolves to f_pgibox.sas
+MPRINT(JM_TF):   JM_G_OUTPUT=tranwrd(strip(lowcase("f_pgibox.sas")),".sas",'.rtf');
+MPRINT(JM_TF):   if index(jm_g_output,'.') = 0 then jm_g_output=trim(jm_g_output) || ".rtf";
+34                                                                   The SAS System
+
+MPRINT(JM_TF):   call symputx('jm_g_output',jm_g_output);
+MPRINT(JM_TF):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TF):   *** Define the last title number for users to create additional optional titles ***;
+MLOGIC(JM_TF):  %GLOBAL  LASTTITLENUM
+MPRINT(JM_TF):   data _null_;
+MPRINT(JM_TF):   set tf(keep=title2-title8);
+MPRINT(JM_TF):   call symput("lasttitlenum",strip(put(8-cmiss(of title2-title8)+2,best.)));
+MPRINT(JM_TF):   run;
+
+NOTE: There were 1 observations read from the data set WORK.TF.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+MLOGIC(JM_TF):  %PUT NOTE: LastTitleNum=&lasttitlenum.
+SYMBOLGEN:  Macro variable LASTTITLENUM resolves to 5
+NOTE: LastTitleNum=5
+MPRINT(JM_TF):   *** Mark the end of parameter checking ***;
+MLOGIC(JM_TF):  Ending execution.
+42         
+43         *-----------------------------------------------------------------;
+44         *DELETE TABLE FROM TLFDATA OF PREVIOUS ITERATION;
+45         *-----------------------------------------------------------------;
+46         %JM_DATAPREP;
+MLOGIC:  Beginning compilation of JM_DATAPREP using the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_dataprep.sas.
+MLOGIC:  Ending compilation of JM_DATAPREP.
+MLOGIC(JM_DATAPREP):  Beginning execution.
+MLOGIC(JM_DATAPREP):  This macro was compiled from the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_dataprep.sas
+MLOGIC(JM_DATAPREP):  Parameter JM_TLFLIB has value TLFDATA
+MLOGIC(JM_DATAPREP):  Parameter JM_OUTNAME has value 
+MLOGIC(JM_DATAPREP):  Parameter JM_DEBUG has value N
+MLOGIC(JM_DATAPREP):  Parameter JM_VERSION has value 1
+MPRINT(JM_DATAPREP):   *** Document in log what parameter value specified ***;
+MPRINT(JM_DATAPREP):   data _null_;
+MPRINT(JM_DATAPREP):   put ' ';
+MPRINT(JM_DATAPREP):   put "******************* Parameter Values *******************";
+SYMBOLGEN:  Macro variable JM_TLFLIB resolves to TLFDATA
+MPRINT(JM_DATAPREP):   PUT "ALERT:I: JM_TLFLIB PROCESSED - TLFDATA";
+35                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable JM_OUTNAME resolves to 
+MPRINT(JM_DATAPREP):   PUT "ALERT:I: JM_OUTNAME PROCESSED - ";
+SYMBOLGEN:  Macro variable JM_DEBUG resolves to N
+MPRINT(JM_DATAPREP):   PUT "ALERT:I: JM_DEBUG PROCESSED - N";
+SYMBOLGEN:  Macro variable JM_VERSION resolves to 1
+MPRINT(JM_DATAPREP):   PUT "ALERT:I: JM_VERSION PROCESSED - 1";
+MPRINT(JM_DATAPREP):   put "********************************************************";
+MPRINT(JM_DATAPREP):   put " ";
+MPRINT(JM_DATAPREP):   put 'NOTE: [JM_DATAPREP] is currently running macro %jm_dataprep version 1.0.';
+MPRINT(JM_DATAPREP):   put " ";
+MPRINT(JM_DATAPREP):   run;
+
+
+******************* Parameter Values *******************
+ALERT:I: JM_TLFLIB PROCESSED - TLFDATA
+ALERT:I: JM_OUTNAME PROCESSED - 
+ALERT:I: JM_DEBUG PROCESSED - N
+ALERT:I: JM_VERSION PROCESSED - 1
+********************************************************
+
+NOTE: [JM_DATAPREP] is currently running macro %jm_dataprep version 1.0.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_DATAPREP):   *** Keep Count of er ror messages ***;
+MLOGIC(JM_DATAPREP):  %LET (variable name is _ERR)
+MLOGIC(JM_DATAPREP):  %LET (variable name is _ERRCNT)
+MPRINT(JM_DATAPREP):   *** Verify invalid values for paramters ***;
+MPRINT(JM_DATAPREP):   data _null_;
+SYMBOLGEN:  Macro variable JM_TLFLIB resolves to TLFDATA
+MLOGIC(JM_DATAPREP):  %IF condition (%sysfunc(libref(&JM_TLFLIB))) is FALSE
+MPRINT(JM_DATAPREP):   run ;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.59 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_DATAPREP):   *** Set default if not specified ***;
+MPRINT(JM_DATAPREP):   data _null_;
+SYMBOLGEN:  Macro variable JM_OUTNAME resolves to 
+MPRINT(JM_DATAPREP):   if compress("") = "" then do;
+MLOGIC(JM_DATAPREP):  %IF condition %symexist(valoutnm) is TRUE
+36                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable VALOUTNM resolves to f_9_02_03_01
+MPRINT(JM_DATAPREP):   call symputx('jm_outname',"f_9_02_03_01");
+MPRINT(JM_DATAPREP):   put ' ';
+MLOGIC(JM_DATAPREP):  %IF condition %symexist(valoutnm) is TRUE
+SYMBOLGEN:  Macro variable VALOUTNM resolves to f_9_02_03_01
+MPRINT(JM_DATAPREP):   put "NOTE:[JM_DATAPREP] is missing required parameter JM_OUTNAME. " "The default value for VALOUTNM (f_9_02_03_01) was assign to 
+this." ;
+MPRINT(JM_DATAPREP):   put " ";
+MPRINT(JM_DATAPREP):   end;
+MPRINT(JM_DATAPREP):   run;
+
+
+NOTE:[JM_DATAPREP] is missing required parameter JM_OUTNAME. The default value for VALOUTNM (f_9_02_03_01) was assign to this.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_DATAPREP):   *** Verify missing parameters ***;
+MPRINT(JM_DATAPREP):   data _null_;
+SYMBOLGEN:  Macro variable JM_OUTNAME resolves to f_9_02_03_01
+MPRINT(JM_DATAPREP):   if compress("f_9_02_03_01") = "" then do;
+MPRINT(JM_DATAPREP):   put ' ';
+MPRINT(JM_DATAPREP):   put "ER" "ROR:[JM_DATAPREP] is missing required parameter JM_OUTNAME. " "This specifies the SAS dataset for output TLF to be 
+deleted.";
+MPRINT(JM_DATAPREP):   put " ";
+MPRINT(JM_DATAPREP):   call symput('_err','yes');
+MPRINT(JM_DATAPREP):   end;
+MPRINT(JM_DATAPREP):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_DATAPREP):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_DATAPREP):   *** Verify JM_DEBUG paramters ***;
+MPRINT(JM_DATAPREP):   data _null_;
+MPRINT(JM_DATAPREP):   length jm_debug $20;
+MPRINT(JM_DATAPREP):   *** 3)If JM_Debug is neither 'Y' or 'N' then issue information log message ***;
+SYMBOLGEN:  Macro variable JM_DEBUG resolves to N
+MPRINT(JM_DATAPREP):   jm_debug=compress(upcase(strip("N")));
+MPRINT(JM_DATAPREP):   if jm_debug not in("Y","N") then do;
+MPRINT(JM_DATAPREP):   put ' ';
+37                                                                   The SAS System
+
+MPRINT(JM_DATAPREP):   put "WARN" "ING:[JM_DATAPREP] Parameter JM_DEBUG value can be either 'N' or 'Y'. " "Since entered value is neither 'Y' or 'N' 
+default value has been assigned to the " "parameter JM_DEBUG=N.";
+MPRINT(JM_DATAPREP):   put " ";
+MPRINT(JM_DATAPREP):   call symputx('jm_debug','N');
+MPRINT(JM_DATAPREP):   end;
+MPRINT(JM_DATAPREP):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_DATAPREP):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_DATAPREP):   *** Identiy all datasets for libname JM_TLFLIB ***;
+MPRINT(JM_DATAPREP):   proc sql;
+SYMBOLGEN:  Macro variable JM_TLFLIB resolves to TLFDATA
+MPRINT(JM_DATAPREP):   create table columns as select distinct memname as table_name from dictionary.columns where upcase(libname) = upcase("TLFDATA") ;
+NOTE: Table WORK.COLUMNS created, with 103 rows and 1 columns.
+
+MPRINT(JM_DATAPREP):   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.39 seconds
+      cpu time            0.03 seconds
+      
+
+MPRINT(JM_DATAPREP):   *** Hold onto only datasets specified by JM_OUTNAME ***;
+MPRINT(JM_DATAPREP):   data columns;
+MPRINT(JM_DATAPREP):   set columns;
+SYMBOLGEN:  Macro variable JM_OUTNAME resolves to f_9_02_03_01
+MPRINT(JM_DATAPREP):   if upcase(table_name)= UPCASE("f_9_02_03_01");
+MPRINT(JM_DATAPREP):   run;
+
+NOTE: There were 103 observations read from the data set WORK.COLUMNS.
+NOTE: The data set WORK.COLUMNS has 0 observations and 1 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MLOGIC(JM_DATAPREP):  %LET (variable name is DSID)
+MLOGIC(JM_DATAPREP):  %LET (variable name is NOBS)
+SYMBOLGEN:  Macro variable DSID resolves to 1
+SYMBOLGEN:  Macro variable NOBS resolves to 0
+MLOGIC(JM_DATAPREP):  %IF condition &nobs > 0 is FALSE
+38                                                                   The SAS System
+
+MPRINT(JM_DATAPREP):   * * * *** Delete specified dataset in libname ***;
+SYMBOLGEN:  Macro variable JM_TLFLIB resolves to TLFDATA
+MPRINT(JM_DATAPREP):   proc datasets lib=TLFDATA memtype= data nolist noprint;
+SYMBOLGEN:  Macro variable JM_OUTNAME resolves to f_9_02_03_01
+MPRINT(JM_DATAPREP):   delete f_9_02_03_01;
+MPRINT(JM_DATAPREP):   quit;
+
+NOTE: The file TLFDATA.F_9_02_03_01 (memtype=DATA) was not found, but appears on a DELETE statement.
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_DATAPREP):   *** Verify if the dataset that is cleanned up still exists ***;
+MPRINT(JM_DATAPREP):   data _null_;
+SYMBOLGEN:  Macro variable JM_TLFLIB resolves to TLFDATA
+SYMBOLGEN:  Macro variable JM_OUTNAME resolves to f_9_02_03_01
+MPRINT(JM_DATAPREP):   if exist("TLFDATA.f_9_02_03_01") then do;
+MPRINT(JM_DATAPREP):   put ' ';
+SYMBOLGEN:  Macro variable JM_TLFLIB resolves to TLFDATA
+SYMBOLGEN:  Macro variable JM_OUTNAME resolves to f_9_02_03_01
+MPRINT(JM_DATAPREP):   put "ER" "ROR:[JM_DATAPREP] had difficulties deleting the dataset: TLFDATA.f_9_02_03_01. ";
+MPRINT(JM_DATAPREP):   put " ";
+MPRINT(JM_DATAPREP):   end;
+MPRINT(JM_DATAPREP):   else do;
+MPRINT(JM_DATAPREP):   put ' ';
+SYMBOLGEN:  Macro variable JM_TLFLIB resolves to TLFDATA
+SYMBOLGEN:  Macro variable JM_OUTNAME resolves to f_9_02_03_01
+MPRINT(JM_DATAPREP):   put "NOTE:[JM_DATAPREP] successfully deleted the dataset: TLFDATA.f_9_02_03_01.";
+MPRINT(JM_DATAPREP):   put " ";
+MPRINT(JM_DATAPREP):   end;
+MPRINT(JM_DATAPREP):   run;
+
+
+NOTE:[JM_DATAPREP] successfully deleted the dataset: TLFDATA.f_9_02_03_01.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(JM_DATAPREP):   *** Mark the end of parameter checking ***;
+MLOGIC(JM_DATAPREP):  Ending execution.
+47         
+48         *-----------------------------------------------------------------;
+49         *PROC TEMPLATE CODE FOR STYLE ELEMENT;
+39                                                                   The SAS System
+
+50         *-----------------------------------------------------------------;
+51         %JM_TEMPLATES;
+MLOGIC:  Beginning compilation of JM_TEMPLATES using the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_templates.sas.
+MLOGIC:  Ending compilation of JM_TEMPLATES.
+MLOGIC(JM_TEMPLATES):  Beginning execution.
+MLOGIC(JM_TEMPLATES):  This macro was compiled from the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_templates.sas
+MLOGIC(JM_TEMPLATES):  Parameter JM_POINTSIZE has value 
+MPRINT(JM_TEMPLATES):   *** Document in log what parameter value specified ***;
+MPRINT(JM_TEMPLATES):   data _null_;
+MPRINT(JM_TEMPLATES):   put ' ';
+MPRINT(JM_TEMPLATES):   put "******************* Parameter Values *******************";
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 
+MPRINT(JM_TEMPLATES):   PUT "ALERT:I: JM_POINTSIZE PROCESSED - ";
+MPRINT(JM_TEMPLATES):   put "********************************************************";
+MPRINT(JM_TEMPLATES):   put " ";
+MPRINT(JM_TEMPLATES):   put 'NOTE: [JM_TEMPLATES] is currently running macro %jm_templates version 1.0.';
+MPRINT(JM_TEMPLATES):   put " ";
+MPRINT(JM_TEMPLATES):   run;
+
+
+******************* Parameter Values *******************
+ALERT:I: JM_POINTSIZE PROCESSED - 
+********************************************************
+
+NOTE: [JM_TEMPLATES] is currently running macro %jm_templates version 1.0.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TEMPLATES):   *** Initialize er ror checking condition ***;
+MLOGIC(JM_TEMPLATES):  %LET (variable name is _ERR)
+MPRINT(JM_TEMPLATES):   data _null_;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 
+MPRINT(JM_TEMPLATES):   if "" = "" then do;
+MPRINT(JM_TEMPLATES):   *** Apply the default fontsize if that is specified ***;
+MLOGIC(JM_TEMPLATES):  %IF condition %symexist(default_fontsize)=0 is FALSE
+SYMBOLGEN:  Macro variable DEFAULT_FONTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   call symputx('JM_POINTSIZE',"9");
+SYMBOLGEN:  Macro variable DEFAULT_FONTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   put "NOTE: [JM_TEMPLATES] is missing required parameter JM_POINTSIZE. " "However, the default was set to: 9.";
+MPRINT(JM_TEMPLATES):   put " ";
+MPRINT(JM_TEMPLATES):   end;
+MPRINT(JM_TEMPLATES):   run;
+
+40                                                                   The SAS System
+
+NOTE: [JM_TEMPLATES] is missing required parameter JM_POINTSIZE. However, the default was set to: 9.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_TEMPLATES):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_TEMPLATES):   *** Verify if the pointsize is a valid numeric value ***;
+MPRINT(JM_TEMPLATES):   data _null_;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   pointsize = strip("9");
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'0','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'1','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'2','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'3','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'4','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'5','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'6','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'7','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'8','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'9','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'.','');
+MPRINT(JM_TEMPLATES):   if pointsize ne '' then do;
+MPRINT(JM_TEMPLATES):   put " ";
+MPRINT(JM_TEMPLATES):   put "ER" "ROR: [JM_TEMPLATES] contain invalid characters (" pointsize +(-1) ") for JM_POINTSIZE parameter. " "This specifies 
+the point size for font in report (i.e. 8).";
+MPRINT(JM_TEMPLATES):   put " ";
+MPRINT(JM_TEMPLATES):   call symput('_err','yes');
+MPRINT(JM_TEMPLATES):   end;
+MPRINT(JM_TEMPLATES):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_TEMPLATES):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_TEMPLATES):   ods path(prepend) work.templat(update);
+MPRINT(JM_TEMPLATES):   *** Define the ODS style for Jazz Reports with Time Roman fonts ***;
+MPRINT(JM_TEMPLATES):   proc template;
+MPRINT(JM_TEMPLATES):   define style JZPStyle;
+MPRINT(JM_TEMPLATES):   parent=styles.rtf;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+41                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   replace fonts / 'titlefont2'=("Times New Roman, Times New Roman",9pt,bold) 'titlefont'=("Times New Roman, Times New 
+Roman",9pt,bold) 'Strongfont'=("Times New Roman, Times New Roman",9pt) 'EmphasisFont'=("Times New Roman, Times New Roman",9pt) 
+'FixedEmphasisFont'=("Times New Roman, Times New Roman",2) 'FixedStrongFont'=("Times New Roman, Times New Roman",2) 'FixedHeadingFont'=("Times New 
+Roman, Times New Roman",2) 'BatchFixedFont'=("SAS Monospace,Times New Roman, Times New Roman",2) 'FixedFont'=("Times New Roman, Times New Roman",2) 
+'headingEmphasisFont'=("Times New Roman, Times New Roman",9pt,bold) 'headingFont'=("Times New Roman, Times New Roman",9pt,bold) 'docFont'=("Times New 
+Roman, Times New Roman",9pt) 'footFont'=("Times New Roman, Times New Roman",8pt);
+MPRINT(JM_TEMPLATES):   style pageno from pageno / font=fonts("strongfont") pretext="Page " posttext=" of ^{lastpage} ";
+MPRINT(JM_TEMPLATES):   style header from table /rules=groups frame=above frameborder=on frameborderwidth=0.5 font_weight=light cellspacing=.25 
+cellpadding=1.0 borderwidth=1.5pt;
+MPRINT(JM_TEMPLATES):   style table from table /rules=groups frame=above cellspacing=0.25 cellpadding=1.0;
+MPRINT(JM_TEMPLATES):   style systemtitle from systemtitle / asis=on;
+MPRINT(JM_TEMPLATES):   style systemfooter from systemfooter / asis=on;
+MPRINT(JM_TEMPLATES):   replace headersAndFooters from cell/ font=fonts('TitleFont') foreground=black background=white;
+MPRINT(JM_TEMPLATES):   replace SystemFooter from TitlesAndFooters / font = Fonts('footFont');
+MPRINT(JM_TEMPLATES):   replace SystemTitles from TitlesAndFooters / font = Fonts('TitleFont');
+MPRINT(JM_TEMPLATES):   replace Body from Document "Controls the Body file. " / bottommargin = 1.01in topmargin = 1.18in rightmargin = 0.79in 
+leftmargin = 0.81in;
+MPRINT(JM_TEMPLATES):   end;
+NOTE: STYLE 'JZPStyle' has been saved to: WORK.TEMPLAT
+NOTE: PROCEDURE TEMPLATE used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TEMPLATES):   run;
+MPRINT(JM_TEMPLATES):   *** Define the ODS style for Tables or Listing Reports with Courier fonts ***;
+MPRINT(JM_TEMPLATES):   proc template;
+MPRINT(JM_TEMPLATES):   define style OXYSTYLE;
+MPRINT(JM_TEMPLATES):   parent=styles.rtf;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   replace fonts / 'titlefont2'=("Courier New, Courier New",9pt,bold) 'titlefont'=("Courier New, Courier New",9pt,bold) 
+'Strongfont'=("Courier New, Courier New",9pt) 'EmphasisFont'=("Courier New, Courier New",9pt) 'FixedEmphasisFont'=("Courier New, Courier New",2) 
+'FixedStrongFont'=("Courier New, Courier New",2) 'FixedHeadingFont'=("Courier New, Courier New",2) 'BatchFixedFont'=("SAS Monospace,Courier New, 
+42                                                                   The SAS System
+
+Courier New",2) 'FixedFont'=("Courier New, Courier New",2) 'headingEmphasisFont'=("Courier New, Courier New",9pt,bold) 'headingFont'=("Courier New, 
+Courier New",9pt,bold) 'docFont'=("Courier New, Courier New",9pt) 'footFont'=("Courier New, Courier New",8pt);
+MPRINT(JM_TEMPLATES):   style pageno from pageno / font=fonts("strongfont") pretext="Page " posttext=" of ^{lastpage} ";
+MPRINT(JM_TEMPLATES):   style header from table /rules=groups frame=above frameborder=on frameborderwidth=0.5 font_weight=light cellspacing=.25 
+cellpadding=1.0 borderwidth=1.5pt;
+MPRINT(JM_TEMPLATES):   style table from table /rules=groups frame=above cellspacing=0.25 cellpadding=1.0;
+MPRINT(JM_TEMPLATES):   style systemtitle from systemtitle / asis=on;
+MPRINT(JM_TEMPLATES):   style systemfooter from systemfooter / asis=on;
+MPRINT(JM_TEMPLATES):   replace headersAndFooters from cell/ font=fonts('TitleFont') foreground=black background=white;
+MPRINT(JM_TEMPLATES):   replace SystemFooter from TitlesAndFooters / font = Fonts('footFont');
+MPRINT(JM_TEMPLATES):   replace SystemTitles from TitlesAndFooters / font = Fonts('TitleFont');
+MPRINT(JM_TEMPLATES):   replace Body from Document "Controls the Body file. " / bottommargin = 1.01in topmargin = 1.18in rightmargin = 0.79in 
+leftmargin = 0.81in;
+MPRINT(JM_TEMPLATES):   end;
+NOTE: STYLE 'Oxystyle' has been saved to: WORK.TEMPLAT
+NOTE: PROCEDURE TEMPLATE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TEMPLATES):   run;
+MPRINT(JM_TEMPLATES):   *** Define the ODS style for Intext Tables with Time Roman fonts ***;
+MPRINT(JM_TEMPLATES):   proc template;
+MPRINT(JM_TEMPLATES):   define style InTXTStyle;
+MPRINT(JM_TEMPLATES):   parent=styles.rtf;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   replace fonts / 'titlefont2'=("Times New Roman, Times New Roman",9pt,bold) 'titlefont'=("Times New Roman, Times New 
+Roman",9pt,bold) 'Strongfont'=("Times New Roman, Times New Roman",9pt) 'EmphasisFont'=("Times New Roman, Times New Roman",9pt) 
+'FixedEmphasisFont'=("Times New Roman, Times New Roman",2) 'FixedStrongFont'=("Times New Roman, Times New Roman",2) 'FixedHeadingFont'=("Times New 
+Roman, Times New Roman",2) 'BatchFixedFont'=("SAS Monospace,Times New Roman, Times New Roman",2) 'FixedFont'=("Times New Roman, Times New Roman",2) 
+'headingEmphasisFont'=("Times New Roman, Times New Roman",9pt,bold) 'headingFont'=("Times New Roman, Times New Roman",9pt,bold) 'docFont'=("Times New 
+Roman, Times New Roman",9pt) 'footFont'=("Times New Roman, Times New Roman",8pt);
+MPRINT(JM_TEMPLATES):   style pageno from pageno / font=fonts("strongfont") pretext="Page " posttext=" of ^{lastpage} ";
+MPRINT(JM_TEMPLATES):   style header from table /rules=groups frame=above frameborder=on frameborderwidth=0.5 font_weight=light cellspacing=.25 
+cellpadding=1.0 borderwidth=1.5pt;
+MPRINT(JM_TEMPLATES):   style table from table /rules=groups frame=above cellspacing=0.25 cellpadding=1.0;
+MPRINT(JM_TEMPLATES):   style systemtitle from systemtitle / asis=on;
+MPRINT(JM_TEMPLATES):   style systemfooter from systemfooter / asis=on;
+MPRINT(JM_TEMPLATES):   replace headersAndFooters from cell/ font=fonts('TitleFont') foreground=black background=white;
+43                                                                   The SAS System
+
+MPRINT(JM_TEMPLATES):   replace SystemFooter from TitlesAndFooters / font = Fonts('footFont');
+MPRINT(JM_TEMPLATES):   replace SystemTitles from TitlesAndFooters / font = Fonts('TitleFont');
+MPRINT(JM_TEMPLATES):   replace Body from Document "Controls the Body file. " / bottommargin = 1.01in topmargin = 1.18in rightmargin = 1.00in 
+leftmargin = 1.00in;
+MPRINT(JM_TEMPLATES):   end;
+NOTE: STYLE 'InTXTStyle' has been saved to: WORK.TEMPLAT
+NOTE: PROCEDURE TEMPLATE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TEMPLATES):   run;
+MPRINT(JM_TEMPLATES):   *** Mark the end of parameter checking ***;
+MLOGIC(JM_TEMPLATES):  Ending execution.
+52         
+53         proc format;
+54         	
+54       !   value trt (MULTILABEL)
+55         
+56         1="JZP150 0.3 mg"
+57         2="JZP150 4 mg"
+58         3="Placebo";
+NOTE: Format TRT has been output.
+59            ;
+60         run;
+
+NOTE: PROCEDURE FORMAT used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.00 seconds
+      
+
+61         
+62         
+63         ****************************************************;
+64         * read in adam.adqsess dataset *;
+65         ****************************************************;
+66         proc sql;
+67           create table caps as select usubjid,trta,trtan label="Treatment",avisit,avisitn,base,chg,paramcd from adam.adqs
+68         where parcat1="PGI" and paramcd="PGI0101" and chg ne . and avisit="Week 12" and MFASFL="Y" and anl01fl="Y" order by trtan,chg;
+NOTE: SAS threaded sort was used.
+NOTE: Table WORK.CAPS created, with 27 rows and 8 columns.
+
+69         quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1.79 seconds
+44                                                                   The SAS System
+
+      cpu time            0.03 seconds
+      
+
+70         
+71         ****************************************************;
+72         * define plot template *;
+73         ****************************************************;
+74         proc template;
+75         define statgraph boxplot;
+76         begingraph / designwidth=1019 designheight=370 border=false;
+77         
+78         /*layout lattice / rowdatarange=data columndatarange=data rowgutter=10 columngutter=10;*/
+79         	layout overlay / xaxisopts=( LABEL= ('Treatment Group') labelattrs=(family='Courier New' size=9pt ) )
+80         	yaxisopts=( LABEL= "Change in PGI-S" labelfitpolicy=splitalways labelsplitchar='*'  offsetmin=0.05
+81         		labelattrs=(family='Courier New' size=9pt ) );
+82         
+83         		boxplot x=trtan y=chg / group=trtan groupdisplay=cluster name='box' boxwidth=0.1 ;
+84         	endlayout;
+85         /*endlayout;*/
+86         endgraph;
+87         end;
+NOTE: STATGRAPH 'Boxplot' has been saved to: WORK.TEMPLAT
+88         run;
+NOTE: PROCEDURE TEMPLATE used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.00 seconds
+      
+
+89         
+90         *----------------------------------------------------------------------------------------------------------------------------------;
+91         *ODS OPEN- OPENS RTF DESTINATION;
+92         *----------------------------------------------------------------------------------------------------------------------------------;
+93         %JM_ODSOPEN (JM_OUTREPORT=, JM_BODYTITLEOPT=0, JM_STYLE=OXYSTYLE);
+MLOGIC:  Beginning compilation of JM_ODSOPEN using the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_odsopen.sas.
+MLOGIC:  Ending compilation of JM_ODSOPEN.
+MLOGIC(JM_ODSOPEN):  Beginning execution.
+MLOGIC(JM_ODSOPEN):  This macro was compiled from the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_odsopen.sas
+MLOGIC(JM_ODSOPEN):  Parameter JM_OUTREPORT has value 
+MLOGIC(JM_ODSOPEN):  Parameter JM_BODYTITLEOPT has value 0
+MLOGIC(JM_ODSOPEN):  Parameter JM_STYLE has value OXYSTYLE
+MLOGIC(JM_ODSOPEN):  Parameter JM_POINTSIZE has value 
+MLOGIC(JM_ODSOPEN):  Parameter JM_ODSTYPE has value rtf
+MPRINT(JM_ODSOPEN):   *** Document in log what parameter value specified ***;
+MPRINT(JM_ODSOPEN):   data _null_;
+MPRINT(JM_ODSOPEN):   put ' ';
+45                                                                   The SAS System
+
+MPRINT(JM_ODSOPEN):   put "******************* Parameter Values *******************";
+SYMBOLGEN:  Macro variable JM_OUTREPORT resolves to 
+MPRINT(JM_ODSOPEN):   PUT "ALERT:I: JM_OUTREPORT PROCESSED - ";
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 
+MPRINT(JM_ODSOPEN):   PUT "ALERT:I: JM_POINTSIZE PROCESSED - ";
+SYMBOLGEN:  Macro variable JM_ODSTYPE resolves to rtf
+MPRINT(JM_ODSOPEN):   PUT "ALERT:I: JM_ODSTYPE PROCESSED - rtf";
+SYMBOLGEN:  Macro variable JM_STYLE resolves to OXYSTYLE
+MPRINT(JM_ODSOPEN):   PUT "ALERT:I: JM_STYLE PROCESSED - OXYSTYLE";
+SYMBOLGEN:  Macro variable JM_BODYTITLEOPT resolves to 0
+MPRINT(JM_ODSOPEN):   PUT "ALERT:I: JM_BODYTITLEOPT PROCESSED - 0";
+MPRINT(JM_ODSOPEN):   put "********************************************************";
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   put 'NOTE: [JM_ODSOPEN] is currently running macro %jm_odsopen version 1.0.';
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   run;
+
+
+******************* Parameter Values *******************
+ALERT:I: JM_OUTREPORT PROCESSED - 
+ALERT:I: JM_POINTSIZE PROCESSED - 
+ALERT:I: JM_ODSTYPE PROCESSED - rtf
+ALERT:I: JM_STYLE PROCESSED - OXYSTYLE
+ALERT:I: JM_BODYTITLEOPT PROCESSED - 0
+********************************************************
+
+NOTE: [JM_ODSOPEN] is currently running macro %jm_odsopen version 1.0.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_ODSOPEN):   *** Default if OUTPUTNM is not defined ***;
+MLOGIC(JM_ODSOPEN):  %IF condition %symexist(outputnm)=0 is FALSE
+MPRINT(JM_ODSOPEN):   *** Initialize er ror checking condition ***;
+MLOGIC(JM_ODSOPEN):  %LET (variable name is _ERR)
+MPRINT(JM_ODSOPEN):   data _null_;
+MPRINT(JM_ODSOPEN):   *** Apply default if not specified ***;
+SYMBOLGEN:  Macro variable JM_OUTREPORT resolves to 
+MPRINT(JM_ODSOPEN):   if "" = "" then do;
+MLOGIC(JM_ODSOPEN):  %IF condition %symexist(rsltpath)=0 and %symexist(outputnm)=0 is FALSE
+SYMBOLGEN:  Macro variable RSLTPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results
+SYMBOLGEN:  Macro variable OUTPUTNM resolves to f-9-02-03-01
+MPRINT(JM_ODSOPEN):   outreport = strip("C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf");
+SYMBOLGEN:  Macro variable RSLTPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results
+46                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable OUTPUTNM resolves to f-9-02-03-01
+MPRINT(JM_ODSOPEN):   call symputx('JM_OUTREPORT',"C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf");
+SYMBOLGEN:  Macro variable RSLTPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results
+SYMBOLGEN:  Macro variable OUTPUTNM resolves to f-9-02-03-01
+MPRINT(JM_ODSOPEN):   put "NOTE: [JM_ODSOPEN] is missing required parameter JM_OUTREPORT. " "However, the output report path and file name is default 
+to: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf.";
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   *** Verify if result path exists ***;
+SYMBOLGEN:  Macro variable RSLTPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results
+MPRINT(JM_ODSOPEN):   if fileexist("C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results") = 0 then do;
+MPRINT(JM_ODSOPEN):   put " ";
+SYMBOLGEN:  Macro variable RSLTPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results
+MPRINT(JM_ODSOPEN):   put "ER" "ROR: [JM_ODSOPEN] contains in invalid path (C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results) value used for 
+parameter JM_OUTREPORT. " 'This specifies the output report path and file name (i.e. &rsltpath.\&outputnm..rtf).';
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   call symput('_err','yes');
+MPRINT(JM_ODSOPEN):   end;
+MPRINT(JM_ODSOPEN):   end;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 
+MPRINT(JM_ODSOPEN):   if "" = "" then do;
+MPRINT(JM_ODSOPEN):   *** Apply the default fontsize if that is specified ***;
+MLOGIC(JM_ODSOPEN):  %IF condition %symexist(default_fontsize)=0 is FALSE
+SYMBOLGEN:  Macro variable DEFAULT_FONTSIZE resolves to 9
+MPRINT(JM_ODSOPEN):   if "9" ne "" then do;
+SYMBOLGEN:  Macro variable DEFAULT_FONTSIZE resolves to 9
+MPRINT(JM_ODSOPEN):   call symputx('JM_POINTSIZE',"9");
+SYMBOLGEN:  Macro variable DEFAULT_FONTSIZE resolves to 9
+MPRINT(JM_ODSOPEN):   put "NOTE: [JM_ODSOPEN] is missing required parameter JM_POINTSIZE. " "However, the default was set to: 9.";
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   end;
+MPRINT(JM_ODSOPEN):   else do;
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   put "ER" "ROR: [JM_ODSOPEN] is missing required parameter JM_POINTSIZE. " "This specifies the point size for font in report (i.e. 
+8).";
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   call symput('_err','yes');
+MPRINT(JM_ODSOPEN):   end;
+MPRINT(JM_ODSOPEN):   end;
+MPRINT(JM_ODSOPEN):   else do;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 
+MPRINT(JM_ODSOPEN):   jm_pointsize=input("",best.);
+MPRINT(JM_ODSOPEN):   if jm_pointsize < 1 or jm_pointsize > 7200 then do;
+MPRINT(JM_ODSOPEN):   put " ";
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 
+MPRINT(JM_ODSOPEN):   put "ER" "ROR: [JM_ODSOPEN] contains an invalid value '' for parameter JM_POINTSIZE. " "This specifies the point size for font in 
+47                                                                   The SAS System
+
+report (i.e. 8).";
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   call symput('_err','yes');
+MPRINT(JM_ODSOPEN):   end;
+MPRINT(JM_ODSOPEN):   end;
+SYMBOLGEN:  Macro variable JM_ODSTYPE resolves to rtf
+MPRINT(JM_ODSOPEN):   if "rtf" = "" then do;
+MPRINT(JM_ODSOPEN):   call symputx('JM_ODSTYPE',"rtf");
+MPRINT(JM_ODSOPEN):   put "NOTE: [JM_ODSOPEN] is missing parameter JM_ODSTYPE. " "However, the default was set to: RTF.";
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   end;
+SYMBOLGEN:  Macro variable JM_STYLE resolves to OXYSTYLE
+MPRINT(JM_ODSOPEN):   if "OXYSTYLE" = "" then do;
+MPRINT(JM_ODSOPEN):   call symputx('JM_STYLE',"OXYStyle");
+MPRINT(JM_ODSOPEN):   put "NOTE: [JM_ODSOPEN] is missing parameter JM_STYLE. " "However, the default was set to: OXYStyle.";
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   end;
+MPRINT(JM_ODSOPEN):   run;
+
+NOTE: [JM_ODSOPEN] is missing required parameter JM_OUTREPORT. 
+However, the output report path and file name is default to: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf.
+
+NOTE: [JM_ODSOPEN] is missing required parameter JM_POINTSIZE. However, the default was set to: 9.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_ODSOPEN):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_ODSOPEN):   *** Verify invalid values ***;
+MPRINT(JM_ODSOPEN):   data _null_;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_ODSOPEN):   pointsize = strip("9");
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'0','');
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'1','');
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'2','');
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'3','');
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'4','');
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'5','');
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'6','');
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'7','');
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'8','');
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'9','');
+MPRINT(JM_ODSOPEN):   pointsize = tranwrd(pointsize,'.','');
+48                                                                   The SAS System
+
+MPRINT(JM_ODSOPEN):   if pointsize ne '' then do;
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   put "ER" "ROR: [JM_ODSOPEN] contain invalid characters (" pointsize +(-1) ") for JM_POINTSIZE parameter. " "This specifies the 
+point size for font in report (i.e. 8).";
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   call symput('_err','yes');
+MPRINT(JM_ODSOPEN):   end;
+SYMBOLGEN:  Macro variable JM_ODSTYPE resolves to rtf
+MPRINT(JM_ODSOPEN):   odstype=upcase(strip("rtf"));
+MPRINT(JM_ODSOPEN):   if odstype ne '' and odstype not in("RTF","PDF") then do;
+MPRINT(JM_ODSOPEN):   put " ";
+SYMBOLGEN:  Macro variable JM_ODSTYPE resolves to rtf
+MPRINT(JM_ODSOPEN):   put "ER" "ROR: [JM_ODSOPEN] contain invalid value 'rtf' for JM_ODSTYPE parameter. " "This specifies the ODS Report output file 
+type (i.e. RTF).";
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   call symput('_err','yes');
+MPRINT(JM_ODSOPEN):   end;
+SYMBOLGEN:  Macro variable JM_STYLE resolves to OXYSTYLE
+MPRINT(JM_ODSOPEN):   STYLE=upcase(strip("OXYSTYLE"));
+MPRINT(JM_ODSOPEN):   if STYLE ne '' and STYLE not in("OXYSTYLE","JZPSTYLE") then do;
+MPRINT(JM_ODSOPEN):   put " ";
+SYMBOLGEN:  Macro variable JM_STYLE resolves to OXYSTYLE
+MPRINT(JM_ODSOPEN):   put "ER" "ROR: [JM_ODSOPEN] contain invalid value 'OXYSTYLE' for JM_STYLE parameter. " 'This specifies the ODS template style as 
+defined in %JM_TEMPLATE (i.e. OXYSTYLE, JZPSTYLE).';
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   call symput('_err','yes');
+MPRINT(JM_ODSOPEN):   end;
+SYMBOLGEN:  Macro variable JM_BODYTITLEOPT resolves to 0
+MPRINT(JM_ODSOPEN):   titleopt = upcase(strip("0"));
+MPRINT(JM_ODSOPEN):   if titleopt not in("1","YES","Y","0") then do;
+MPRINT(JM_ODSOPEN):   put " ";
+SYMBOLGEN:  Macro variable JM_BODYTITLEOPT resolves to 0
+MPRINT(JM_ODSOPEN):   put "ER" "ROR: [JM_ODSOPEN] contain invalid value '0' for JM_BODYTITLEOPT parameter. " "This specifies the report body title 
+option (i.e. 1).";
+MPRINT(JM_ODSOPEN):   put " ";
+MPRINT(JM_ODSOPEN):   call symput('_err','yes');
+MPRINT(JM_ODSOPEN):   end;
+MPRINT(JM_ODSOPEN):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+49                                                                   The SAS System
+
+MLOGIC(JM_ODSOPEN):  %IF condition "&_err" = "yes" is FALSE
+MLOGIC(JM_TEMPLATES):  Beginning execution.
+MLOGIC(JM_TEMPLATES):  This macro was compiled from the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_templates.sas
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MLOGIC(JM_TEMPLATES):  Parameter JM_POINTSIZE has value 9
+MPRINT(JM_TEMPLATES):   *** Document in log what parameter value specified ***;
+MPRINT(JM_TEMPLATES):   data _null_;
+MPRINT(JM_TEMPLATES):   put ' ';
+MPRINT(JM_TEMPLATES):   put "******************* Parameter Values *******************";
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   PUT "ALERT:I: JM_POINTSIZE PROCESSED - 9";
+MPRINT(JM_TEMPLATES):   put "********************************************************";
+MPRINT(JM_TEMPLATES):   put " ";
+MPRINT(JM_TEMPLATES):   put 'NOTE: [JM_TEMPLATES] is currently running macro %jm_templates version 1.0.';
+MPRINT(JM_TEMPLATES):   put " ";
+MPRINT(JM_TEMPLATES):   run;
+
+
+******************* Parameter Values *******************
+ALERT:I: JM_POINTSIZE PROCESSED - 9
+********************************************************
+
+NOTE: [JM_TEMPLATES] is currently running macro %jm_templates version 1.0.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TEMPLATES):   *** Initialize er ror checking condition ***;
+MLOGIC(JM_TEMPLATES):  %LET (variable name is _ERR)
+MPRINT(JM_TEMPLATES):   data _null_;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   if "9" = "" then do;
+MPRINT(JM_TEMPLATES):   *** Apply the default fontsize if that is specified ***;
+MLOGIC(JM_TEMPLATES):  %IF condition %symexist(default_fontsize)=0 is FALSE
+SYMBOLGEN:  Macro variable DEFAULT_FONTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   call symputx('JM_POINTSIZE',"9");
+SYMBOLGEN:  Macro variable DEFAULT_FONTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   put "NOTE: [JM_TEMPLATES] is missing required parameter JM_POINTSIZE. " "However, the default was set to: 9.";
+MPRINT(JM_TEMPLATES):   put " ";
+MPRINT(JM_TEMPLATES):   end;
+MPRINT(JM_TEMPLATES):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+50                                                                   The SAS System
+
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_TEMPLATES):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_TEMPLATES):   *** Verify if the pointsize is a valid numeric value ***;
+MPRINT(JM_TEMPLATES):   data _null_;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   pointsize = strip("9");
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'0','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'1','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'2','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'3','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'4','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'5','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'6','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'7','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'8','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'9','');
+MPRINT(JM_TEMPLATES):   pointsize = tranwrd(pointsize,'.','');
+MPRINT(JM_TEMPLATES):   if pointsize ne '' then do;
+MPRINT(JM_TEMPLATES):   put " ";
+MPRINT(JM_TEMPLATES):   put "ER" "ROR: [JM_TEMPLATES] contain invalid characters (" pointsize +(-1) ") for JM_POINTSIZE parameter. " "This specifies 
+the point size for font in report (i.e. 8).";
+MPRINT(JM_TEMPLATES):   put " ";
+MPRINT(JM_TEMPLATES):   call symput('_err','yes');
+MPRINT(JM_TEMPLATES):   end;
+MPRINT(JM_TEMPLATES):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_TEMPLATES):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_TEMPLATES):   ods path(prepend) work.templat(update);
+MPRINT(JM_TEMPLATES):   *** Define the ODS style for Jazz Reports with Time Roman fonts ***;
+MPRINT(JM_TEMPLATES):   proc template;
+MPRINT(JM_TEMPLATES):   define style JZPStyle;
+MPRINT(JM_TEMPLATES):   parent=styles.rtf;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+51                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   replace fonts / 'titlefont2'=("Times New Roman, Times New Roman",9pt,bold) 'titlefont'=("Times New Roman, Times New 
+Roman",9pt,bold) 'Strongfont'=("Times New Roman, Times New Roman",9pt) 'EmphasisFont'=("Times New Roman, Times New Roman",9pt) 
+'FixedEmphasisFont'=("Times New Roman, Times New Roman",2) 'FixedStrongFont'=("Times New Roman, Times New Roman",2) 'FixedHeadingFont'=("Times New 
+Roman, Times New Roman",2) 'BatchFixedFont'=("SAS Monospace,Times New Roman, Times New Roman",2) 'FixedFont'=("Times New Roman, Times New Roman",2) 
+'headingEmphasisFont'=("Times New Roman, Times New Roman",9pt,bold) 'headingFont'=("Times New Roman, Times New Roman",9pt,bold) 'docFont'=("Times New 
+Roman, Times New Roman",9pt) 'footFont'=("Times New Roman, Times New Roman",8pt);
+MPRINT(JM_TEMPLATES):   style pageno from pageno / font=fonts("strongfont") pretext="Page " posttext=" of ^{lastpage} ";
+MPRINT(JM_TEMPLATES):   style header from table /rules=groups frame=above frameborder=on frameborderwidth=0.5 font_weight=light cellspacing=.25 
+cellpadding=1.0 borderwidth=1.5pt;
+MPRINT(JM_TEMPLATES):   style table from table /rules=groups frame=above cellspacing=0.25 cellpadding=1.0;
+MPRINT(JM_TEMPLATES):   style systemtitle from systemtitle / asis=on;
+MPRINT(JM_TEMPLATES):   style systemfooter from systemfooter / asis=on;
+MPRINT(JM_TEMPLATES):   replace headersAndFooters from cell/ font=fonts('TitleFont') foreground=black background=white;
+MPRINT(JM_TEMPLATES):   replace SystemFooter from TitlesAndFooters / font = Fonts('footFont');
+MPRINT(JM_TEMPLATES):   replace SystemTitles from TitlesAndFooters / font = Fonts('TitleFont');
+MPRINT(JM_TEMPLATES):   replace Body from Document "Controls the Body file. " / bottommargin = 1.01in topmargin = 1.18in rightmargin = 0.79in 
+leftmargin = 0.81in;
+MPRINT(JM_TEMPLATES):   end;
+NOTE: Overwriting existing template/link: JZPStyle
+NOTE: STYLE 'JZPStyle' has been saved to: WORK.TEMPLAT
+NOTE: PROCEDURE TEMPLATE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TEMPLATES):   run;
+MPRINT(JM_TEMPLATES):   *** Define the ODS style for Tables or Listing Reports with Courier fonts ***;
+MPRINT(JM_TEMPLATES):   proc template;
+MPRINT(JM_TEMPLATES):   define style OXYSTYLE;
+MPRINT(JM_TEMPLATES):   parent=styles.rtf;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   replace fonts / 'titlefont2'=("Courier New, Courier New",9pt,bold) 'titlefont'=("Courier New, Courier New",9pt,bold) 
+'Strongfont'=("Courier New, Courier New",9pt) 'EmphasisFont'=("Courier New, Courier New",9pt) 'FixedEmphasisFont'=("Courier New, Courier New",2) 
+'FixedStrongFont'=("Courier New, Courier New",2) 'FixedHeadingFont'=("Courier New, Courier New",2) 'BatchFixedFont'=("SAS Monospace,Courier New, 
+Courier New",2) 'FixedFont'=("Courier New, Courier New",2) 'headingEmphasisFont'=("Courier New, Courier New",9pt,bold) 'headingFont'=("Courier New, 
+Courier New",9pt,bold) 'docFont'=("Courier New, Courier New",9pt) 'footFont'=("Courier New, Courier New",8pt);
+52                                                                   The SAS System
+
+MPRINT(JM_TEMPLATES):   style pageno from pageno / font=fonts("strongfont") pretext="Page " posttext=" of ^{lastpage} ";
+MPRINT(JM_TEMPLATES):   style header from table /rules=groups frame=above frameborder=on frameborderwidth=0.5 font_weight=light cellspacing=.25 
+cellpadding=1.0 borderwidth=1.5pt;
+MPRINT(JM_TEMPLATES):   style table from table /rules=groups frame=above cellspacing=0.25 cellpadding=1.0;
+MPRINT(JM_TEMPLATES):   style systemtitle from systemtitle / asis=on;
+MPRINT(JM_TEMPLATES):   style systemfooter from systemfooter / asis=on;
+MPRINT(JM_TEMPLATES):   replace headersAndFooters from cell/ font=fonts('TitleFont') foreground=black background=white;
+MPRINT(JM_TEMPLATES):   replace SystemFooter from TitlesAndFooters / font = Fonts('footFont');
+MPRINT(JM_TEMPLATES):   replace SystemTitles from TitlesAndFooters / font = Fonts('TitleFont');
+MPRINT(JM_TEMPLATES):   replace Body from Document "Controls the Body file. " / bottommargin = 1.01in topmargin = 1.18in rightmargin = 0.79in 
+leftmargin = 0.81in;
+MPRINT(JM_TEMPLATES):   end;
+NOTE: Overwriting existing template/link: Oxystyle
+NOTE: STYLE 'Oxystyle' has been saved to: WORK.TEMPLAT
+NOTE: PROCEDURE TEMPLATE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TEMPLATES):   run;
+MPRINT(JM_TEMPLATES):   *** Define the ODS style for Intext Tables with Time Roman fonts ***;
+MPRINT(JM_TEMPLATES):   proc template;
+MPRINT(JM_TEMPLATES):   define style InTXTStyle;
+MPRINT(JM_TEMPLATES):   parent=styles.rtf;
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+SYMBOLGEN:  Macro variable JM_POINTSIZE resolves to 9
+MPRINT(JM_TEMPLATES):   replace fonts / 'titlefont2'=("Times New Roman, Times New Roman",9pt,bold) 'titlefont'=("Times New Roman, Times New 
+Roman",9pt,bold) 'Strongfont'=("Times New Roman, Times New Roman",9pt) 'EmphasisFont'=("Times New Roman, Times New Roman",9pt) 
+'FixedEmphasisFont'=("Times New Roman, Times New Roman",2) 'FixedStrongFont'=("Times New Roman, Times New Roman",2) 'FixedHeadingFont'=("Times New 
+Roman, Times New Roman",2) 'BatchFixedFont'=("SAS Monospace,Times New Roman, Times New Roman",2) 'FixedFont'=("Times New Roman, Times New Roman",2) 
+'headingEmphasisFont'=("Times New Roman, Times New Roman",9pt,bold) 'headingFont'=("Times New Roman, Times New Roman",9pt,bold) 'docFont'=("Times New 
+Roman, Times New Roman",9pt) 'footFont'=("Times New Roman, Times New Roman",8pt);
+MPRINT(JM_TEMPLATES):   style pageno from pageno / font=fonts("strongfont") pretext="Page " posttext=" of ^{lastpage} ";
+MPRINT(JM_TEMPLATES):   style header from table /rules=groups frame=above frameborder=on frameborderwidth=0.5 font_weight=light cellspacing=.25 
+cellpadding=1.0 borderwidth=1.5pt;
+MPRINT(JM_TEMPLATES):   style table from table /rules=groups frame=above cellspacing=0.25 cellpadding=1.0;
+MPRINT(JM_TEMPLATES):   style systemtitle from systemtitle / asis=on;
+MPRINT(JM_TEMPLATES):   style systemfooter from systemfooter / asis=on;
+MPRINT(JM_TEMPLATES):   replace headersAndFooters from cell/ font=fonts('TitleFont') foreground=black background=white;
+MPRINT(JM_TEMPLATES):   replace SystemFooter from TitlesAndFooters / font = Fonts('footFont');
+53                                                                   The SAS System
+
+MPRINT(JM_TEMPLATES):   replace SystemTitles from TitlesAndFooters / font = Fonts('TitleFont');
+MPRINT(JM_TEMPLATES):   replace Body from Document "Controls the Body file. " / bottommargin = 1.01in topmargin = 1.18in rightmargin = 1.00in 
+leftmargin = 1.00in;
+MPRINT(JM_TEMPLATES):   end;
+NOTE: Overwriting existing template/link: InTXTStyle
+NOTE: STYLE 'InTXTStyle' has been saved to: WORK.TEMPLAT
+NOTE: PROCEDURE TEMPLATE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_TEMPLATES):   run;
+MPRINT(JM_TEMPLATES):   *** Mark the end of parameter checking ***;
+MLOGIC(JM_TEMPLATES):  Ending execution.
+MPRINT(JM_ODSOPEN):  ;
+SYMBOLGEN:  Macro variable JM_BODYTITLEOPT resolves to 0
+SYMBOLGEN:  Macro variable JM_BODYTITLEOPT resolves to 0
+SYMBOLGEN:  Macro variable JM_BODYTITLEOPT resolves to 0
+MLOGIC(JM_ODSOPEN):  %IF condition "&jm_bodytitleopt" = "1" or "&jm_bodytitleopt" = "Y" or "&jm_bodytitleopt" = "YES" is FALSE
+MPRINT(JM_ODSOPEN):   options orientation=landscape nodate nonumber;
+MPRINT(JM_ODSOPEN):   ods escapechar="^";
+MPRINT(JM_ODSOPEN):   ods listing close;
+SYMBOLGEN:  Macro variable JM_ODSTYPE resolves to rtf
+SYMBOLGEN:  Macro variable JM_OUTREPORT resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf
+SYMBOLGEN:  Macro variable JM_STYLE resolves to OXYSTYLE
+SYMBOLGEN:  Macro variable JM_BODYTITLEOPT resolves to 0
+SYMBOLGEN:  Macro variable JM_BODYTITLEOPT resolves to 0
+SYMBOLGEN:  Macro variable JM_BODYTITLEOPT resolves to 0
+MLOGIC(JM_ODSOPEN):  %IF condition "&jm_bodytitleopt" = "1" or "&jm_bodytitleopt" = "Y" or "&jm_bodytitleopt" = "YES" is FALSE
+MPRINT(JM_ODSOPEN):   ods rtf file="C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf" style=OXYSTYLE ;
+NOTE: Writing RTF Body file: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf
+MPRINT(JM_ODSOPEN):   *** Create the filename to be used later to remove page break in JM_ODSCLOSE ***;
+SYMBOLGEN:  Macro variable JM_OUTREPORT resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf
+MPRINT(JM_ODSOPEN):   filename _fixrtf "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf";
+MPRINT(JM_ODSOPEN):   *** Mark the end of parameter checking ***;
+MLOGIC(JM_ODSOPEN):  Ending execution.
+94         
+95         options nonumber nobyline ;
+96         OPTIONS FORMCHAR='|_---|+|---+=|-/\<>*';
+97         ods escapechar "^" noproctitle;
+98         ods rtf nogtitle nogfootnote ;
+                                                           The SAS System
+
+99         goptions  reset=symbol ftext="Courier New" gsfmode=replace
+100        	noborder hsize=7.75in vsize=4.95in ;
+101        
+102        proc sgrender data=caps template=boxplot ;
+103        format trtan trt. ;
+104        run;
+
+104      !     quit;
+NOTE: PROCEDURE SGRENDER used (Total process time):
+      real time           22.20 seconds
+      cpu time            0.10 seconds
+      
+NOTE: This SAS session is using a registry in WORK.  All changes will be lost at the end of this session.
+NOTE: There were 27 observations read from the data set WORK.CAPS.
+
+105        
+106        *------------------------------------------------------------------------------------------------------------------------
+106      ! ----------;
+107        *ODS CLOSE- CLOSES RTF DESTINATION;
+108        *------------------------------------------------------------------------------------------------------------------------
+108      ! ----------;
+109        %JM_ODSCLOSE;
+MLOGIC:  Beginning compilation of REM_BLKPG using the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_odsclose.sas.
+MLOGIC:  Ending compilation of REM_BLKPG.
+MLOGIC:  Beginning compilation of JM_ODSCLOSE using the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_odsclose.sas.
+MLOGIC:  Ending compilation of JM_ODSCLOSE.
+MLOGIC(JM_ODSCLOSE):  Beginning execution.
+MLOGIC(JM_ODSCLOSE):  This macro was compiled from the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_odsclose.sas
+MLOGIC(JM_ODSCLOSE):  Parameter JM_ODSTYPE has value rtf
+MPRINT(JM_ODSCLOSE):   *** Document in log what parameter value specified ***;
+MPRINT(JM_ODSCLOSE):   data _null_;
+MPRINT(JM_ODSCLOSE):   put ' ';
+MPRINT(JM_ODSCLOSE):   put "******************* Parameter Values *******************";
+SYMBOLGEN:  Macro variable JM_ODSTYPE resolves to rtf
+MPRINT(JM_ODSCLOSE):   PUT "ALERT:I: JM_ODSTYPE PROCESSED - rtf";
+MPRINT(JM_ODSCLOSE):   put "********************************************************";
+MPRINT(JM_ODSCLOSE):   put " ";
+MPRINT(JM_ODSCLOSE):   put 'NOTE: [JM_ODSCLOSE] is currently running macro %jm_odsclose version 1.0.';
+MPRINT(JM_ODSCLOSE):   put " ";
+MPRINT(JM_ODSCLOSE):   run;
+
+                                                           The SAS System
+
+
+******************* Parameter Values *******************
+ALERT:I: JM_ODSTYPE PROCESSED - rtf
+********************************************************
+
+NOTE: [JM_ODSCLOSE] is currently running macro %jm_odsclose version 1.0.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_ODSCLOSE):   *** Initialize er ror checking condition ***;
+MLOGIC(JM_ODSCLOSE):  %LET (variable name is _ERR)
+MPRINT(JM_ODSCLOSE):   data _null_;
+SYMBOLGEN:  Macro variable JM_ODSTYPE resolves to rtf
+MPRINT(JM_ODSCLOSE):   if "rtf" = "" then do;
+MPRINT(JM_ODSCLOSE):   call symputx('JM_ODSTYPE',"rtf");
+MPRINT(JM_ODSCLOSE):   put "NOTE: [JM_ODSCLOSE] is missing parameter JM_ODSTYPE. " "However, the default was set to: RTF.";
+MPRINT(JM_ODSCLOSE):   put " ";
+MPRINT(JM_ODSCLOSE):   end;
+MPRINT(JM_ODSCLOSE):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_ODSCLOSE):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_ODSCLOSE):   *** Verify invalid values ***;
+MPRINT(JM_ODSCLOSE):   data _null_;
+SYMBOLGEN:  Macro variable JM_ODSTYPE resolves to rtf
+MPRINT(JM_ODSCLOSE):   odstype=upcase(strip("rtf"));
+MPRINT(JM_ODSCLOSE):   if odstype ne '' and odstype not in("RTF","PDF") then do;
+MPRINT(JM_ODSCLOSE):   put " ";
+SYMBOLGEN:  Macro variable JM_ODSTYPE resolves to rtf
+MPRINT(JM_ODSCLOSE):   put "ER" "ROR: [JM_ODSCLOSE] contain invalid value 'rtf' for JM_ODSTYPE parameter. " "This specifies the ODS 
+Report output file type (i.e. RTF).";
+MPRINT(JM_ODSCLOSE):   put " ";
+MPRINT(JM_ODSCLOSE):   call symput('_err','yes');
+MPRINT(JM_ODSCLOSE):   end;
+                                                           The SAS System
+
+MPRINT(JM_ODSCLOSE):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_ODSCLOSE):  %IF condition "&_err" = "yes" is FALSE
+MPRINT(JM_ODSCLOSE):   *** Close the ODS Destination ***;
+SYMBOLGEN:  Macro variable JM_ODSTYPE resolves to rtf
+MPRINT(JM_ODSCLOSE):   ods rtf close;
+MPRINT(JM_ODSCLOSE):   *** Remove extra page breaks creating blank page at the bottom ***;
+MLOGIC(REM_BLKPG):  Beginning execution.
+MLOGIC(REM_BLKPG):  This macro was compiled from the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_odsclose.sas
+MLOGIC(REM_BLKPG):  Parameter SOURCE has value _fixrtf
+MPRINT(REM_BLKPG):   *** Read the RTF file into a temporary dataset ***;
+MPRINT(REM_BLKPG):   data temp ;
+MPRINT(REM_BLKPG):   length line $1800;
+SYMBOLGEN:  Macro variable SOURCE resolves to _fixrtf
+MPRINT(REM_BLKPG):   infile _fixrtf length=lg lrecl=1800 end=eof;
+MPRINT(REM_BLKPG):   input @1 line $varying1800. lg;
+MPRINT(REM_BLKPG):   run;
+
+NOTE: The infile _FIXRTF is:
+      Filename=C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf,
+      RECFM=V,LRECL=1800,File Size (bytes)=44561,
+      Last Modified=31Jan2023:10:20:56,
+      Create Time=23Nov2022:11:13:19
+
+NOTE: 392 records were read from the infile _FIXRTF.
+      The minimum record length was 3.
+      The maximum record length was 218.
+NOTE: The data set WORK.TEMP has 392 observations and 1 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(REM_BLKPG):   *** Identify and remove the page break RTF code ***;
+MPRINT(REM_BLKPG):   data _null_;
+                                                           The SAS System
+
+MPRINT(REM_BLKPG):   set temp ;
+MPRINT(REM_BLKPG):   if (index(line,"\page\par") > 0) then line = tranwrd(line,"{\page\par}",' ');
+MPRINT(REM_BLKPG):   if (index(line,"{\par}\trowd\trkeep\trqc") > 0) then line = tranwrd(line,"{\par}",' ');
+SYMBOLGEN:  Macro variable SOURCE resolves to _fixrtf
+MPRINT(REM_BLKPG):   file _fixrtf;
+MPRINT(REM_BLKPG):   put line ;
+MPRINT(REM_BLKPG):   run;
+
+NOTE: The file _FIXRTF is:
+      Filename=C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\f-9-02-03-01.rtf,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+      Last Modified=31Jan2023:10:20:56,
+      Create Time=23Nov2022:11:13:19
+
+NOTE: 392 records were written to the file _FIXRTF.
+      The minimum record length was 3.
+      The maximum record length was 218.
+NOTE: There were 392 observations read from the data set WORK.TEMP.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MLOGIC(REM_BLKPG):  Ending execution.
+MPRINT(JM_ODSCLOSE):  ;
+MPRINT(JM_ODSCLOSE):   *** Mark the end of parameter checking ***;
+MLOGIC(JM_ODSCLOSE):  Ending execution.
+110        ods listing;
+SYMBOLGEN:  Macro variable MYPGMNAME resolves to 
+111        
+112        
+113        data tlfdata.&mypgmname.(drop=CHG TRTAN BOX_CHG_X_TRTAN_GROUP_TRTAN__GP rename=(BOX_CHG_X_TRTAN_GROUP_TRTAN___Y=statval
+113      ! BOX_CHG_X_TRTAN_GROUP_TRTAN__ST=stat BOX_CHG_X_TRTAN_GROUP_TRTAN___X=trt ));
+NOTE 138-205: Line generated by the macro variable "MYPGMNAME".
+113         tlfdata.
+            ________
+            22
+            201
+ERROR 22-322: Syntax error, expecting one of the following: a name, a quoted string, /, ;, _DATA_, _LAST_, _NULL_.  
+
+ERROR 201-322: The option is not recognized and will be ignored.
+                                                           The SAS System
+
+
+22: LINE and COLUMN cannot be determined.
+NOTE 242-205: NOSPOOL is on. Rerunning with OPTION SPOOL might allow recovery of the LINE and COLUMN where the error has occurred.
+ERROR 22-322: Syntax error, expecting one of the following: a name, a quoted string, /, ;, _DATA_, _LAST_, _NULL_.  
+76: LINE and COLUMN cannot be determined.
+NOTE: NOSPOOL is on. Rerunning with OPTION SPOOL might allow recovery of the LINE and COLUMN where the error has occurred.
+ERROR 76-322: Syntax error, statement will be ignored.
+114        set stat;
+ERROR: File WORK.STAT.DATA does not exist.
+115        run;
+
+NOTE: The SAS System stopped processing this step because of errors.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+116        
+
+ERROR: Errors printed on pages 57,58.
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           1:21.32
+      cpu time            1.56 seconds
+      

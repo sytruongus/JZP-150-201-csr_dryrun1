@@ -1,0 +1,559 @@
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                     Table 1 of PARAMN by PARAM
+                                             Controlling for AVISITN=0 AVISIT=Baseline
+
+                                                PARAMN(Parameter (N))
+                                                          PARAM(Parameter)
+
+                                                Frequency‚
+                                                Row Pct  ‚Interpre‚Sinus No‚  Total
+                                                         ‚tation  ‚de Rhyth‚
+                                                         ‚        ‚ms and A‚
+                                                         ‚        ‚rrhythmi‚
+                                                         ‚        ‚as      ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                     106 ‚      0 ‚    153 ‚    153
+                                                         ‚   0.00 ‚ 100.00 ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                     201 ‚    349 ‚      0 ‚    349
+                                                         ‚ 100.00 ‚   0.00 ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                Total         349      153      502
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                     Table 2 of PARAMN by PARAM
+                                              Controlling for AVISITN=0 AVISIT=Week 1
+
+                                                     Effective Sample Size = 0
+
+
+                                                     Table 3 of PARAMN by PARAM
+                                              Controlling for AVISITN=0 AVISIT=Week 12
+
+                                                     Effective Sample Size = 0
+
+
+                                                     Table 4 of PARAMN by PARAM
+                                              Controlling for AVISITN=0 AVISIT=Week 4
+
+                                                     Effective Sample Size = 0
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                     Table 5 of PARAMN by PARAM
+                                              Controlling for AVISITN=0 AVISIT=Week 8
+
+                                                     Effective Sample Size = 0
+
+
+                                                     Table 6 of PARAMN by PARAM
+                                             Controlling for AVISITN=1 AVISIT=Baseline
+
+                                                     Effective Sample Size = 0
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                     Table 7 of PARAMN by PARAM
+                                              Controlling for AVISITN=1 AVISIT=Week 1
+
+                                                PARAMN(Parameter (N))
+                                                          PARAM(Parameter)
+
+                                                Frequency‚
+                                                Row Pct  ‚Interpre‚Sinus No‚  Total
+                                                         ‚tation  ‚de Rhyth‚
+                                                         ‚        ‚ms and A‚
+                                                         ‚        ‚rrhythmi‚
+                                                         ‚        ‚as      ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                     106 ‚      0 ‚    208 ‚    208
+                                                         ‚   0.00 ‚ 100.00 ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                     201 ‚    443 ‚      0 ‚    443
+                                                         ‚ 100.00 ‚   0.00 ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                Total         443      208      651
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                     Table 8 of PARAMN by PARAM
+                                              Controlling for AVISITN=1 AVISIT=Week 12
+
+                                                     Effective Sample Size = 0
+
+
+                                                     Table 9 of PARAMN by PARAM
+                                              Controlling for AVISITN=1 AVISIT=Week 4
+
+                                                     Effective Sample Size = 0
+
+
+                                                    Table 10 of PARAMN by PARAM
+                                              Controlling for AVISITN=1 AVISIT=Week 8
+
+                                                     Effective Sample Size = 0
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                    Table 11 of PARAMN by PARAM
+                                             Controlling for AVISITN=4 AVISIT=Baseline
+
+                                                     Effective Sample Size = 0
+
+
+                                                    Table 12 of PARAMN by PARAM
+                                              Controlling for AVISITN=4 AVISIT=Week 1
+
+                                                     Effective Sample Size = 0
+
+
+                                                    Table 13 of PARAMN by PARAM
+                                              Controlling for AVISITN=4 AVISIT=Week 12
+
+                                                     Effective Sample Size = 0
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                    Table 14 of PARAMN by PARAM
+                                              Controlling for AVISITN=4 AVISIT=Week 4
+
+                                                PARAMN(Parameter (N))
+                                                          PARAM(Parameter)
+
+                                                Frequency‚
+                                                Row Pct  ‚Interpre‚Sinus No‚  Total
+                                                         ‚tation  ‚de Rhyth‚
+                                                         ‚        ‚ms and A‚
+                                                         ‚        ‚rrhythmi‚
+                                                         ‚        ‚as      ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                     106 ‚      0 ‚    162 ‚    162
+                                                         ‚   0.00 ‚ 100.00 ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                     201 ‚    327 ‚      0 ‚    327
+                                                         ‚ 100.00 ‚   0.00 ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                Total         327      162      489
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                    Table 15 of PARAMN by PARAM
+                                              Controlling for AVISITN=4 AVISIT=Week 8
+
+                                                     Effective Sample Size = 0
+
+
+                                                    Table 16 of PARAMN by PARAM
+                                             Controlling for AVISITN=8 AVISIT=Baseline
+
+                                                     Effective Sample Size = 0
+
+
+                                                    Table 17 of PARAMN by PARAM
+                                              Controlling for AVISITN=8 AVISIT=Week 1
+
+                                                     Effective Sample Size = 0
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                    Table 18 of PARAMN by PARAM
+                                              Controlling for AVISITN=8 AVISIT=Week 12
+
+                                                     Effective Sample Size = 0
+
+
+                                                    Table 19 of PARAMN by PARAM
+                                              Controlling for AVISITN=8 AVISIT=Week 4
+
+                                                     Effective Sample Size = 0
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                    Table 20 of PARAMN by PARAM
+                                              Controlling for AVISITN=8 AVISIT=Week 8
+
+                                                PARAMN(Parameter (N))
+                                                          PARAM(Parameter)
+
+                                                Frequency‚
+                                                Row Pct  ‚Interpre‚Sinus No‚  Total
+                                                         ‚tation  ‚de Rhyth‚
+                                                         ‚        ‚ms and A‚
+                                                         ‚        ‚rrhythmi‚
+                                                         ‚        ‚as      ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                     106 ‚      0 ‚    150 ‚    150
+                                                         ‚   0.00 ‚ 100.00 ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                     201 ‚    264 ‚      0 ‚    264
+                                                         ‚ 100.00 ‚   0.00 ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                Total         264      150      414
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                    Table 21 of PARAMN by PARAM
+                                             Controlling for AVISITN=12 AVISIT=Baseline
+
+                                                     Effective Sample Size = 0
+
+
+                                                    Table 22 of PARAMN by PARAM
+                                              Controlling for AVISITN=12 AVISIT=Week 1
+
+                                                     Effective Sample Size = 0
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                    Table 23 of PARAMN by PARAM
+                                             Controlling for AVISITN=12 AVISIT=Week 12
+
+                                                PARAMN(Parameter (N))
+                                                          PARAM(Parameter)
+
+                                                Frequency‚
+                                                Row Pct  ‚Interpre‚Sinus No‚  Total
+                                                         ‚tation  ‚de Rhyth‚
+                                                         ‚        ‚ms and A‚
+                                                         ‚        ‚rrhythmi‚
+                                                         ‚        ‚as      ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                     106 ‚      0 ‚    119 ‚    119
+                                                         ‚   0.00 ‚ 100.00 ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                     201 ‚    204 ‚      0 ‚    204
+                                                         ‚ 100.00 ‚   0.00 ‚
+                                                ƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                                Total         204      119      323
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.3.1.1  
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}ECG Parameters
+                              ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analysis Set)
+
+                                                         The FREQ Procedure
+
+                                                    Table 24 of PARAMN by PARAM
+                                              Controlling for AVISITN=12 AVISIT=Week 4
+
+                                                     Effective Sample Size = 0
+
+
+                                                    Table 25 of PARAMN by PARAM
+                                              Controlling for AVISITN=12 AVISIT=Week 8
+
+                                                     Effective Sample Size = 0
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            ^S={}Note: The Safety Analysis Set includes all participants who took at least 1 dose of study intervention.
+^S={}Note: The baseline (Day -1) value is generally defined as the last non-missing value obtained (scheduled or unscheduled, includ
+            ^S={}Note: Results collected during an Early Termination visit have been mapped to the next available visit.
+          ^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_ecg_saffl.sas     DATE: 20FEB2023:15:43

@@ -1,0 +1,1332 @@
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                   Table 1 of trt by CRIT4FL
+                   Controlling for SSNRISN=1
+
+            trt
+                           CRIT4FL(Criterion 4 Evaluation 
+                                   Result Flag)
+
+            Frequency     ‚
+            Percent       ‚
+            Row Pct       ‚
+            Col Pct       ‚N       ‚Y       ‚  Total
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            JZP150 0.3 mg ‚      1 ‚      0 ‚      1
+                          ‚  50.00 ‚   0.00 ‚  50.00
+                          ‚ 100.00 ‚   0.00 ‚
+                          ‚  50.00 ‚      . ‚
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            Total                2        0        2
+                            100.00     0.00   100.00
+            (Continued)
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                   Table 1 of trt by CRIT4FL
+                   Controlling for SSNRISN=1
+
+            trt
+                           CRIT4FL(Criterion 4 Evaluation 
+                                   Result Flag)
+
+            Frequency     ‚
+            Percent       ‚
+            Row Pct       ‚
+            Col Pct       ‚N       ‚Y       ‚  Total
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            Placebo       ‚      1 ‚      0 ‚      1
+                          ‚  50.00 ‚   0.00 ‚  50.00
+                          ‚ 100.00 ‚   0.00 ‚
+                          ‚  50.00 ‚      . ‚
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            Total                2        0        2
+                            100.00     0.00   100.00
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                   Table 2 of trt by CRIT4FL
+                   Controlling for SSNRISN=2
+
+            trt
+                           CRIT4FL(Criterion 4 Evaluation 
+                                   Result Flag)
+
+            Frequency     ‚
+            Percent       ‚
+            Row Pct       ‚
+            Col Pct       ‚N       ‚Y       ‚  Total
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            JZP150 0.3 mg ‚      6 ‚      0 ‚      6
+                          ‚  42.86 ‚   0.00 ‚  42.86
+                          ‚ 100.00 ‚   0.00 ‚
+                          ‚  50.00 ‚   0.00 ‚
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            Total               12        2       14
+                             85.71    14.29   100.00
+            (Continued)
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                   Table 2 of trt by CRIT4FL
+                   Controlling for SSNRISN=2
+
+            trt
+                           CRIT4FL(Criterion 4 Evaluation 
+                                   Result Flag)
+
+            Frequency     ‚
+            Percent       ‚
+            Row Pct       ‚
+            Col Pct       ‚N       ‚Y       ‚  Total
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            Placebo       ‚      6 ‚      2 ‚      8
+                          ‚  42.86 ‚  14.29 ‚  57.14
+                          ‚  75.00 ‚  25.00 ‚
+                          ‚  50.00 ‚ 100.00 ‚
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            Total               12        2       14
+                             85.71    14.29   100.00
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+  Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+ 
+Statistic    Alternative Hypothesis    DF       Value      Prob
+ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+    1        Nonzero Correlation        1      1.6250    0.2024
+    2        Row Mean Scores Differ     1      1.6250    0.2024
+    3        General Association        1      1.6250    0.2024
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+             Common Odds Ratio and Relative Risks
+ 
+   Statistic                   Method                  Value
+   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+   Odds Ratio                  Mantel-Haenszel              
+                               Logit **               5.0000
+
+   Relative Risk (Column 1)    Mantel-Haenszel        1.2791
+                               Logit                  1.3333
+
+   Relative Risk (Column 2)    Mantel-Haenszel        0.0000
+                               Logit **               0.2571
+
+             Common Odds Ratio and Relative Risks
+ 
+   Statistic                   Method  95% Confidence Limits
+   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+   Odds Ratio                  Mantel-Haenszel              
+                               Logit **               0.1988
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+             Common Odds Ratio and Relative Risks
+ 
+   Statistic                   Method  95% Confidence Limits
+   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+   Relative Risk (Column 1)    Mantel-Haenszel        0.9086
+                               Logit                  0.8937
+
+   Relative Risk (Column 2)    Mantel-Haenszel              
+                               Logit **               0.0146
+
+             Common Odds Ratio and Relative Risks
+ 
+   Statistic                   Method  95% Confidence Limits
+   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+   Odds Ratio                  Mantel-Haenszel              
+                               Logit **             125.7847
+
+   Relative Risk (Column 1)    Mantel-Haenszel        1.8006
+                               Logit                  1.9893
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+             Common Odds Ratio and Relative Risks
+ 
+   Statistic                   Method  95% Confidence Limits
+   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+   Relative Risk (Column 2)    Mantel-Haenszel              
+                               Logit **               4.5408
+
+  To avoid undefined results, some estimates are not computed.
+** These logit estimators use a correction of 0.5 in every cell 
+                                
+                                 
+                                 
+                                o
+                               f 
+                               th
+                               os
+                               e 
+                               ta
+                               bl
+                               es
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+                                t
+                               ha
+                               t 
+                               co
+                               nt
+                               ai
+                               n 
+                               a 
+                               ze
+                               ro
+                               . 
+                               Ta
+                               bl
+                               es
+                                w
+                               it
+                               h 
+                               a 
+                               ze
+                               ro
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+                                
+                                 
+                                 
+                                r
+                               ow
+                                o
+                               r 
+                               a 
+                               ze
+                               ro
+                                c
+                               ol
+                               um
+                               n 
+                               ar
+                               e 
+                               no
+                               t 
+                               in
+                               cl
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+                               ud
+                               ed
+                                i
+                               n 
+                               co
+                               mp
+                               ut
+                               in
+                               g 
+                               th
+                               e 
+                                 
+                                 
+                                l
+                               og
+                               it
+                                e
+                               st
+                               im
+                               at
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+                               or
+                               s.
+
+
+  Breslow-Day Statistic not computed--the data are too sparse.
+
+
+                     Total Sample Size = 16
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                    Table of trt by CRIT4FL
+
+            trt
+                           CRIT4FL(Criterion 4 Evaluation 
+                                   Result Flag)
+
+            Frequency     ‚
+            Percent       ‚
+            Row Pct       ‚
+            Col Pct       ‚N       ‚Y       ‚  Total
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            JZP150 0.3 mg ‚      7 ‚      0 ‚      7
+                          ‚  43.75 ‚   0.00 ‚  43.75
+                          ‚ 100.00 ‚   0.00 ‚
+                          ‚  50.00 ‚   0.00 ‚
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            Total               14        2       16
+                             87.50    12.50   100.00
+            (Continued)
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                    Table of trt by CRIT4FL
+
+            trt
+                           CRIT4FL(Criterion 4 Evaluation 
+                                   Result Flag)
+
+            Frequency     ‚
+            Percent       ‚
+            Row Pct       ‚
+            Col Pct       ‚N       ‚Y       ‚  Total
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            Placebo       ‚      7 ‚      2 ‚      9
+                          ‚  43.75 ‚  12.50 ‚  56.25
+                          ‚  77.78 ‚  22.22 ‚
+                          ‚  50.00 ‚ 100.00 ‚
+            ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+            Total               14        2       16
+                             87.50    12.50   100.00
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+             Statistics for Table of trt by CRIT4FL
+
+                    Column 1 Risk Estimates
+ 
+                                          (Asymptotic) 95%
+                      Risk        ASE     Confidence Limits
+    ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+    Row 1           1.0000     0.0000     1.0000     1.0000
+    Row 2           0.7778     0.1386     0.5062     1.0000
+    Total           0.8750     0.0827     0.7130     1.0000
+
+    Difference      0.2222     0.1386    -0.0494     0.4938
+
+                 Difference is (Row 1 - Row 2)
+
+                                  (Exact) 95%
+                               Confidence Limits
+               ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+               Row 1           0.5904     1.0000
+               Row 2           0.3999     0.9719
+               Total           0.6165     0.9845
+
+                 Difference is (Row 1 - Row 2)
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Statistics for Table of trt by CRIT4FL
+
+                                  (Exact) 95%
+                               Confidence Limits
+               ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+               Difference                       
+
+                 Difference is (Row 1 - Row 2)
+
+
+     Confidence Limits for the Proportion (Risk) Difference
+                Proportion Difference = 0.2222
+ 
+         Type                    95% Confidence Limits
+
+         Newcombe (Corrected)    -0.2534        0.5981
+
+                    Column 1 (CRIT4FL = N)
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Statistics for Table of trt by CRIT4FL
+
+                    Column 2 Risk Estimates
+ 
+                                          (Asymptotic) 95%
+                      Risk        ASE     Confidence Limits
+    ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+    Row 1           0.0000     0.0000     0.0000     0.0000
+    Row 2           0.2222     0.1386     0.0000     0.4938
+    Total           0.1250     0.0827     0.0000     0.2870
+
+    Difference     -0.2222     0.1386    -0.4938     0.0494
+
+                 Difference is (Row 1 - Row 2)
+
+ 
+ 
+                                  (Exact) 95%
+                               Confidence Limits
+               ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+               Row 1           0.0000     0.4096
+
+                 Difference is (Row 1 - Row 2)
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Statistics for Table of trt by CRIT4FL
+
+ 
+ 
+                                  (Exact) 95%
+                               Confidence Limits
+               ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+               Row 2           0.0281     0.6001
+               Total           0.0155     0.3835
+
+               Difference                       
+
+                 Difference is (Row 1 - Row 2)
+
+                        Sample Size = 16
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                   Table 1 of trt by CRIT4FL
+                   Controlling for SSNRISN=1
+
+             trt
+                          CRIT4FL(Criterion 4 Evaluation Result 
+                                  Flag)
+
+             Frequency   ‚
+             Percent     ‚
+             Row Pct     ‚
+             Col Pct     ‚N       ‚Y       ‚  Total
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             JZP150 4 mg ‚      2 ‚      0 ‚      2
+                         ‚  66.67 ‚   0.00 ‚  66.67
+                         ‚ 100.00 ‚   0.00 ‚
+                         ‚  66.67 ‚      . ‚
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             Total              3        0        3
+                           100.00     0.00   100.00
+             (Continued)
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                   Table 1 of trt by CRIT4FL
+                   Controlling for SSNRISN=1
+
+             trt
+                          CRIT4FL(Criterion 4 Evaluation Result 
+                                  Flag)
+
+             Frequency   ‚
+             Percent     ‚
+             Row Pct     ‚
+             Col Pct     ‚N       ‚Y       ‚  Total
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             Placebo     ‚      1 ‚      0 ‚      1
+                         ‚  33.33 ‚   0.00 ‚  33.33
+                         ‚ 100.00 ‚   0.00 ‚
+                         ‚  33.33 ‚      . ‚
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             Total              3        0        3
+                           100.00     0.00   100.00
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                   Table 2 of trt by CRIT4FL
+                   Controlling for SSNRISN=2
+
+             trt
+                          CRIT4FL(Criterion 4 Evaluation Result 
+                                  Flag)
+
+             Frequency   ‚
+             Percent     ‚
+             Row Pct     ‚
+             Col Pct     ‚N       ‚Y       ‚  Total
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             JZP150 4 mg ‚      9 ‚      0 ‚      9
+                         ‚  52.94 ‚   0.00 ‚  52.94
+                         ‚ 100.00 ‚   0.00 ‚
+                         ‚  60.00 ‚   0.00 ‚
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             Total             15        2       17
+                            88.24    11.76   100.00
+             (Continued)
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                   Table 2 of trt by CRIT4FL
+                   Controlling for SSNRISN=2
+
+             trt
+                          CRIT4FL(Criterion 4 Evaluation Result 
+                                  Flag)
+
+             Frequency   ‚
+             Percent     ‚
+             Row Pct     ‚
+             Col Pct     ‚N       ‚Y       ‚  Total
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             Placebo     ‚      6 ‚      2 ‚      8
+                         ‚  35.29 ‚  11.76 ‚  47.06
+                         ‚  75.00 ‚  25.00 ‚
+                         ‚  40.00 ‚ 100.00 ‚
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             Total             15        2       17
+                            88.24    11.76   100.00
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+  Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+ 
+Statistic    Alternative Hypothesis    DF       Value      Prob
+ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+    1        Nonzero Correlation        1      2.4000    0.1213
+    2        Row Mean Scores Differ     1      2.4000    0.1213
+    3        General Association        1      2.4000    0.1213
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+             Common Odds Ratio and Relative Risks
+ 
+   Statistic                   Method                  Value
+   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+   Odds Ratio                  Mantel-Haenszel              
+                               Logit **               7.3077
+
+   Relative Risk (Column 1)    Mantel-Haenszel        1.2755
+                               Logit                  1.3333
+
+   Relative Risk (Column 2)    Mantel-Haenszel        0.0000
+                               Logit **               0.1800
+
+             Common Odds Ratio and Relative Risks
+ 
+   Statistic                   Method  95% Confidence Limits
+   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+   Odds Ratio                  Mantel-Haenszel              
+                               Logit **               0.2991
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+             Common Odds Ratio and Relative Risks
+ 
+   Statistic                   Method  95% Confidence Limits
+   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+   Relative Risk (Column 1)    Mantel-Haenszel        0.9096
+                               Logit                  0.8937
+
+   Relative Risk (Column 2)    Mantel-Haenszel              
+                               Logit **               0.0099
+
+             Common Odds Ratio and Relative Risks
+ 
+   Statistic                   Method  95% Confidence Limits
+   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+   Odds Ratio                  Mantel-Haenszel              
+                               Logit **             178.5729
+
+   Relative Risk (Column 1)    Mantel-Haenszel        1.7886
+                               Logit                  1.9893
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+             Common Odds Ratio and Relative Risks
+ 
+   Statistic                   Method  95% Confidence Limits
+   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+   Relative Risk (Column 2)    Mantel-Haenszel              
+                               Logit **               3.2705
+
+  To avoid undefined results, some estimates are not computed.
+** These logit estimators use a correction of 0.5 in every cell 
+                                
+                                 
+                                 
+                                o
+                               f 
+                               th
+                               os
+                               e 
+                               ta
+                               bl
+                               es
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+                                t
+                               ha
+                               t 
+                               co
+                               nt
+                               ai
+                               n 
+                               a 
+                               ze
+                               ro
+                               . 
+                               Ta
+                               bl
+                               es
+                                w
+                               it
+                               h 
+                               a 
+                               ze
+                               ro
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+                                
+                                 
+                                 
+                                r
+                               ow
+                                o
+                               r 
+                               a 
+                               ze
+                               ro
+                                c
+                               ol
+                               um
+                               n 
+                               ar
+                               e 
+                               no
+                               t 
+                               in
+                               cl
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+                               ud
+                               ed
+                                i
+                               n 
+                               co
+                               mp
+                               ut
+                               in
+                               g 
+                               th
+                               e 
+                                 
+                                 
+                                l
+                               og
+                               it
+                                e
+                               st
+                               im
+                               at
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Summary Statistics for trt by CRIT4FL
+                    Controlling for SSNRISN
+
+                               or
+                               s.
+
+
+  Breslow-Day Statistic not computed--the data are too sparse.
+
+
+                     Total Sample Size = 20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                    Table of trt by CRIT4FL
+
+             trt
+                          CRIT4FL(Criterion 4 Evaluation Result 
+                                  Flag)
+
+             Frequency   ‚
+             Percent     ‚
+             Row Pct     ‚
+             Col Pct     ‚N       ‚Y       ‚  Total
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             JZP150 4 mg ‚     11 ‚      0 ‚     11
+                         ‚  55.00 ‚   0.00 ‚  55.00
+                         ‚ 100.00 ‚   0.00 ‚
+                         ‚  61.11 ‚   0.00 ‚
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             Total             18        2       20
+                            90.00    10.00   100.00
+             (Continued)
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+                    Table of trt by CRIT4FL
+
+             trt
+                          CRIT4FL(Criterion 4 Evaluation Result 
+                                  Flag)
+
+             Frequency   ‚
+             Percent     ‚
+             Row Pct     ‚
+             Col Pct     ‚N       ‚Y       ‚  Total
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             Placebo     ‚      7 ‚      2 ‚      9
+                         ‚  35.00 ‚  10.00 ‚  45.00
+                         ‚  77.78 ‚  22.22 ‚
+                         ‚  38.89 ‚ 100.00 ‚
+             ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+             Total             18        2       20
+                            90.00    10.00   100.00
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+
+             Statistics for Table of trt by CRIT4FL
+
+                    Column 1 Risk Estimates
+ 
+                                          (Asymptotic) 95%
+                      Risk        ASE     Confidence Limits
+    ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+    Row 1           1.0000     0.0000     1.0000     1.0000
+    Row 2           0.7778     0.1386     0.5062     1.0000
+    Total           0.9000     0.0671     0.7685     1.0000
+
+    Difference      0.2222     0.1386    -0.0494     0.4938
+
+                 Difference is (Row 1 - Row 2)
+
+                                  (Exact) 95%
+                               Confidence Limits
+               ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+               Row 1           0.7151     1.0000
+               Row 2           0.3999     0.9719
+               Total           0.6830     0.9877
+
+                 Difference is (Row 1 - Row 2)
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Statistics for Table of trt by CRIT4FL
+
+                                  (Exact) 95%
+                               Confidence Limits
+               ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+               Difference                       
+
+                 Difference is (Row 1 - Row 2)
+
+
+     Confidence Limits for the Proportion (Risk) Difference
+                Proportion Difference = 0.2222
+ 
+         Type                    95% Confidence Limits
+
+         Newcombe (Corrected)    -0.1475        0.5981
+
+                    Column 1 (CRIT4FL = N)
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Statistics for Table of trt by CRIT4FL
+
+                    Column 2 Risk Estimates
+ 
+                                          (Asymptotic) 95%
+                      Risk        ASE     Confidence Limits
+    ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+    Row 1           0.0000     0.0000     0.0000     0.0000
+    Row 2           0.2222     0.1386     0.0000     0.4938
+    Total           0.1000     0.0671     0.0000     0.2315
+
+    Difference     -0.2222     0.1386    -0.4938     0.0494
+
+                 Difference is (Row 1 - Row 2)
+
+ 
+ 
+                                  (Exact) 95%
+                               Confidence Limits
+               ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+               Row 1           0.0000     0.2849
+
+                 Difference is (Row 1 - Row 2)
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Eff
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The FREQ Procedure
+ 
+             Statistics for Table of trt by CRIT4FL
+
+ 
+ 
+                                  (Exact) 95%
+                               Confidence Limits
+               ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+               Row 2           0.0281     0.6001
+               Total           0.0123     0.3170
+
+               Difference                       
+
+                 Difference is (Row 1 - Row 2)
+
+                        Sample Size = 20
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity, CI: Confidenc
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by N
+^S={}Note: Percentages are based on the total number of particip
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p

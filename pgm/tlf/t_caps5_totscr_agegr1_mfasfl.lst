@@ -1,0 +1,888 @@
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Model Information
+
+     Data Set                     WORK.DBRW_DATA           
+     Dependent Variable           CHG                      
+     Covariance Structure         Unstructured             
+     Subject Effect               id                       
+     Estimation Method            REML                     
+     Residual Variance Method     None                     
+     Fixed Effects SE Method      Kenward-Roger            
+     Degrees of Freedom Method    Kenward-Roger            
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Class Level Information
+ 
+      Class      Levels    Values
+
+      id             35    10631001 10631002 10631003    
+                           11601006 11601007 13031001    
+                           13031004 13581001 13581014    
+                           13991002 13991004 13991007    
+                           13991009 13991010 16591001    
+                           16591003 16591006 17601002    
+                           17601003 17601005 17601007    
+                           17601012 17601014 17601025    
+                           17661002 17661004 17661006    
+                           19691001 19731001 19731002    
+                           19731006 19831001 19831005    
+                           19831008 19901003             
+      AVISITN         2    4 12                          
+      trtn            3    1 2 3                         
+      SSNRISN         2    1 2                           
+      AGEGR1N         1    1                             
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Class Level Information
+ 
+      Class      Levels    Values
+
+      wk12            2    0 1                           
+
+
+                          Dimensions
+
+              Covariance Parameters             3
+              Columns in X                     28
+              Columns in Z                      0
+              Subjects                         35
+              Max Obs per Subject               2
+
+
+                    Number of Observations
+
+          Number of Observations Read              60
+          Number of Observations Used              60
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Number of Observations
+
+          Number of Observations Not Used           0
+
+
+                       Iteration History
+ 
+  Iteration    Evaluations    -2 Res Log Like       Criterion
+
+          0              1       424.44378537                
+          1              2       418.11098552      0.00010393
+          2              1       418.09333817      0.00000060
+          3              1       418.09324077      0.00000000
+
+
+                   Convergence criteria met.                    
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                Covariance Parameter Estimates
+ 
+                Cov Parm    Subject    Estimate
+
+                UN(1,1)     id           147.01
+                UN(2,1)     id          70.1864
+                UN(2,2)     id           116.62
+
+
+                        Fit Statistics
+
+             -2 Res Log Likelihood           418.1
+             AIC (Smaller is Better)         424.1
+             AICC (Smaller is Better)        424.6
+             BIC (Smaller is Better)         428.8
+
+
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                Null Model Likelihood Ratio Test
+ 
+                  DF    Chi-Square      Pr > ChiSq
+
+                   2          6.35          0.0418
+
+
+                 Type 3 Tests of Fixed Effects
+ 
+                           Num     Den
+     Effect                 DF      DF    F Value    Pr > F
+
+     BASE                    1    29.5      12.19    0.0015
+     trtn                    2    26.7       0.04    0.9629
+     wk12                    1    23.3       3.96    0.0584
+     SSNRISN                 1    27.5       0.00    0.9858
+     BASE*wk12               1    23.9       1.45    0.2411
+     trtn*AGEGR1N            0                             
+     trtn*wk12               2    22.7       0.29    0.7480
+     AGEGR1N*wk12            0                             
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                 Type 3 Tests of Fixed Effects
+ 
+                           Num     Den
+     Effect                 DF      DF    F Value    Pr > F
+
+     trtn*AGEGR1N*wk12       0                             
+
+
+                      Least Squares Means
+ 
+                     Pooled
+                     Age
+                     Group             Standard
+ Effect        trtn  1 (N)   Estimate     Error    DF  t Value
+
+ trtn*AGEGR1N  1     1       -19.2480    3.7854  27.2    -5.08
+ trtn*AGEGR1N  2     1       -18.0515    3.2866  26.5    -5.49
+ trtn*AGEGR1N  3     1       -18.2670    3.5282  27.3    -5.18
+
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                      Least Squares Means
+ 
+                    Pooled
+                    Age
+                    Group
+Effect        trtn  1 (N)   Pr > |t|   Alpha     Lower     Upper
+
+trtn*AGEGR1N  1     1         <.0001    0.05  -27.0122  -11.4838
+trtn*AGEGR1N  2     1         <.0001    0.05  -24.8006  -11.3024
+trtn*AGEGR1N  3     1         <.0001    0.05  -25.5029  -11.0312
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Model Information
+
+     Data Set                     WORK.DBRW_DATA           
+     Dependent Variable           CHG                      
+     Covariance Structure         Unstructured             
+     Subject Effect               id                       
+     Estimation Method            REML                     
+     Residual Variance Method     None                     
+     Fixed Effects SE Method      Kenward-Roger            
+     Degrees of Freedom Method    Kenward-Roger            
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Class Level Information
+ 
+      Class       Levels    Values
+
+      id              21    10631001 10631002 10631003    
+                            11601006 11601007 13031001    
+                            13581001 13581014 13991002    
+                            13991004 13991007 13991009    
+                            16591001 17601005 17601007    
+                            17601014 17661004 19731002    
+                            19731006 19831001 19901003    
+      AVISITN          2    4 12                          
+      SSNRISN1         2    0 1                           
+
+
+                          Dimensions
+
+              Covariance Parameters             3
+              Columns in X                     12
+              Columns in Z                      0
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                          Dimensions
+
+              Subjects                         21
+              Max Obs per Subject               2
+
+
+                    Number of Observations
+
+          Number of Observations Read              37
+          Number of Observations Used              37
+          Number of Observations Not Used           0
+
+
+                       Iteration History
+ 
+  Iteration    Evaluations    -2 Res Log Like       Criterion
+
+          0              1       258.87813125                
+          1              2       252.59173354      0.00009142
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Iteration History
+ 
+  Iteration    Evaluations    -2 Res Log Like       Criterion
+
+          2              1       252.58231481      0.00000045
+          3              1       252.58227048      0.00000000
+
+
+                   Convergence criteria met.                    
+
+
+                Covariance Parameter Estimates
+ 
+                Cov Parm    Subject    Estimate
+
+                UN(1,1)     id           155.62
+                UN(2,1)     id          93.3023
+                UN(2,2)     id           136.22
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                        Fit Statistics
+
+             -2 Res Log Likelihood           252.6
+             AIC (Smaller is Better)         258.6
+             AICC (Smaller is Better)        259.5
+             BIC (Smaller is Better)         261.7
+
+
+                Null Model Likelihood Ratio Test
+ 
+                  DF    Chi-Square      Pr > ChiSq
+
+                   2          6.30          0.0429
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                 Type 3 Tests of Fixed Effects
+ 
+                            Num     Den
+    Effect                   DF      DF    F Value    Pr > F
+
+    BASE                      1    17.3       5.15    0.0363
+    trtn1                     0                             
+    wk12                      0                             
+    SSNRISN1                  1    17.8       0.00    0.9968
+    AGEGR1N1                  0                             
+    BASE*wk12                 1    14.3       0.29    0.5993
+    trtn1*AGEGR1N1            0                             
+    trtn1*wk12                0                             
+    wk12*AGEGR1N1             0                             
+    trtn1*wk12*AGEGR1N1       0                             
+
+
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                           Estimates
+ 
+                              Standard
+Label               Estimate     Error    DF  t Value  Pr > |t|
+
+1 ACT-PBO  Week 4    -0.2122    5.6973  17.2    -0.04    0.9707
+2 ACT-PBO  Week 4    Non-est                                   
+1 ACT-PBO  Week 12   -1.5232    5.9821  14.2    -0.25    0.8027
+2 ACT-PBO  Week 12   Non-est                                   
+
+                           Estimates
+ 
+       Label                Alpha       Lower       Upper
+
+       1 ACT-PBO  Week 4     0.05    -12.2211     11.7967
+       2 ACT-PBO  Week 4                                 
+       1 ACT-PBO  Week 12    0.05    -14.3348     11.2884
+       2 ACT-PBO  Week 12                                
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                           Contrasts
+ 
+                                           Num    Den
+ Label                                      DF     DF   F Value
+
+ Treatment*Week 4*Subgroup Interaction                         
+ Treatment*Week 12*Subgroup Interaction                        
+
+                           Contrasts
+ 
+        Label                                    Pr > F
+
+        Treatment*Week 4*Subgroup Interaction          
+        Treatment*Week 12*Subgroup Interaction         
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Model Information
+
+     Data Set                     WORK.DBRW_DATA           
+     Dependent Variable           CHG                      
+     Covariance Structure         Unstructured             
+     Subject Effect               id                       
+     Estimation Method            REML                     
+     Residual Variance Method     None                     
+     Fixed Effects SE Method      Kenward-Roger            
+     Degrees of Freedom Method    Kenward-Roger            
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Class Level Information
+ 
+      Class       Levels    Values
+
+      id              26    10631001 10631003 11601006    
+                            13031001 13031004 13581001    
+                            13581014 13991010 16591003    
+                            16591006 17601002 17601003    
+                            17601007 17601012 17601025    
+                            17661002 17661004 17661006    
+                            19691001 19731001 19731002    
+                            19731006 19831001 19831005    
+                            19831008 19901003             
+      AVISITN          2    4 12                          
+      SSNRISN1         2    0 1                           
+
+
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                          Dimensions
+
+              Covariance Parameters             3
+              Columns in X                     12
+              Columns in Z                      0
+              Subjects                         26
+              Max Obs per Subject               2
+
+
+                    Number of Observations
+
+          Number of Observations Read              44
+          Number of Observations Used              44
+          Number of Observations Not Used           0
+
+
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Iteration History
+ 
+  Iteration    Evaluations    -2 Res Log Like       Criterion
+
+          0              1       313.20285412                
+          1              2       304.67674268      0.00005293
+          2              1       304.67025600      0.00000017
+          3              1       304.67023609      0.00000000
+
+
+                   Convergence criteria met.                    
+
+
+                Covariance Parameter Estimates
+ 
+                Cov Parm    Subject    Estimate
+
+                UN(1,1)     id           155.84
+                UN(2,1)     id          95.9616
+                UN(2,2)     id           128.29
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                        Fit Statistics
+
+             -2 Res Log Likelihood           304.7
+             AIC (Smaller is Better)         310.7
+             AICC (Smaller is Better)        311.4
+             BIC (Smaller is Better)         314.4
+
+
+                Null Model Likelihood Ratio Test
+ 
+                  DF    Chi-Square      Pr > ChiSq
+
+                   2          8.53          0.0140
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                 Type 3 Tests of Fixed Effects
+ 
+                            Num     Den
+    Effect                   DF      DF    F Value    Pr > F
+
+    BASE                      1      20       7.75    0.0115
+    trtn2                     0                             
+    wk12                      0                             
+    SSNRISN1                  1    20.6       0.11    0.7438
+    AGEGR1N1                  0                             
+    BASE*wk12                 1    16.7       0.18    0.6803
+    trtn2*AGEGR1N1            0                             
+    trtn2*wk12                0                             
+    wk12*AGEGR1N1             0                             
+    trtn2*wk12*AGEGR1N1       0                             
+
+
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                           Estimates
+ 
+                               Standard
+Label                Estimate     Error    DF  t Value  Pr > |t|
+
+1 ACT-PBO    Week 4    2.2671    5.0918  20.1     0.45    0.6609
+2 ACT-PBO  Week 4     Non-est                                   
+1 ACT-PBO  Week 12    -2.4171    5.1096  17.3    -0.47    0.6421
+2 ACT-PBO  Week 12    Non-est                                   
+
+                           Estimates
+ 
+      Label                 Alpha       Lower       Upper
+
+      1 ACT-PBO    Week 4    0.05     -8.3515     12.8857
+      2 ACT-PBO  Week 4                                  
+      1 ACT-PBO  Week 12     0.05    -13.1816      8.3475
+      2 ACT-PBO  Week 12                                 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Primary Effic
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                           Contrasts
+ 
+                                           Num    Den
+ Label                                      DF     DF   F Value
+
+ Treatment*Week 4*Subgroup Interaction                         
+ Treatment*Week 12*Subgroup Interaction                        
+
+                           Contrasts
+ 
+        Label                                    Pr > F
+
+        Treatment*Week 4*Subgroup Interaction          
+        Treatment*Week 12*Subgroup Interaction         
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS-5: Clinician Administered PTSD Scale; CAPS-5 total sco
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note:The CAPS-5 total score is the sum of the 20 item-score
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: The LS means, SEs,LS Mean Diff, 95% (CI) and p-value 
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p

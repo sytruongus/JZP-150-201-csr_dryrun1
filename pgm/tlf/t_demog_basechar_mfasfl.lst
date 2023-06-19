@@ -1,0 +1,111 @@
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.1.4.2
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Demographic a
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       JM_AVAL_      JM_AVAL_      JM_AVAL_
+ JM_TYPE               LABEL         COUNTC        NAMEC
+             JM_BIGN_                     JM_AVAL_  JM_AVAL_
+ JM_BLOCK    WHERE         trtVAR            COUNT      BIGN
+             JM_AVAL_
+ JM_TRTVARN     NAMEN
+ ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+ COUNT                 Age Group 1,  10 (100)         1: <=65  
+                       n (%)                                   
+ 102                       JZP150 0.3 mg        10        10
+          1         1
+
+ COUNT                 Age Group 1,  0                2: >65   
+                       n (%)                                   
+ 102                       JZP150 0.3 mg         0        10
+          1         2
+
+ COUNT                 Age Group 1,  18 (100)         1: <=65  
+                       n (%)                                   
+ 102                       JZP150 4 mg          18        18
+          2         3
+ 
+ 
+ 
+ 
+^S={}kg: Kilogram; cm: Centimeter; kg/m2: Kilogram per square me
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Baseline (Day -1) value is generally defined as the l
+^S={}Note: Percentages are based on the total number reported in
+^S={}Note: Age, in years, as collected by the site at enrollment
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.1.4.2
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Demographic a
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       JM_AVAL_      JM_AVAL_      JM_AVAL_
+ JM_TYPE               LABEL         COUNTC        NAMEC
+             JM_BIGN_                     JM_AVAL_  JM_AVAL_
+ JM_BLOCK    WHERE         trtVAR            COUNT      BIGN
+             JM_AVAL_
+ JM_TRTVARN     NAMEN
+ ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+ COUNT                 Age Group 1,  0                2: >65   
+                       n (%)                                   
+ 102                       JZP150 4 mg           0        18
+          2         4
+
+ COUNT                 Age Group 1,  18 (100)         1: <=65  
+                       n (%)                                   
+ 102                       Placebo              18        18
+          3         5
+
+ COUNT                 Age Group 1,  0                2: >65   
+                       n (%)                                   
+ 102                       Placebo               0        18
+          3         6
+ 
+ 
+ 
+ 
+^S={}kg: Kilogram; cm: Centimeter; kg/m2: Kilogram per square me
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Baseline (Day -1) value is generally defined as the l
+^S={}Note: Percentages are based on the total number reported in
+^S={}Note: Age, in years, as collected by the site at enrollment
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.1.4.2
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Demographic a
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       JM_AVAL_      JM_AVAL_      JM_AVAL_
+ JM_TYPE               LABEL         COUNTC        NAMEC
+             JM_BIGN_                     JM_AVAL_  JM_AVAL_
+ JM_BLOCK    WHERE         trtVAR            COUNT      BIGN
+             JM_AVAL_
+ JM_TRTVARN     NAMEN
+ ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+ COUNT                 Age Group 1,  46 (100)         1: <=65  
+                       n (%)                                   
+ 102                       Total                46        46
+         99         7
+
+ COUNT                 Age Group 1,  0                2: >65   
+                       n (%)                                   
+ 102                       Total                 0        46
+         99         8
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}kg: Kilogram; cm: Centimeter; kg/m2: Kilogram per square me
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: Baseline (Day -1) value is generally defined as the l
+^S={}Note: Percentages are based on the total number reported in
+^S={}Note: Age, in years, as collected by the site at enrollment
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p

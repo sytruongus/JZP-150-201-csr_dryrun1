@@ -1,0 +1,185 @@
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.5
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}CAPS-5 Total 
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The GLM Procedure
+
+                    Class Level Information
+ 
+                 Class         Levels    Values
+
+                 trtn               3    1 2 3 
+
+                 SSNRISN            2    1 2   
+
+
+            Number of Observations Read          40
+            Number of Observations Used          40
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS: Clinician Administered PTSD Scale; CAPS-5 total score
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note:The baseline (Day -1) value is generally defined as th
+^S={}Note: The CAPS-5 total score is the sum of the 20 item-scor
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.5
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}CAPS-5 Total 
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The GLM Procedure
+ 
+         Dependent Variable: chg   Change from Baseline
+
+                                         Sum of
+ Source                      DF         Squares     Mean Square
+
+ Model                        4      399.460907       99.865227
+
+ Error                       35     4564.139093      130.403974
+
+ Corrected Total             39     4963.600000                
+
+           Source                  F Value    Pr > F
+
+           Model                      0.77    0.5547
+
+           Error                                    
+
+           Corrected Total                          
+
+
+ 
+ 
+ 
+ 
+^S={}CAPS: Clinician Administered PTSD Scale; CAPS-5 total score
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note:The baseline (Day -1) value is generally defined as th
+^S={}Note: The CAPS-5 total score is the sum of the 20 item-scor
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.5
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}CAPS-5 Total 
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The GLM Procedure
+ 
+         Dependent Variable: chg   Change from Baseline
+
+       R-Square     Coeff Var      Root MSE      chg Mean
+
+       0.080478     -69.63083      11.41946     -16.40000
+
+
+ Source                      DF     Type III SS     Mean Square
+
+ trtn                         2      77.4716016      38.7358008
+ SSNRISN                      1       1.5978168       1.5978168
+ base                         1     298.9732091     298.9732091
+
+           Source                  F Value    Pr > F
+
+           trtn                       0.30    0.7449
+           SSNRISN                    0.01    0.9125
+           base                       2.29    0.1390
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS: Clinician Administered PTSD Scale; CAPS-5 total score
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note:The baseline (Day -1) value is generally defined as th
+^S={}Note: The CAPS-5 total score is the sum of the 20 item-scor
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.5
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}CAPS-5 Total 
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The GLM Procedure
+                      Least Squares Means
+
+                              Standard                  LSMEAN
+  trtn      chg LSMEAN           Error    Pr > |t|      Number
+
+  1        -13.6435528       4.2451971      0.0028           1
+  2        -17.1208317       3.0986593      <.0001           2
+  3        -16.8012993       3.5245045      <.0001           3
+
+
+              Least Squares Means for effect trtn
+              Pr > |t| for H0: LSMean(i)=LSMean(j)
+                                
+                    Dependent Variable: chg
+ 
+         i/j              1             2             3
+
+            1                      0.4697        0.5254
+            2        0.4697                      0.9406
+            3        0.5254        0.9406              
+ 
+ 
+ 
+ 
+ 
+^S={}CAPS: Clinician Administered PTSD Scale; CAPS-5 total score
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note:The baseline (Day -1) value is generally defined as th
+^S={}Note: The CAPS-5 total score is the sum of the 20 item-scor
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.1.5
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}CAPS-5 Total 
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The GLM Procedure
+                      Least Squares Means
+
+       trtn      chg LSMEAN      95% Confidence Limits
+
+       1         -13.643553      -22.261761    -5.025345
+       2         -17.120832      -23.411445   -10.830219
+       3         -16.801299      -23.956424    -9.646175
+
+
+              Least Squares Means for Effect trtn
+ 
+                  Difference
+                     Between    95% Confidence Limits for
+      i    j           Means       LSMean(i)-LSMean(j)
+
+      1    2        3.477279       -6.180526    13.135084
+      1    3        3.157746       -6.835064    13.150557
+      2    3       -0.319532       -8.964386     8.325322
+
+
+NOTE: To ensure overall protection level, only probabilities 
+      associated with pre-planned comparisons should be used.
+ 
+ 
+ 
+^S={}CAPS: Clinician Administered PTSD Scale; CAPS-5 total score
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note:The baseline (Day -1) value is generally defined as th
+^S={}Note: The CAPS-5 total score is the sum of the 20 item-scor
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p

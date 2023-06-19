@@ -1,0 +1,111 @@
+                                                                     Domain= ADAE                                                                      1
+                     NOTE: List of Variables that are not in Spec but in Data. These variables are deleted from final SDTM dataset
+
+                                                                    Obs    Variable
+
+                                                                      1    ACNOTH1  
+                                                                      2    ACNOTH2  
+                                                                      5    ADURN    
+                                                                      6    ADURU    
+                                                                     14    AEEM     
+                                                                     16    AEENDTC_D
+                                                                     17    AEENDY   
+                                                                     19    AEEY     
+                                                                     27    AENDTC   
+                                                                     28    AENDTF   
+                                                                     42    AESM     
+                                                                     46    AESPID   
+                                                                     48    AESTDTC_D
+                                                                     49    AESTDY   
+                                                                     50    AESY     
+                                                                     67    AREL     
+                                                                     70    ARMNRS   
+                                                                     74    ASTDTC   
+                                                                     80    BRTHDT   
+                                                                     84    CHILDPOT 
+                                                                     85    CHILDPTN 
+                                                                     86    COMP04FL 
+                                                                     87    COMP12FL 
+                                                                     88    COMPDISC 
+                                                                     93    DCSREAS  
+                                                                     94    DCSREASP 
+                                                                     95    DCTREAS  
+                                                                     96    DCTREASP 
+                                                                     97    DOEM     
+                                                                     98    DOEM30   
+                                                                     99    DOEY     
+                                                                    100    DOEY30   
+                                                                    101    DOMAIN   
+                                                                    102    DOSM     
+                                                                    103    DOSY     
+                                                                    104    DSDECOD  
+                                                                    105    DSRW4FL  
+                                                                    106    DSSCAT   
+                                                                    107    DTHDT    
+                                                                    108    DTHDTC   
+                                                                    109    DTHFL    
+                                                                    111    EOSDT    
+                                                                     Domain= ADAE                                                                      2
+                     NOTE: List of Variables that are not in Spec but in Data. These variables are deleted from final SDTM dataset
+
+                                                                    Obs    Variable
+
+                                                                    112    EOSDY    
+                                                                    113    EOSSTT   
+                                                                    114    EOTDT    
+                                                                    115    EOTDY    
+                                                                    116    EOTSTT   
+                                                                    117    EPOCH    
+                                                                    122    INVNAM   
+                                                                    123    LVISDATE 
+                                                                    137    RFSTDTC_D
+                                                                    138    RFXENDT  
+                                                                    139    RFXENDT30
+                                                                    141    RFXENDTC_
+                                                                    142    RFXSTDT  
+                                                                    147    SERONOEN 
+                                                                    148    SERONOIN 
+                                                                    149    SERONORE 
+                                                                    150    SERONORI 
+                                                                    154    SSNRIS   
+                                                                    155    SSNRISN  
+                                                                    160    TRT01A   
+                                                                    161    TRT01AN  
+                                                                    162    TRT01P   
+                                                                    163    TRT01PN  
+                                                                    172    VISITBL  
+                                                                    173    VISITBLN 
+                                                                    174    VISITTYN 
+                                                                    175    VISITTYP 
+                                                                    176    VISITWK1 
+                                                                    177    VISITWK4 
+                                                                    178    VISITWK8 
+                                                                    179    VISWK12  
+                                                                    180    VISWK12N 
+                                                                    181    VISWK1N  
+                                                                    182    VISWK4N  
+                                                                    183    VISWK8N  
+                                                                     Domain= ADAE                                                                      3
+                                                WARNING: List of Common Variables with Different Lengths
+
+                                                                             Length
+                                                                               in      Length in
+                                                        Obs    Variable     dataset    Spec file
+
+                                                          7    AEACN           16          50   
+                                                         12    AEDISCON         1         200   
+                                                         18    AEENRF           7          20   
+                                                         30    AEOUT           32          50   
+                                                         32    AEREL           25          40   
+                                                         52    AETOXGR         16         100   
+                                                         77    ATOXGR          22         100   
+                                                                     Domain= ADAE                                                                      4
+                          WARNING: List of Variables with Variable name >8. Please update to restrict variable name to 8 char
+
+                                                                    Obs    Variable
+
+                                                                     16    AEENDTC_D
+                                                                     48    AESTDTC_D
+                                                                    137    RFSTDTC_D
+                                                                    139    RFXENDT30
+                                                                    141    RFXENDTC_

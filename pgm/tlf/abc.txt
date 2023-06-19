@@ -1,0 +1,14 @@
+t_ae_overall.sas:%*include "&macpath.\call_sandbox_macs.sas";
+t_ae_pt.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt_2pct.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt_discon.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt_dos_int.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt_first_onset.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt_rel.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt_rel_ser.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt_ser.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt_sev.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt_spl.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_ae_soc_pt_stdy_per.sas:%include "&macpath.\call_sandbox_macs.sas";
+t_dispo.sas:%*include "&macpath.\call_sandbox_macs.sas";

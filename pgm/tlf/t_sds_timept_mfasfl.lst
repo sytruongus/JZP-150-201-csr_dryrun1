@@ -1,0 +1,185 @@
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.6.2
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}SDS Score by 
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The GLM Procedure
+
+                    Class Level Information
+ 
+                 Class         Levels    Values
+
+                 trtn               3    1 2 3 
+
+                 SSNRISN            2    1 2   
+
+
+            Number of Observations Read          60
+            Number of Observations Used          60
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}SDS: Sheehan Disability Scale; SD: Standard deviation; Min.
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: The SDS is a participant-reported tool that assesses 
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.6.2
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}SDS Score by 
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The GLM Procedure
+ 
+         Dependent Variable: chg   Change from Baseline
+
+                                         Sum of
+ Source                      DF         Squares     Mean Square
+
+ Model                        4     2137.138150      534.284537
+
+ Error                       55     3552.595184       64.592640
+
+ Corrected Total             59     5689.733333                
+
+           Source                  F Value    Pr > F
+
+           Model                      8.27    <.0001
+
+           Error                                    
+
+           Corrected Total                          
+
+
+ 
+ 
+ 
+ 
+^S={}SDS: Sheehan Disability Scale; SD: Standard deviation; Min.
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: The SDS is a participant-reported tool that assesses 
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.6.2
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}SDS Score by 
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The GLM Procedure
+ 
+         Dependent Variable: chg   Change from Baseline
+
+       R-Square     Coeff Var      Root MSE      chg Mean
+
+       0.375613     -162.9112      8.036955     -4.933333
+
+
+ Source                      DF     Type III SS     Mean Square
+
+ trtn                         2      109.636559       54.818280
+ SSNRISN                      1      133.428679      133.428679
+ base                         1     2132.758123     2132.758123
+
+           Source                  F Value    Pr > F
+
+           trtn                       0.85    0.4335
+           SSNRISN                    2.07    0.1563
+           base                      33.02    <.0001
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}SDS: Sheehan Disability Scale; SD: Standard deviation; Min.
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: The SDS is a participant-reported tool that assesses 
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.6.2
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}SDS Score by 
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The GLM Procedure
+                      Least Squares Means
+
+                              Standard                  LSMEAN
+  trtn      chg LSMEAN           Error    Pr > |t|      Number
+
+  1        -4.30289799      2.24576689      0.0606           1
+  2        -4.72215357      1.88567472      0.0153           2
+  3        -1.67955800      2.08768887      0.4246           3
+
+
+              Least Squares Means for effect trtn
+              Pr > |t| for H0: LSMean(i)=LSMean(j)
+                                
+                    Dependent Variable: chg
+ 
+         i/j              1             2             3
+
+            1                      0.8750        0.3432
+            2        0.8750                      0.2212
+            3        0.3432        0.2212              
+ 
+ 
+ 
+ 
+ 
+^S={}SDS: Sheehan Disability Scale; SD: Standard deviation; Min.
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: The SDS is a participant-reported tool that assesses 
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.6.2
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}SDS Score by 
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                       The GLM Procedure
+                      Least Squares Means
+
+       trtn      chg LSMEAN      95% Confidence Limits
+
+       1          -4.302898       -8.803515     0.197719
+       2          -4.722154       -8.501130    -0.943177
+       3          -1.679558       -5.863380     2.504264
+
+
+              Least Squares Means for Effect trtn
+ 
+                  Difference
+                     Between    95% Confidence Limits for
+      i    j           Means       LSMean(i)-LSMean(j)
+
+      1    2        0.419256       -4.897348     5.735859
+      1    3       -2.623340       -8.121536     2.874856
+      2    3       -3.042596       -7.970550     1.885359
+
+
+NOTE: To ensure overall protection level, only probabilities 
+      associated with pre-planned comparisons should be used.
+ 
+ 
+ 
+^S={}SDS: Sheehan Disability Scale; SD: Standard deviation; Min.
+^S={}Note: The Modified Full Analysis Set includes all participa
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: The SDS is a participant-reported tool that assesses 
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p

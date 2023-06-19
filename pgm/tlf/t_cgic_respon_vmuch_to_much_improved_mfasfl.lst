@@ -1,0 +1,1376 @@
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+
+                                                     Table 1 of trt by CRIT3FL
+                                                     Controlling for SSNRISN=1
+
+                                              trt
+                                                             CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                              Frequency     ‚
+                                              Percent       ‚
+                                              Row Pct       ‚
+                                              Col Pct       ‚N       ‚Y       ‚  Total
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              JZP150 0.3 mg ‚      2 ‚      0 ‚      2
+                                                            ‚  50.00 ‚   0.00 ‚  50.00
+                                                            ‚ 100.00 ‚   0.00 ‚
+                                                            ‚  50.00 ‚      . ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Placebo       ‚      2 ‚      0 ‚      2
+                                                            ‚  50.00 ‚   0.00 ‚  50.00
+                                                            ‚ 100.00 ‚   0.00 ‚
+                                                            ‚  50.00 ‚      . ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Total                4        0        4
+                                                              100.00     0.00   100.00
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+
+                                                     Table 2 of trt by CRIT3FL
+                                                     Controlling for SSNRISN=2
+
+                                              trt
+                                                             CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                              Frequency     ‚
+                                              Percent       ‚
+                                              Row Pct       ‚
+                                              Col Pct       ‚N       ‚Y       ‚  Total
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              JZP150 0.3 mg ‚      5 ‚      2 ‚      7
+                                                            ‚  29.41 ‚  11.76 ‚  41.18
+                                                            ‚  71.43 ‚  28.57 ‚
+                                                            ‚  45.45 ‚  33.33 ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Placebo       ‚      6 ‚      4 ‚     10
+                                                            ‚  35.29 ‚  23.53 ‚  58.82
+                                                            ‚  60.00 ‚  40.00 ‚
+                                                            ‚  54.55 ‚  66.67 ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Total               11        6       17
+                                                               64.71    35.29   100.00
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                    Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+ 
+                                  Statistic    Alternative Hypothesis    DF       Value      Prob
+                                  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                                      1        Nonzero Correlation        1      0.2216    0.6378
+                                      2        Row Mean Scores Differ     1      0.2216    0.6378
+                                      3        General Association        1      0.2216    0.6378
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                               Common Odds Ratio and Relative Risks
+ 
+                       Statistic                   Method                  Value       95% Confidence Limits
+                       ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                       Odds Ratio                  Mantel-Haenszel        1.6667        0.2101       13.2231
+                                                   Logit **               1.6667        0.2101       13.2231
+
+                       Relative Risk (Column 1)    Mantel-Haenszel        1.1356        0.6869        1.8773
+                                                   Logit                  1.1905        0.5973        2.3726
+
+                       Relative Risk (Column 2)    Mantel-Haenszel        0.7143        0.1769        2.8843
+                                                   Logit **               0.7143        0.1769        2.8843
+
+                                 ** These logit estimators use a correction of 0.5 in every cell  
+                                      of those tables that contain a zero. Tables with a zero 
+                                      row or a zero column are not included in computing the 
+                                      logit estimators.
+
+
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                                        Breslow-Day Test for
+                                                   Homogeneity of the Odds Ratios
+                                                   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                                                   Chi-Square                    
+                                                   DF                           0
+                                                   Pr > ChiSq                    
+
+
+                                                       Total Sample Size = 21
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+
+                                                     Table 1 of trt by CRIT3FL
+                                                     Controlling for SSNRISN=1
+
+                                              trt
+                                                             CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                              Frequency     ‚
+                                              Percent       ‚
+                                              Row Pct       ‚
+                                              Col Pct       ‚N       ‚Y       ‚  Total
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              JZP150 0.3 mg ‚      1 ‚      0 ‚      1
+                                                            ‚  50.00 ‚   0.00 ‚  50.00
+                                                            ‚ 100.00 ‚   0.00 ‚
+                                                            ‚  50.00 ‚      . ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Placebo       ‚      1 ‚      0 ‚      1
+                                                            ‚  50.00 ‚   0.00 ‚  50.00
+                                                            ‚ 100.00 ‚   0.00 ‚
+                                                            ‚  50.00 ‚      . ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Total                2        0        2
+                                                              100.00     0.00   100.00
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+
+                                                     Table 2 of trt by CRIT3FL
+                                                     Controlling for SSNRISN=2
+
+                                              trt
+                                                             CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                              Frequency     ‚
+                                              Percent       ‚
+                                              Row Pct       ‚
+                                              Col Pct       ‚N       ‚Y       ‚  Total
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              JZP150 0.3 mg ‚      2 ‚      4 ‚      6
+                                                            ‚  14.29 ‚  28.57 ‚  42.86
+                                                            ‚  33.33 ‚  66.67 ‚
+                                                            ‚  33.33 ‚  50.00 ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Placebo       ‚      4 ‚      4 ‚      8
+                                                            ‚  28.57 ‚  28.57 ‚  57.14
+                                                            ‚  50.00 ‚  50.00 ‚
+                                                            ‚  66.67 ‚  50.00 ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Total                6        8       14
+                                                               42.86    57.14   100.00
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                    Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+ 
+                                  Statistic    Alternative Hypothesis    DF       Value      Prob
+                                  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                                      1        Nonzero Correlation        1      0.3611    0.5479
+                                      2        Row Mean Scores Differ     1      0.3611    0.5479
+                                      3        General Association        1      0.3611    0.5479
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                               Common Odds Ratio and Relative Risks
+ 
+                       Statistic                   Method                  Value       95% Confidence Limits
+                       ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                       Odds Ratio                  Mantel-Haenszel        0.5000        0.0559        4.4734
+                                                   Logit **               0.5000        0.0559        4.4734
+
+                       Relative Risk (Column 1)    Mantel-Haenszel        0.7419        0.2802        1.9646
+                                                   Logit                  0.6667        0.1769        2.5129
+
+                       Relative Risk (Column 2)    Mantel-Haenszel        1.3333        0.5450        3.2618
+                                                   Logit **               1.3333        0.5450        3.2618
+
+                                 ** These logit estimators use a correction of 0.5 in every cell  
+                                      of those tables that contain a zero. Tables with a zero 
+                                      row or a zero column are not included in computing the 
+                                      logit estimators.
+
+
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                                        Breslow-Day Test for
+                                                   Homogeneity of the Odds Ratios
+                                                   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                                                   Chi-Square                    
+                                                   DF                           0
+                                                   Pr > ChiSq                    
+
+
+                                                       Total Sample Size = 16
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+
+                                                      Table of trt by CRIT3FL
+
+                                              trt
+                                                             CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                              Frequency     ‚
+                                              Percent       ‚
+                                              Row Pct       ‚
+                                              Col Pct       ‚N       ‚Y       ‚  Total
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              JZP150 0.3 mg ‚      7 ‚      2 ‚      9
+                                                            ‚  33.33 ‚   9.52 ‚  42.86
+                                                            ‚  77.78 ‚  22.22 ‚
+                                                            ‚  46.67 ‚  33.33 ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Placebo       ‚      8 ‚      4 ‚     12
+                                                            ‚  38.10 ‚  19.05 ‚  57.14
+                                                            ‚  66.67 ‚  33.33 ‚
+                                                            ‚  53.33 ‚  66.67 ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Total               15        6       21
+                                                               71.43    28.57   100.00
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+
+                                               Statistics for Table of trt by CRIT3FL
+
+                                                      Column 1 Risk Estimates
+ 
+                                                                 (Asymptotic) 95%         (Exact) 95%
+                                             Risk        ASE     Confidence Limits     Confidence Limits
+                           ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                           Row 1           0.7778     0.1386     0.5062     1.0000     0.3999     0.9719
+                           Row 2           0.6667     0.1361     0.3999     0.9334     0.3489     0.9008
+                           Total           0.7143     0.0986     0.5211     0.9075     0.4782     0.8872
+
+                           Difference      0.1111     0.1942    -0.2696     0.4918                      
+
+                                                   Difference is (Row 1 - Row 2)
+
+
+                                       Confidence Limits for the Proportion (Risk) Difference
+                                                  Proportion Difference = 0.1111
+ 
+                                           Type                    95% Confidence Limits
+
+                                           Newcombe (Corrected)    -0.3247        0.4730
+
+                                                      Column 1 (CRIT3FL = N)
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Statistics for Table of trt by CRIT3FL
+
+                                                      Column 2 Risk Estimates
+ 
+                                                                 (Asymptotic) 95%         (Exact) 95%
+                                             Risk        ASE     Confidence Limits     Confidence Limits
+                           ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                           Row 1           0.2222     0.1386     0.0000     0.4938     0.0281     0.6001
+                           Row 2           0.3333     0.1361     0.0666     0.6001     0.0992     0.6511
+                           Total           0.2857     0.0986     0.0925     0.4789     0.1128     0.5218
+
+                           Difference     -0.1111     0.1942    -0.4918     0.2696                      
+
+                                                   Difference is (Row 1 - Row 2)
+
+                                                          Sample Size = 21
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+
+                                                      Table of trt by CRIT3FL
+
+                                              trt
+                                                             CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                              Frequency     ‚
+                                              Percent       ‚
+                                              Row Pct       ‚
+                                              Col Pct       ‚N       ‚Y       ‚  Total
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              JZP150 0.3 mg ‚      3 ‚      4 ‚      7
+                                                            ‚  18.75 ‚  25.00 ‚  43.75
+                                                            ‚  42.86 ‚  57.14 ‚
+                                                            ‚  37.50 ‚  50.00 ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Placebo       ‚      5 ‚      4 ‚      9
+                                                            ‚  31.25 ‚  25.00 ‚  56.25
+                                                            ‚  55.56 ‚  44.44 ‚
+                                                            ‚  62.50 ‚  50.00 ‚
+                                              ƒƒƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                              Total                8        8       16
+                                                               50.00    50.00   100.00
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+
+                                               Statistics for Table of trt by CRIT3FL
+
+                                                      Column 1 Risk Estimates
+ 
+                                                                 (Asymptotic) 95%         (Exact) 95%
+                                             Risk        ASE     Confidence Limits     Confidence Limits
+                           ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                           Row 1           0.4286     0.1870     0.0620     0.7952     0.0990     0.8159
+                           Row 2           0.5556     0.1656     0.2309     0.8802     0.2120     0.8630
+                           Total           0.5000     0.1250     0.2550     0.7450     0.2465     0.7535
+
+                           Difference     -0.1270     0.2498    -0.6167     0.3627                      
+
+                                                   Difference is (Row 1 - Row 2)
+
+
+                                       Confidence Limits for the Proportion (Risk) Difference
+                                                  Proportion Difference = -0.1270
+ 
+                                           Type                    95% Confidence Limits
+
+                                           Newcombe (Corrected)    -0.5525        0.3674
+
+                                                      Column 1 (CRIT3FL = N)
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Statistics for Table of trt by CRIT3FL
+
+                                                      Column 2 Risk Estimates
+ 
+                                                                 (Asymptotic) 95%         (Exact) 95%
+                                             Risk        ASE     Confidence Limits     Confidence Limits
+                           ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                           Row 1           0.5714     0.1870     0.2048     0.9380     0.1841     0.9010
+                           Row 2           0.4444     0.1656     0.1198     0.7691     0.1370     0.7880
+                           Total           0.5000     0.1250     0.2550     0.7450     0.2465     0.7535
+
+                           Difference      0.1270     0.2498    -0.3627     0.6167                      
+
+                                                   Difference is (Row 1 - Row 2)
+
+                                                          Sample Size = 16
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+
+                                                     Table 1 of trt by CRIT3FL
+                                                     Controlling for SSNRISN=1
+
+                                               trt
+                                                            CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                               Frequency   ‚
+                                               Percent     ‚
+                                               Row Pct     ‚
+                                               Col Pct     ‚N       ‚Y       ‚  Total
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               JZP150 4 mg ‚      0 ‚      2 ‚      2
+                                                           ‚   0.00 ‚  50.00 ‚  50.00
+                                                           ‚   0.00 ‚ 100.00 ‚
+                                                           ‚   0.00 ‚ 100.00 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Placebo     ‚      2 ‚      0 ‚      2
+                                                           ‚  50.00 ‚   0.00 ‚  50.00
+                                                           ‚ 100.00 ‚   0.00 ‚
+                                                           ‚ 100.00 ‚   0.00 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Total              2        2        4
+                                                              50.00    50.00   100.00
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+
+                                                     Table 2 of trt by CRIT3FL
+                                                     Controlling for SSNRISN=2
+
+                                               trt
+                                                            CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                               Frequency   ‚
+                                               Percent     ‚
+                                               Row Pct     ‚
+                                               Col Pct     ‚N       ‚Y       ‚  Total
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               JZP150 4 mg ‚      7 ‚      5 ‚     12
+                                                           ‚  31.82 ‚  22.73 ‚  54.55
+                                                           ‚  58.33 ‚  41.67 ‚
+                                                           ‚  53.85 ‚  55.56 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Placebo     ‚      6 ‚      4 ‚     10
+                                                           ‚  27.27 ‚  18.18 ‚  45.45
+                                                           ‚  60.00 ‚  40.00 ‚
+                                                           ‚  46.15 ‚  44.44 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Total             13        9       22
+                                                              59.09    40.91   100.00
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                    Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+ 
+                                  Statistic    Alternative Hypothesis    DF       Value      Prob
+                                  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                                      1        Nonzero Correlation        1      0.6941    0.4048
+                                      2        Row Mean Scores Differ     1      0.6941    0.4048
+                                      3        General Association        1      0.6941    0.4048
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                               Common Odds Ratio and Relative Risks
+ 
+                       Statistic                   Method                  Value       95% Confidence Limits
+                       ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                       Odds Ratio                  Mantel-Haenszel        0.5385        0.1232        2.3527
+                                                   Logit **               0.6069        0.1241        2.9679
+
+                       Relative Risk (Column 1)    Mantel-Haenszel        0.7447        0.3639        1.5237
+                                                   Logit **               0.8733        0.4459        1.7104
+
+                       Relative Risk (Column 2)    Mantel-Haenszel        1.5000        0.5573        4.0374
+                                                   Logit **               1.2840        0.5004        3.2943
+
+                                 ** These logit estimators use a correction of 0.5 in every cell  
+                                      of those tables that contain a zero.
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                                        Breslow-Day Test for
+                                                   Homogeneity of the Odds Ratios
+                                                   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                                                   Chi-Square              3.3365
+                                                   DF                           1
+                                                   Pr > ChiSq              0.0678
+
+
+                                                       Total Sample Size = 26
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+
+                                                     Table 1 of trt by CRIT3FL
+                                                     Controlling for SSNRISN=1
+
+                                               trt
+                                                            CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                               Frequency   ‚
+                                               Percent     ‚
+                                               Row Pct     ‚
+                                               Col Pct     ‚N       ‚Y       ‚  Total
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               JZP150 4 mg ‚      1 ‚      1 ‚      2
+                                                           ‚  33.33 ‚  33.33 ‚  66.67
+                                                           ‚  50.00 ‚  50.00 ‚
+                                                           ‚  50.00 ‚ 100.00 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Placebo     ‚      1 ‚      0 ‚      1
+                                                           ‚  33.33 ‚   0.00 ‚  33.33
+                                                           ‚ 100.00 ‚   0.00 ‚
+                                                           ‚  50.00 ‚   0.00 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Total              2        1        3
+                                                              66.67    33.33   100.00
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+
+                                                     Table 2 of trt by CRIT3FL
+                                                     Controlling for SSNRISN=2
+
+                                               trt
+                                                            CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                               Frequency   ‚
+                                               Percent     ‚
+                                               Row Pct     ‚
+                                               Col Pct     ‚N       ‚Y       ‚  Total
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               JZP150 4 mg ‚      4 ‚      4 ‚      8
+                                                           ‚  25.00 ‚  25.00 ‚  50.00
+                                                           ‚  50.00 ‚  50.00 ‚
+                                                           ‚  50.00 ‚  50.00 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Placebo     ‚      4 ‚      4 ‚      8
+                                                           ‚  25.00 ‚  25.00 ‚  50.00
+                                                           ‚  50.00 ‚  50.00 ‚
+                                                           ‚  50.00 ‚  50.00 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Total              8        8       16
+                                                              50.00    50.00   100.00
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                    Cochran-Mantel-Haenszel Statistics (Based on Table Scores)
+ 
+                                  Statistic    Alternative Hypothesis    DF       Value      Prob
+                                  ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                                      1        Nonzero Correlation        1      0.0862    0.7691
+                                      2        Row Mean Scores Differ     1      0.0862    0.7691
+                                      3        General Association        1      0.0862    0.7691
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                               Common Odds Ratio and Relative Risks
+ 
+                       Statistic                   Method                  Value       95% Confidence Limits
+                       ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                       Odds Ratio                  Mantel-Haenszel        0.7500        0.1206        4.6657
+                                                   Logit **               0.8027        0.1391        4.6335
+
+                       Relative Risk (Column 1)    Mantel-Haenszel        0.8750        0.3822        2.0031
+                                                   Logit                  0.7937        0.3566        1.7667
+
+                       Relative Risk (Column 2)    Mantel-Haenszel        1.1667        0.4279        3.1810
+                                                   Logit **               1.0867        0.4334        2.7250
+
+                                 ** These logit estimators use a correction of 0.5 in every cell  
+                                      of those tables that contain a zero.
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Summary Statistics for trt by CRIT3FL
+                                                      Controlling for SSNRISN
+
+                                                        Breslow-Day Test for
+                                                   Homogeneity of the Odds Ratios
+                                                   ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                                                   Chi-Square              0.6801
+                                                   DF                           1
+                                                   Pr > ChiSq              0.4096
+
+
+                                                       Total Sample Size = 19
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+
+                                                      Table of trt by CRIT3FL
+
+                                               trt
+                                                            CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                               Frequency   ‚
+                                               Percent     ‚
+                                               Row Pct     ‚
+                                               Col Pct     ‚N       ‚Y       ‚  Total
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               JZP150 4 mg ‚      7 ‚      7 ‚     14
+                                                           ‚  26.92 ‚  26.92 ‚  53.85
+                                                           ‚  50.00 ‚  50.00 ‚
+                                                           ‚  46.67 ‚  63.64 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Placebo     ‚      8 ‚      4 ‚     12
+                                                           ‚  30.77 ‚  15.38 ‚  46.15
+                                                           ‚  66.67 ‚  33.33 ‚
+                                                           ‚  53.33 ‚  36.36 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Total             15       11       26
+                                                              57.69    42.31   100.00
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+
+                                               Statistics for Table of trt by CRIT3FL
+
+                                                      Column 1 Risk Estimates
+ 
+                                                                 (Asymptotic) 95%         (Exact) 95%
+                                             Risk        ASE     Confidence Limits     Confidence Limits
+                           ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                           Row 1           0.5000     0.1336     0.2381     0.7619     0.2304     0.7696
+                           Row 2           0.6667     0.1361     0.3999     0.9334     0.3489     0.9008
+                           Total           0.5769     0.0969     0.3870     0.7668     0.3692     0.7665
+
+                           Difference     -0.1667     0.1907    -0.5405     0.2071                      
+
+                                                   Difference is (Row 1 - Row 2)
+
+
+                                       Confidence Limits for the Proportion (Risk) Difference
+                                                  Proportion Difference = -0.1667
+ 
+                                           Type                    95% Confidence Limits
+
+                                           Newcombe (Corrected)    -0.5073        0.2394
+
+                                                      Column 1 (CRIT3FL = N)
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+--------------------- Analysis Visit (N)=4 Analysis Visit=Week 4 Parameter Code=CGI0202 Parameter=CGI02-Change ---------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Statistics for Table of trt by CRIT3FL
+
+                                                      Column 2 Risk Estimates
+ 
+                                                                 (Asymptotic) 95%         (Exact) 95%
+                                             Risk        ASE     Confidence Limits     Confidence Limits
+                           ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                           Row 1           0.5000     0.1336     0.2381     0.7619     0.2304     0.7696
+                           Row 2           0.3333     0.1361     0.0666     0.6001     0.0992     0.6511
+                           Total           0.4231     0.0969     0.2332     0.6130     0.2335     0.6308
+
+                           Difference      0.1667     0.1907    -0.2071     0.5405                      
+
+                                                   Difference is (Row 1 - Row 2)
+
+                                                          Sample Size = 26
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+
+                                                      Table of trt by CRIT3FL
+
+                                               trt
+                                                            CRIT3FL(Criterion 3 Evaluation Result Flag)
+
+                                               Frequency   ‚
+                                               Percent     ‚
+                                               Row Pct     ‚
+                                               Col Pct     ‚N       ‚Y       ‚  Total
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               JZP150 4 mg ‚      5 ‚      5 ‚     10
+                                                           ‚  26.32 ‚  26.32 ‚  52.63
+                                                           ‚  50.00 ‚  50.00 ‚
+                                                           ‚  50.00 ‚  55.56 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Placebo     ‚      5 ‚      4 ‚      9
+                                                           ‚  26.32 ‚  21.05 ‚  47.37
+                                                           ‚  55.56 ‚  44.44 ‚
+                                                           ‚  50.00 ‚  44.44 ‚
+                                               ƒƒƒƒƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆƒƒƒƒƒƒƒƒˆ
+                                               Total             10        9       19
+                                                              52.63    47.37   100.00
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+
+                                               Statistics for Table of trt by CRIT3FL
+
+                                                      Column 1 Risk Estimates
+ 
+                                                                 (Asymptotic) 95%         (Exact) 95%
+                                             Risk        ASE     Confidence Limits     Confidence Limits
+                           ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                           Row 1           0.5000     0.1581     0.1901     0.8099     0.1871     0.8129
+                           Row 2           0.5556     0.1656     0.2309     0.8802     0.2120     0.8630
+                           Total           0.5263     0.1145     0.3018     0.7508     0.2886     0.7555
+
+                           Difference     -0.0556     0.2290    -0.5044     0.3932                      
+
+                                                   Difference is (Row 1 - Row 2)
+
+
+                                       Confidence Limits for the Proportion (Risk) Difference
+                                                  Proportion Difference = -0.0556
+ 
+                                           Type                    95% Confidence Limits
+
+                                           Newcombe (Corrected)    -0.4725        0.3887
+
+                                                      Column 1 (CRIT3FL = N)
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F
+                       ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz PharmaceuticalsPage ^{pageof}
+                                ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-201
+                                 ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.4.2  
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Secondary Efficacy Endpoint, CGI-C Responder: Percent of Participants Who Are Ver
+                          ^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Full Analysis Set)
+
+-------------------- Analysis Visit (N)=12 Analysis Visit=Week 12 Parameter Code=CGI0202 Parameter=CGI02-Change --------------------
+
+                                                         The FREQ Procedure
+ 
+                                               Statistics for Table of trt by CRIT3FL
+
+                                                      Column 2 Risk Estimates
+ 
+                                                                 (Asymptotic) 95%         (Exact) 95%
+                                             Risk        ASE     Confidence Limits     Confidence Limits
+                           ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+                           Row 1           0.5000     0.1581     0.1901     0.8099     0.1871     0.8129
+                           Row 2           0.4444     0.1656     0.1198     0.7691     0.1370     0.7880
+                           Total           0.4737     0.1145     0.2492     0.6982     0.2445     0.7114
+
+                           Difference      0.0556     0.2290    -0.3932     0.5044                      
+
+                                                   Difference is (Row 1 - Row 2)
+
+                                                          Sample Size = 19
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}CGI-C: Clinician Global Impression of Change; CI: Confidence Interval; CAPS-5: Clinician Administered PTSD Scale; CAPS-5 Total 
+^S={}Note: The Modified Full Analysis Set includes all participants who were randomized, took at least 1 dose of study intervention,
+^S={}Note: Continuity corrected Wilson’s 95% CI as modified by Newcombe are presented for the difference in proportion. The p-value 
+  ^S={}Note: Percentages are based on the total number of participants with at least one survey in each column at each time point.
+^S={}Note: CGI-C is a 7-point Likert-type rating scale used to assess efficacy in clinical drug trials. The responses to this clinic
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\tlf\t_cgic_respon_vmuch_to_much_improved_mfasfl.sas     DATE: 10F

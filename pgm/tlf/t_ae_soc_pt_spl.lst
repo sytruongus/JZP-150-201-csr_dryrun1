@@ -1,0 +1,76 @@
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.1.8
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+TEAEs of Sp
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analy
+
+                       JM_AVAL_      JM_AVAL_      JM_AVAL_
+ JM_TYPE               LABEL         COUNTC        NAMEC
+             JM_BIGN_                     JM_AVAL_  JM_AVAL_
+ JM_BLOCK    WHERE         trtVAR            COUNT      BIGN
+             JM_AVAL_  JM_SECONDARY_
+ JM_TRTVARN     NAMEN  WHERE
+ ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+ COUNT                 Number of     2 (20.0)         Y        
+                       participants                            
+                       with at                                 
+                       least one                               
+                       TEAE                                    
+ 101         saffl='Y'     JZP150 0.3 mg         2        10
+          1         1               
+
+ COUNT                 Number of     2 (7.1)          Y        
+                       participants                            
+                       with at                                 
+                       least one                               
+                       TEAE                                    
+ 101         saffl='Y'     JZP150 Total          2        28
+         99         2               
+ 
+ 
+^S={}AE: Adverse Event; TEAE: Treatment-Emergent Adverse Event.
+^S={}Note: The Safety Analysis Set includes all participants who
+^S={}Note: A TEAE is generally defined as any event with onset d
+^S={}Note: TEAEs have been coded using the MedDRA dictionary, ve
+^S={}Note: Participants reporting an AE more than once within a 
+^S={}Note: Percentages are based on the total number reported in
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.3.1.8
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+TEAEs of Sp
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Safety Analy
+
+                       JM_AVAL_      JM_AVAL_      JM_AVAL_
+ JM_TYPE               LABEL         COUNTC        NAMEC
+             JM_BIGN_                     JM_AVAL_  JM_AVAL_
+ JM_BLOCK    WHERE         trtVAR            COUNT      BIGN
+             JM_AVAL_  JM_SECONDARY_
+ JM_TRTVARN     NAMEN  WHERE
+ ƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒ
+ COUNT                 Number of     3 (15.0)         Y        
+                       participants                            
+                       with at                                 
+                       least one                               
+                       TEAE                                    
+ 101         saffl='Y'     Placebo               3        20
+          3         3               
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}AE: Adverse Event; TEAE: Treatment-Emergent Adverse Event.
+^S={}Note: The Safety Analysis Set includes all participants who
+^S={}Note: A TEAE is generally defined as any event with onset d
+^S={}Note: TEAEs have been coded using the MedDRA dictionary, ve
+^S={}Note: Participants reporting an AE more than once within a 
+^S={}Note: Percentages are based on the total number reported in
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p

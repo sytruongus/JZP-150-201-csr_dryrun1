@@ -1,0 +1,1064 @@
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Model Information
+
+     Data Set                     WORK.DBRW_DATA           
+     Dependent Variable           CHG                      
+     Covariance Structure         Unstructured             
+     Subject Effect               id                       
+     Estimation Method            REML                     
+     Residual Variance Method     None                     
+     Fixed Effects SE Method      Kenward-Roger            
+     Degrees of Freedom Method    Kenward-Roger            
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Class Level Information
+ 
+      Class      Levels    Values
+
+      id             39    10631001 10631002 10631003    
+                           11601002 11601006 11601007    
+                           13031001 13031004 13581001    
+                           13581010 13581014 13991001    
+                           13991002 13991004 13991007    
+                           13991009 13991010 16591001    
+                           16591003 16591006 17601002    
+                           17601003 17601005 17601007    
+                           17601012 17601014 17601025    
+                           17661002 17661004 17661006    
+                           19691001 19731001 19731002    
+                           19731004 19731006 19831001    
+                           19831005 19831008 19901003    
+      AVISITN         4    1 4 8 12                      
+      trtn            3    1 2 3                         
+      SSNRISN         2    1 2                           
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Class Level Information
+ 
+      Class      Levels    Values
+
+      wk12            2    0 1                           
+
+
+                          Dimensions
+
+              Covariance Parameters            10
+              Columns in X                     39
+              Columns in Z                      0
+              Subjects                         39
+              Max Obs per Subject               4
+
+
+                    Number of Observations
+
+          Number of Observations Read             129
+          Number of Observations Used             129
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Number of Observations
+
+          Number of Observations Not Used           0
+
+
+                       Iteration History
+ 
+  Iteration    Evaluations    -2 Res Log Like       Criterion
+
+          0              1       303.90933895                
+          1              2       249.50979071      0.06474871
+          2              1       248.03400648      0.01060314
+          3              1       247.81629350      0.00049493
+          4              1       247.80695576      0.00000149
+          5              1       247.80692846      0.00000000
+
+
+                   Convergence criteria met.                    
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                Covariance Parameter Estimates
+ 
+                Cov Parm    Subject    Estimate
+
+                UN(1,1)     id           0.5016
+                UN(2,1)     id           0.2540
+                UN(2,2)     id           0.5949
+                UN(3,1)     id           0.3240
+                UN(3,2)     id           0.5938
+                UN(3,3)     id           1.0529
+                UN(4,1)     id           0.3563
+                UN(4,2)     id           0.3363
+                UN(4,3)     id           0.6023
+                UN(4,4)     id           0.6406
+
+
+                        Fit Statistics
+
+             -2 Res Log Likelihood           247.8
+             AIC (Smaller is Better)         267.8
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                        Fit Statistics
+
+             AICC (Smaller is Better)        269.9
+             BIC (Smaller is Better)         284.4
+
+
+                Null Model Likelihood Ratio Test
+ 
+                  DF    Chi-Square      Pr > ChiSq
+
+                   9         56.10          <.0001
+
+
+                 Type 3 Tests of Fixed Effects
+ 
+                           Num     Den
+     Effect                 DF      DF    F Value    Pr > F
+
+     BASE                    1    31.2      47.76    <.0001
+     trtn                    2    29.6       0.85    0.4392
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                 Type 3 Tests of Fixed Effects
+ 
+                           Num     Den
+     Effect                 DF      DF    F Value    Pr > F
+
+     wk12                    1    21.1       1.53    0.2304
+     SSNRISN                 1      30       2.98    0.0948
+     BASE*wk12               1    20.7       0.54    0.4717
+     trtn*SSNRISN            2    29.5       1.70    0.2000
+     trtn*wk12               2    21.3       1.43    0.2610
+     SSNRISN*wk12            1    21.5       1.75    0.2000
+     trtn*SSNRISN*wk12       2    21.3       1.91    0.1725
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                      Least Squares Means
+ 
+                       Concomitant
+                       Use of
+                       SSRI/SNRI                Standard
+ Effect         trtn   (N)           Estimate      Error     DF
+
+ trtn*SSNRISN   1      1              -0.6264     0.5062   31.3
+ trtn*SSNRISN   1      2              -0.7888     0.2542   26.8
+ trtn*SSNRISN   2      1              -0.6615     0.4760   27.2
+ trtn*SSNRISN   2      2              -0.7735     0.1892   29.8
+ trtn*SSNRISN   3      1               0.4232     0.5317   30.2
+ trtn*SSNRISN   3      2              -0.9677     0.2036   30.6
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                      Least Squares Means
+ 
+                      Concomitant
+                      Use of
+                      SSRI/SNRI
+Effect         trtn   (N)           t Value   Pr > |t|    Alpha
+
+trtn*SSNRISN   1      1               -1.24     0.2252     0.05
+trtn*SSNRISN   1      2               -3.10     0.0045     0.05
+trtn*SSNRISN   2      1               -1.39     0.1759     0.05
+trtn*SSNRISN   2      2               -4.09     0.0003     0.05
+trtn*SSNRISN   3      1                0.80     0.4323     0.05
+trtn*SSNRISN   3      2               -4.75     <.0001     0.05
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                      Least Squares Means
+ 
+                          Concomitant
+                          Use of
+                          SSRI/SNRI
+    Effect         trtn   (N)              Lower       Upper
+
+    trtn*SSNRISN   1      1              -1.6585      0.4057
+    trtn*SSNRISN   1      2              -1.3106     -0.2670
+    trtn*SSNRISN   2      1              -1.6378      0.3147
+    trtn*SSNRISN   2      2              -1.1600     -0.3869
+    trtn*SSNRISN   3      1              -0.6624      1.5087
+    trtn*SSNRISN   3      2              -1.3832     -0.5523
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Model Information
+
+     Data Set                     WORK.DBRW_DATA           
+     Dependent Variable           CHG                      
+     Covariance Structure         Unstructured             
+     Subject Effect               id                       
+     Estimation Method            REML                     
+     Residual Variance Method     None                     
+     Fixed Effects SE Method      Kenward-Roger            
+     Degrees of Freedom Method    Kenward-Roger            
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Class Level Information
+ 
+      Class      Levels    Values
+
+      id             23    10631001 10631002 10631003    
+                           11601002 11601006 11601007    
+                           13031001 13581001 13581010    
+                           13581014 13991002 13991004    
+                           13991007 13991009 16591001    
+                           17601005 17601007 17601014    
+                           17661004 19731002 19731006    
+                           19831001 19901003             
+      AVISITN         4    1 4 8 12                      
+
+
+                          Dimensions
+
+              Covariance Parameters            10
+              Columns in X                     10
+              Columns in Z                      0
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                          Dimensions
+
+              Subjects                         23
+              Max Obs per Subject               4
+
+
+                    Number of Observations
+
+          Number of Observations Read              76
+          Number of Observations Used              76
+          Number of Observations Not Used           0
+
+
+                       Iteration History
+ 
+  Iteration    Evaluations    -2 Res Log Like       Criterion
+
+          0              1       189.77886667                
+          1              2       156.83106706      0.00804854
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Iteration History
+ 
+  Iteration    Evaluations    -2 Res Log Like       Criterion
+
+          2              1       156.67058722      0.00039938
+          3              1       156.66325617      0.00000144
+          4              1       156.66323056      0.00000000
+
+
+                   Convergence criteria met.                    
+
+
+                Covariance Parameter Estimates
+ 
+                Cov Parm    Subject    Estimate
+
+                UN(1,1)     id           0.6484
+                UN(2,1)     id           0.3537
+                UN(2,2)     id           0.8062
+                UN(3,1)     id           0.4138
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                Covariance Parameter Estimates
+ 
+                Cov Parm    Subject    Estimate
+
+                UN(3,2)     id           0.8081
+                UN(3,3)     id           1.3104
+                UN(4,1)     id           0.4123
+                UN(4,2)     id           0.4466
+                UN(4,3)     id           0.6893
+                UN(4,4)     id           0.6752
+
+
+                        Fit Statistics
+
+             -2 Res Log Likelihood           156.7
+             AIC (Smaller is Better)         176.7
+             AICC (Smaller is Better)        180.7
+             BIC (Smaller is Better)         188.0
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                Null Model Likelihood Ratio Test
+ 
+                  DF    Chi-Square      Pr > ChiSq
+
+                   9         33.12          0.0001
+
+
+                 Type 3 Tests of Fixed Effects
+ 
+                            Num     Den
+    Effect                   DF      DF    F Value    Pr > F
+
+    BASE                      1    17.9      21.26    0.0002
+    trtn1                     1    17.1       0.11    0.7457
+    wk12                      1    11.6       2.75    0.1240
+    SSNRISN1                  1    16.9       2.54    0.1294
+    BASE*wk12                 1    11.6       0.40    0.5390
+    trtn1*SSNRISN1            1    16.5       0.77    0.3923
+    trtn1*wk12                1    11.5       2.07    0.1768
+    wk12*SSNRISN1             1    11.6       0.06    0.8146
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                 Type 3 Tests of Fixed Effects
+ 
+                            Num     Den
+    Effect                   DF      DF    F Value    Pr > F
+
+    trtn1*wk12*SSNRISN1       1    11.6       0.12    0.7381
+
+
+                           Estimates
+ 
+                              Standard
+Label               Estimate     Error    DF  t Value  Pr > |t|
+
+1 ACT-PBO  Week 4    -0.9615    0.8482  16.3    -1.13    0.2734
+2 ACT-PBO  Week 4    -0.1286    0.3901  17.1    -0.33    0.7457
+1 ACT-PBO  Week 12   -0.7911    1.0459  15.3    -0.76    0.4609
+2 ACT-PBO  Week 12    0.3513    0.4396  14.1     0.80    0.4375
+
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                           Estimates
+ 
+       Label                Alpha       Lower       Upper
+
+       1 ACT-PBO  Week 4     0.05     -2.7571      0.8342
+       2 ACT-PBO  Week 4     0.05     -0.9512      0.6941
+       1 ACT-PBO  Week 12    0.05     -3.0169      1.4347
+       2 ACT-PBO  Week 12    0.05     -0.5912      1.2939
+
+
+                           Contrasts
+ 
+                                           Num    Den
+ Label                                      DF     DF   F Value
+
+ Treatment*Week 4*Subgroup Interaction       1   16.5      0.77
+ Treatment*Week 12*Subgroup Interaction      1     15      1.00
+
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                           Contrasts
+ 
+        Label                                    Pr > F
+
+        Treatment*Week 4*Subgroup Interaction    0.3923
+        Treatment*Week 12*Subgroup Interaction   0.3325
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Model Information
+
+     Data Set                     WORK.DBRW_DATA           
+     Dependent Variable           CHG                      
+     Covariance Structure         Unstructured             
+     Subject Effect               id                       
+     Estimation Method            REML                     
+     Residual Variance Method     None                     
+     Fixed Effects SE Method      Kenward-Roger            
+     Degrees of Freedom Method    Kenward-Roger            
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Class Level Information
+ 
+      Class      Levels    Values
+
+      id             30    10631001 10631003 11601002    
+                           11601006 13031001 13031004    
+                           13581001 13581010 13581014    
+                           13991001 13991010 16591003    
+                           16591006 17601002 17601003    
+                           17601007 17601012 17601025    
+                           17661002 17661004 17661006    
+                           19691001 19731001 19731002    
+                           19731004 19731006 19831001    
+                           19831005 19831008 19901003    
+      AVISITN         4    1 4 8 12                      
+
+
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                          Dimensions
+
+              Covariance Parameters            10
+              Columns in X                     10
+              Columns in Z                      0
+              Subjects                         30
+              Max Obs per Subject               4
+
+
+                    Number of Observations
+
+          Number of Observations Read              96
+          Number of Observations Used              96
+          Number of Observations Not Used           0
+
+
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Iteration History
+ 
+  Iteration    Evaluations    -2 Res Log Like       Criterion
+
+          0              1       231.19554630                
+          1              2       196.78778132      0.30998756
+          2              1       189.09077759      0.16609259
+          3              1       185.83217190      0.06621394
+          4              1       184.70087732      0.01609382
+          5              1       184.45299509      0.00136358
+          6              1       184.43393197      0.00001255
+          7              1       184.43376535      0.00000000
+
+
+                   Convergence criteria met.                    
+
+
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                Covariance Parameter Estimates
+ 
+                Cov Parm    Subject    Estimate
+
+                UN(1,1)     id           0.4620
+                UN(2,1)     id           0.2824
+                UN(2,2)     id           0.6559
+                UN(3,1)     id           0.4746
+                UN(3,2)     id           0.6995
+                UN(3,3)     id           1.2839
+                UN(4,1)     id           0.4355
+                UN(4,2)     id           0.4394
+                UN(4,3)     id           0.8417
+                UN(4,4)     id           0.8198
+
+
+                        Fit Statistics
+
+             -2 Res Log Likelihood           184.4
+             AIC (Smaller is Better)         204.4
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                        Fit Statistics
+
+             AICC (Smaller is Better)        207.4
+             BIC (Smaller is Better)         218.4
+
+
+                Null Model Likelihood Ratio Test
+ 
+                  DF    Chi-Square      Pr > ChiSq
+
+                   9         46.76          <.0001
+
+
+                 Type 3 Tests of Fixed Effects
+ 
+                            Num     Den
+    Effect                   DF      DF    F Value    Pr > F
+
+    BASE                      1    23.3      43.60    <.0001
+    trtn2                     1    23.5       0.44    0.5116
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                 Type 3 Tests of Fixed Effects
+ 
+                            Num     Den
+    Effect                   DF      DF    F Value    Pr > F
+
+    wk12                      1      15       4.81    0.0444
+    SSNRISN1                  1    21.7       5.86    0.0243
+    BASE*wk12                 1    15.1       0.93    0.3504
+    trtn2*SSNRISN1            1      22       6.34    0.0196
+    trtn2*wk12                1    15.1       0.28    0.6046
+    wk12*SSNRISN1             1    14.6       0.14    0.7181
+    trtn2*wk12*SSNRISN1       1    15.9       1.82    0.1959
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                           Estimates
+ 
+                               Standard
+Label                Estimate     Error    DF  t Value  Pr > |t|
+
+1 ACT-PBO    Week 4   -1.6836    0.6947  21.6    -2.42    0.0242
+2 ACT-PBO  Week 4      0.1784    0.2677  23.5     0.67    0.5116
+1 ACT-PBO  Week 12    -0.5750    0.9247  21.4    -0.62    0.5406
+2 ACT-PBO  Week 12     0.3154    0.3500  20.4     0.90    0.3779
+
+                           Estimates
+ 
+      Label                 Alpha       Lower       Upper
+
+      1 ACT-PBO    Week 4    0.05     -3.1258     -0.2414
+      2 ACT-PBO  Week 4      0.05     -0.3747      0.7315
+      1 ACT-PBO  Week 12     0.05     -2.4962      1.3461
+      2 ACT-PBO  Week 12     0.05     -0.4137      1.0446
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.3
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                           Contrasts
+ 
+                                           Num    Den
+ Label                                      DF     DF   F Value
+
+ Treatment*Week 4*Subgroup Interaction       1     22      6.34
+ Treatment*Week 12*Subgroup Interaction      1   21.4      0.81
+
+                           Contrasts
+ 
+        Label                                    Pr > F
+
+        Treatment*Week 4*Subgroup Interaction    0.0196
+        Treatment*Week 12*Subgroup Interaction   0.3773
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: All ICEs are addressed using the treatment policy str
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}Note: The randomization stratification factor will be remov
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p

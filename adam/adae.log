@@ -1,0 +1,2601 @@
+1                                                          The SAS System                                  17:38 Friday, May 5, 2023
+
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+NOTE: Copyright (c) 2002-2012 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.4 (TS1M4) 
+      Licensed to JAZZ PHARMACEUTICALS INC - D-WISE, Site 70203642.
+NOTE: This session is executing on the X64_SR12R2  platform.
+
+
+
+NOTE: Updated analytical products:
+      
+      SAS/STAT 14.2
+      SAS/IML 14.2
+
+NOTE: Additional host information:
+
+ X64_SR12R2 WIN 6.3.9600  Server
+
+NOTE: SAS initialization used:
+      real time           3.97 seconds
+      cpu time            0.07 seconds
+      
+
+NOTE: AUTOEXEC processing beginning; file is 
+      C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\adam\autoexec.sas.
+
+MLOGIC(AUTOEXEC):  Beginning execution.
+MPRINT(AUTOEXEC):   libname here " ";
+NOTE: Libref HERE was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm\adam\
+MLOGIC(AUTOEXEC):  %GLOBAL  GTOPLEVEL
+MPRINT(AUTOEXEC):   data _null_;
+MPRINT(AUTOEXEC):   path=pathname("here");
+MPRINT(AUTOEXEC):   pos=index(path,"\stat\")+5;
+MPRINT(AUTOEXEC):   gtoplevel=substr(path,1,pos);
+MPRINT(AUTOEXEC):   call symputx("gtoplevel",gtoplevel);
+MPRINT(AUTOEXEC):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MLOGIC(AUTOEXEC):  %PUT &gtoplevel.
+SYMBOLGEN:  Macro variable GTOPLEVEL resolves to C:\SASData\JZP-150\150-201\stat\
+C:\SASData\JZP-150\150-201\stat\
+MPRINT(AUTOEXEC):   libname here clear;
+NOTE: Libref HERE has been deassigned.
+2                                          The SAS System                  17:38 Friday, May 5, 2023
+
+MPRINT(AUTOEXEC):   *** Identify the utilities folder ***;
+MPRINT(AUTOEXEC):   filename util1 "..\..\..\..\utilities";
+MPRINT(AUTOEXEC):   filename util2 "..\..\..\utilities";
+MPRINT(AUTOEXEC):   filename util3 "..\..\utilities";
+MPRINT(AUTOEXEC):   filename util4 "..\utilities";
+MPRINT(AUTOEXEC):   filename util5 ".\utilities";
+MPRINT(AUTOEXEC):   *** Identify setup.sas programs ***;
+MPRINT(AUTOEXEC):   filename setup1 "..\..\..\..\utilities\setup.sas";
+MPRINT(AUTOEXEC):   filename setup2 "..\..\..\utilities\setup.sas";
+MPRINT(AUTOEXEC):   filename setup3 "..\..\utilities\setup.sas";
+MPRINT(AUTOEXEC):   filename setup4 "..\utilities\setup.sas";
+MPRINT(AUTOEXEC):   filename setup5 ".\utilities\setup.sas";
+MPRINT(AUTOEXEC):   data _null_;
+MPRINT(AUTOEXEC):   *** Identify the closest utility path ***;
+MPRINT(AUTOEXEC):   path1 = pathname('util1');
+MPRINT(AUTOEXEC):   path2 = pathname('util2');
+MPRINT(AUTOEXEC):   path3 = pathname('util3');
+MPRINT(AUTOEXEC):   path4 = pathname('util4');
+MPRINT(AUTOEXEC):   path5 = pathname('util5');
+MPRINT(AUTOEXEC):   if fileexist(path1) then call symput('utilpath',strip(path1));
+MPRINT(AUTOEXEC):   if fileexist(path2) then call symput('utilpath',strip(path2));
+MPRINT(AUTOEXEC):   if fileexist(path3) then call symput('utilpath',strip(path3));
+MPRINT(AUTOEXEC):   if fileexist(path4) then call symput('utilpath',strip(path4));
+MPRINT(AUTOEXEC):   if fileexist(path5) then call symput('utilpath',strip(path5));
+MPRINT(AUTOEXEC):   *** Idetify the closest setup.sas program ***;
+MPRINT(AUTOEXEC):   setup1 = pathname('setup1');
+MPRINT(AUTOEXEC):   setup2 = pathname('setup2');
+MPRINT(AUTOEXEC):   setup3 = pathname('setup3');
+MPRINT(AUTOEXEC):   setup4 = pathname('setup4');
+MPRINT(AUTOEXEC):   setup5 = pathname('setup5');
+MPRINT(AUTOEXEC):   if fileexist(setup1) then call symput('setupprog',strip(setup1));
+MPRINT(AUTOEXEC):   if fileexist(setup2) then call symput('setupprog',strip(setup2));
+MPRINT(AUTOEXEC):   if fileexist(setup3) then call symput('setupprog',strip(setup3));
+MPRINT(AUTOEXEC):   if fileexist(setup4) then call symput('setupprog',strip(setup4));
+MPRINT(AUTOEXEC):   if fileexist(setup5) then call symput('setupprog',strip(setup5));
+MPRINT(AUTOEXEC):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(AUTOEXEC):   *** Clear temporary filenames ***;
+MPRINT(AUTOEXEC):   filename util1;
+NOTE: Fileref UTIL1 has been deassigned.
+MPRINT(AUTOEXEC):   filename util2;
+NOTE: Fileref UTIL2 has been deassigned.
+MPRINT(AUTOEXEC):   filename util3;
+NOTE: Fileref UTIL3 has been deassigned.
+MPRINT(AUTOEXEC):   filename util4;
+NOTE: Fileref UTIL4 has been deassigned.
+MPRINT(AUTOEXEC):   filename util5;
+NOTE: Fileref UTIL5 has been deassigned.
+SYMBOLGEN:  Macro variable UTILPATH resolves to 
+3                                          The SAS System                  17:38 Friday, May 5, 2023
+
+            C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+MPRINT(AUTOEXEC):   options Mautosource sasautos=(sasautos 
+"C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities");
+SYMBOLGEN:  Macro variable SETUPPROG resolves to 
+            C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities\setup.sas
+MPRINT(AUTOEXEC):   dm "continue";
+MPRINT(AUTOEXEC):   dm "out;clear;log;clear;";
+MPRINT(AUTOEXEC):   data _x_;
+MPRINT(AUTOEXEC):   set sashelp.vmacro;
+MPRINT(AUTOEXEC):   where scope = "GLOBAL" and name not in : ( "SYS" "DUPS" "DUPLS");
+MPRINT(AUTOEXEC):   run;
+
+NOTE: There were 3 observations read from the data set SASHELP.VMACRO.
+      WHERE (scope='GLOBAL') and name not in: ('DUPLS', 'DUPS', 'SYS');
+NOTE: The data set WORK._X_ has 3 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(AUTOEXEC):   data _null_;
+MPRINT(AUTOEXEC):   set _x_;
+MPRINT(AUTOEXEC):   call execute('%symdel ' || name || ';');
+MPRINT(AUTOEXEC):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+NOTE: There were 3 observations read from the data set WORK._X_.
+
+NOTE: CALL EXECUTE routine executed successfully, but no SAS statements were generated.
+MPRINT(AUTOEXEC):   proc datasets library=work memtype = data nolist kill;
+NOTE: Deleting WORK._X_ (memtype=DATA).
+MPRINT(AUTOEXEC):   quit;
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(AUTOEXEC):   proc datasets library=work memtype = cat nolist;
+MPRINT(AUTOEXEC):   delete formats;
+MPRINT(AUTOEXEC):   quit;
+
+NOTE: The file WORK.FORMATS (memtype=CATALOG) was not found, but appears on a DELETE statement.
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(AUTOEXEC):   libname _all_;
+MPRINT(AUTOEXEC):   filename _all_;
+NOTE: Fileref SETUP1 has been deassigned.
+4                                          The SAS System                  17:38 Friday, May 5, 2023
+
+NOTE: Fileref SETUP2 has been deassigned.
+NOTE: Fileref SETUP3 has been deassigned.
+NOTE: Fileref SETUP4 has been deassigned.
+NOTE: Fileref SETUP5 has been deassigned.
+MPRINT(AUTOEXEC):   title;
+MPRINT(AUTOEXEC):   footnote;
+MPRINT(AUTOEXEC):   ods output close;
+MPRINT(AUTOEXEC):   ods listing;
+MPRINT(AUTOEXEC):   ************************************;
+MPRINT(AUTOEXEC):   *** STANDARD MACRO VARIABLES ***;
+MPRINT(AUTOEXEC):   ************************************;
+MPRINT(AUTOEXEC):   data _null_;
+MPRINT(AUTOEXEC):   call symput("RUNDTM",trim(left(put(datetime(),datetime.))));
+MPRINT(AUTOEXEC):   call symput('date', put(today(), date9.));
+MPRINT(AUTOEXEC):   call symput('time', put(time(), hhmm.));
+MPRINT(AUTOEXEC):   run;
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable RUNUSR resolves to SSHABADI
+SYMBOLGEN:  Macro variable RUNDTM resolves to 05MAY23:17:38:07
+Run by: SSHABADI 05MAY23:17:38:07
+SYMBOLGEN:  Macro variable VOLUME resolves to C:\SASData\JZP-150
+SYMBOLGEN:  Macro variable PROTOCOL resolves to 150-201
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+MPRINT(AUTOEXEC):   *%let hocpath = &path.\adhoc;
+SYMBOLGEN:  Macro variable SYSHOSTNAME resolves to JazzProd
+SYMBOLGEN:  Macro variable COMPANY resolves to Jazz Pharmaceutical
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have been 
+            unquoted for printing.
+SYMBOLGEN:  Macro variable PROTOCOL resolves to 150-201
+MPRINT(AUTOEXEC):   ************************************;
+MPRINT(AUTOEXEC):   *** Include Utility Macro ***;
+MPRINT(AUTOEXEC):   ************************************;
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+MPRINT(AUTOEXEC):   ************************************************************************* * 
+STUDY DRUG : * PROTOCOL NO : * PROGRAMMER : Indraneel * DATE CREATED : 03FEB2022 * PROGRAM NAME : 
+get_attr * DESCRIPTION : To get the attributes on the validation side programs * DATA SETS USED: 
+*************************************************************************** PROGRAM MODIFICATION 
+LOG *************************************************************************** Programmer: Date: 
+Description: ***************************************************************************;
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+5                                          The SAS System                  17:38 Friday, May 5, 2023
+
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+MPRINT(AUTOEXEC):   ***********************************;
+MPRINT(AUTOEXEC):   *** LIBRARY REFERENCES ***;
+MPRINT(AUTOEXEC):   ***********************************;
+MPRINT(AUTOEXEC):   *libname raw1 "&rawpath.\" access=readonly;
+SYMBOLGEN:  Macro variable RAWPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata
+MPRINT(AUTOEXEC):   libname raw "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata\";
+NOTE: Libref RAW was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata
+MPRINT(AUTOEXEC):   *parent studies records for group A subject are from raw data*;
+SYMBOLGEN:  Macro variable RAWPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata
+MPRINT(AUTOEXEC):   libname rawvend "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata\vendor" 
+access=readonly;
+NOTE: Library RAWVEND does not exist.
+MPRINT(AUTOEXEC):   *libname sdtm1 "&anapath\SDTM" access=readonly;
+SYMBOLGEN:  Macro variable ANAPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata
+MPRINT(AUTOEXEC):   libname sdtm "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\SDTM";
+NOTE: Libref SDTM was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\SDTM
+SYMBOLGEN:  Macro variable VALPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate
+MPRINT(AUTOEXEC):   libname sdtmout 
+"C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\SDTM\QCdata";
+NOTE: Libref SDTMOUT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\SDTM\QCdata
+SYMBOLGEN:  Macro variable ANAPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata
+MPRINT(AUTOEXEC):   libname cdf "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\cdf";
+NOTE: Libref CDF was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\cdf
+MPRINT(AUTOEXEC):   *libname adam1 "&anapath\\ADaM\" access=readonly;
+SYMBOLGEN:  Macro variable ANAPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata
+MPRINT(AUTOEXEC):   libname adam "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\ADaM\";
+NOTE: Libref ADAM was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\ADaM
+SYMBOLGEN:  Macro variable VALPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate
+MPRINT(AUTOEXEC):   libname adamout 
+"C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\ADaM\QCdata";
+NOTE: Libref ADAMOUT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\ADaM\QCdata
+MPRINT(AUTOEXEC):   *libname adhoc "&hocpath";
+MPRINT(AUTOEXEC):   *TLF output folder;
+SYMBOLGEN:  Macro variable VALPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate
+SYMBOLGEN:  Macro variable TLFOUT resolves to 
+            C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\tfls\results
+MPRINT(AUTOEXEC):   libname tlfout 
+"C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\tfls\results";
+NOTE: Library TLFOUT does not exist.
+SYMBOLGEN:  Macro variable RSLTPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results
+MPRINT(AUTOEXEC):   libname tlfdata "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\tlfdata";
+6                                          The SAS System                  17:38 Friday, May 5, 2023
+
+NOTE: Libref TLFDATA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\tlfdata
+MPRINT(AUTOEXEC):   libname tlfdata2 'C:\SASData\JZP-150\201\stat\csr_dryrun1\anadata';
+NOTE: Library TLFDATA2 does not exist.
+MPRINT(AUTOEXEC):   *Patient Profiles;
+MPRINT(AUTOEXEC):   libname ppdata 'C:\SASData\JZP-150\201\stat\csr_dryrun1\Patient Profiles\data';
+NOTE: Library PPDATA does not exist.
+MPRINT(AUTOEXEC):   *Patient Profiles_;
+MPRINT(AUTOEXEC):   libname pfdata 'C:\SASData\JZP-150\201\stat\csr_dryrun1\Patient 
+Profiles\data\profile';
+NOTE: Library PFDATA does not exist.
+SYMBOLGEN:  Macro variable PGMPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm
+MPRINT(AUTOEXEC):   ******************************;
+MPRINT(AUTOEXEC):   *** DEFINE GLOBAL SETTINGS ***;
+MPRINT(AUTOEXEC):   ******************************;
+MPRINT(AUTOEXEC):   options nodate center pageno=1 ls=152 ps=47 nofmterr mrecall msglevel=I ;
+MLOGIC(AUTOEXEC):  Ending execution.
+
+NOTE: AUTOEXEC processing completed.
+
+1          *************************************************************************
+2          * STUDY DRUG    :   JZP150
+3          * PROTOCOL NO   :   JZP150-201
+4          * PROGRAMMER    :   Arun Kumar
+5          * DATE CREATED  :   06SEPT2022
+6          * PROGRAM NAME  :   adae.sas
+7          * DESCRIPTION   :   Produce ADAE ADaM dataset
+8          * DATA SETS USED: 	sdtm.<ae,suppae>, adam.adsl
+9          ***************************************************************************
+10         PROGRAM MODIFICATION LOG
+11         ***************************************************************************
+12         Programmer: 		
+13         Date:       	
+14         Description:
+15         ****************************************************************************;
+16         dm "clear log"; dm "clear output";
+17         
+18         options mprint mlogic symbolgen;
+19         
+20         %setup;
+
+NOTE: There were 13 observations read from the data set SASHELP.VMACRO.
+      WHERE (scope='GLOBAL') and name not in: ('DUPLS', 'DUPS', 'SYS');
+NOTE: The data set WORK._X_ has 13 observations and 4 variables.
+7                                                                    The SAS System
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+NOTE: There were 13 observations read from the data set WORK._X_.
+
+NOTE: CALL EXECUTE routine executed successfully, but no SAS statements were generated.
+NOTE: Deleting WORK._X_ (memtype=DATA).
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: The file WORK.FORMATS (memtype=CATALOG) was not found, but appears on a DELETE statement.
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Libref RAW has been deassigned.
+NOTE: Libref PFDATA has been deassigned.
+NOTE: Libref PPDATA has been deassigned.
+NOTE: Libref TLFDATA2 has been deassigned.
+NOTE: Libref TLFDATA has been deassigned.
+NOTE: Libref TLFOUT has been deassigned.
+NOTE: Libref ADAMOUT has been deassigned.
+NOTE: Libref ADAM has been deassigned.
+NOTE: Libref CDF has been deassigned.
+NOTE: Libref SDTMOUT has been deassigned.
+NOTE: Libref SDTM has been deassigned.
+NOTE: Libref RAWVEND has been deassigned.
+NOTE: Fileref SASAUTOS has been deassigned.
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+8                                                                    The SAS System
+
+
+SYMBOLGEN:  Macro variable RUNUSR resolves to SSHABADI
+SYMBOLGEN:  Macro variable RUNDTM resolves to 05MAY23:17:38:07
+Run by: SSHABADI 05MAY23:17:38:07
+SYMBOLGEN:  Macro variable VOLUME resolves to C:\SASData\JZP-150
+SYMBOLGEN:  Macro variable PROTOCOL resolves to 150-201
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable PATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+SYMBOLGEN:  Macro variable SYSHOSTNAME resolves to JazzProd
+SYMBOLGEN:  Macro variable COMPANY resolves to Jazz Pharmaceutical
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have been unquoted for printing.
+SYMBOLGEN:  Macro variable PROTOCOL resolves to 150-201
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+MLOGIC:  Beginning compilation of SUPPQUAL using the autocall file C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities\setup.sas.
+MLOGIC:  Ending compilation of SUPPQUAL.
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+SYMBOLGEN:  Macro variable MACPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities
+SYMBOLGEN:  Macro variable RAWPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata
+NOTE: Libref RAW was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata
+SYMBOLGEN:  Macro variable RAWPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\rawdata
+NOTE: Library RAWVEND does not exist.
+SYMBOLGEN:  Macro variable ANAPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata
+NOTE: Libref SDTM was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\SDTM
+SYMBOLGEN:  Macro variable VALPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate
+NOTE: Libref SDTMOUT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\SDTM\QCdata
+SYMBOLGEN:  Macro variable ANAPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata
+NOTE: Libref CDF was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\cdf
+SYMBOLGEN:  Macro variable ANAPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata
+NOTE: Libref ADAM was successfully assigned as follows: 
+9                                                                    The SAS System
+
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\anadata\ADaM
+SYMBOLGEN:  Macro variable VALPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate
+NOTE: Libref ADAMOUT was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\ADaM\QCdata
+SYMBOLGEN:  Macro variable VALPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate
+SYMBOLGEN:  Macro variable TLFOUT resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\validate\tfls\results
+NOTE: Library TLFOUT does not exist.
+SYMBOLGEN:  Macro variable RSLTPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results
+NOTE: Libref TLFDATA was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\results\tlfdata
+NOTE: Library TLFDATA2 does not exist.
+NOTE: Library PPDATA does not exist.
+NOTE: Library PFDATA does not exist.
+SYMBOLGEN:  Macro variable PGMPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\pgm
+MLOGIC:  Beginning compilation of TITLEANDFOOTER using the autocall file C:\SASData\JZP-150\150-201\stat\csr_dryrun1\utilities\setup.sas.
+MLOGIC:  Ending compilation of TITLEANDFOOTER.
+NOTE: Autocall member, SETUP, has not been compiled by the macro processor. It might contain a macro syntax error or not define a macro with the same 
+      name as the member.  To autocall this member again, set OPTION MRECALL.
+757        
+758        
+759        proc format;
+760        	
+760      !  value mdayf
+761        		1=31
+762        		3=31
+763        		4=30
+764        		5=31
+765        		6=30
+766        		7=31
+767        		8=31
+768        		9=30
+769        		10=31
+770        		11=30
+771        		12=31;
+NOTE: Format MDAYF has been output.
+772        run;
+
+NOTE: PROCEDURE FORMAT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+10                                                                   The SAS System
+
+773        
+774        
+775        %macro parentsupp(lib=sdtm, ds=, qnams=);
+776        	
+777            %if &qnams eq %then %do;
+778                proc sql noprint;
+779                    select distinct(qnam) into: qnam separated by ' '
+780                    from &lib..supp&ds;
+781        		quit;
+782        	%end;
+783        
+784        	proc sort data=&lib..supp&ds.  out=_temp_supp&ds.;
+785        	  by usubjid idvarval;
+786        	run;
+787        
+788            proc sort data = &lib..&ds. out=_temp_&ds.;
+789        	  by usubjid %if &ds ne dm %then %do; &ds.seq %end;;
+790        	run;
+791        
+792        	proc transpose data=_temp_supp&ds. out=_t_supp&ds.;
+793        	  by usubjid idvarval;
+794        	  id qnam;
+795              idl qlabel;
+796        	  var qval;
+797        	run;
+798        
+799        	data _t_supp&ds. (drop= _: idvarval );
+800        	  set _t_supp&ds.;
+801        	  %if &ds ne dm %then %do; &ds.seq=input(compress(idvarval),8.); %end;
+802        	run;
+803        
+804        	proc sort data=_t_supp&ds.;
+805        	  by usubjid %if &ds ne dm %then %do; &ds.seq %end;;
+806        	run;
+807        	
+808        	data sdtm&ds.;
+809        	  merge _temp_&ds.(in=a)
+810        	        _t_supp&ds.;
+811        	  by usubjid %if &ds ne dm %then %do; &ds.seq %end;;
+812        	  if a;
+813        	run;
+814        
+815           	proc datasets nolist;
+816           	   delete _temp_ _t:;
+817            run;
+11                                                                   The SAS System
+
+818        	quit;
+819        
+820        %mend parentsupp;
+821        
+822        ***sdtm.ae;
+823        %parentsupp(lib=sdtm, ds=ae, qnams=);
+MLOGIC(PARENTSUPP):  Beginning execution.
+MLOGIC(PARENTSUPP):  Parameter LIB has value sdtm
+MLOGIC(PARENTSUPP):  Parameter DS has value ae
+MLOGIC(PARENTSUPP):  Parameter QNAMS has value 
+SYMBOLGEN:  Macro variable QNAMS resolves to 
+MLOGIC(PARENTSUPP):  %IF condition &qnams eq is TRUE
+MPRINT(PARENTSUPP):   proc sql noprint;
+SYMBOLGEN:  Macro variable LIB resolves to sdtm
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   select distinct(qnam) into: qnam separated by ' ' from sdtm.suppae;
+MPRINT(PARENTSUPP):   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+SYMBOLGEN:  Macro variable LIB resolves to sdtm
+SYMBOLGEN:  Macro variable DS resolves to ae
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   proc sort data=sdtm.suppae out=_temp_suppae;
+MPRINT(PARENTSUPP):   by usubjid idvarval;
+MPRINT(PARENTSUPP):   run;
+
+NOTE: There were 101 observations read from the data set SDTM.SUPPAE.
+NOTE: SAS sort was used.
+NOTE: The data set WORK._TEMP_SUPPAE has 101 observations and 10 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable LIB resolves to sdtm
+SYMBOLGEN:  Macro variable DS resolves to ae
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   proc sort data = sdtm.ae out=_temp_ae;
+SYMBOLGEN:  Macro variable DS resolves to ae
+MLOGIC(PARENTSUPP):  %IF condition &ds ne dm is TRUE
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   by usubjid aeseq;
+12                                                                   The SAS System
+
+MPRINT(PARENTSUPP):   run;
+
+NOTE: There were 101 observations read from the data set SDTM.AE.
+NOTE: SAS sort was used.
+NOTE: The data set WORK._TEMP_AE has 101 observations and 36 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable DS resolves to ae
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   proc transpose data=_temp_suppae out=_t_suppae;
+MPRINT(PARENTSUPP):   by usubjid idvarval;
+MPRINT(PARENTSUPP):   id qnam;
+MPRINT(PARENTSUPP):   idl qlabel;
+MPRINT(PARENTSUPP):   var qval;
+MPRINT(PARENTSUPP):   run;
+
+NOTE: There were 101 observations read from the data set WORK._TEMP_SUPPAE.
+NOTE: The data set WORK._T_SUPPAE has 100 observations and 7 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   data _t_suppae (drop= _: idvarval );
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   set _t_suppae;
+SYMBOLGEN:  Macro variable DS resolves to ae
+MLOGIC(PARENTSUPP):  %IF condition &ds ne dm is TRUE
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   aeseq=input(compress(idvarval),8.);
+MPRINT(PARENTSUPP):   run;
+
+NOTE: There were 100 observations read from the data set WORK._T_SUPPAE.
+NOTE: The data set WORK._T_SUPPAE has 100 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   proc sort data=_t_suppae;
+13                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable DS resolves to ae
+MLOGIC(PARENTSUPP):  %IF condition &ds ne dm is TRUE
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   by usubjid aeseq;
+MPRINT(PARENTSUPP):   run;
+
+NOTE: There were 100 observations read from the data set WORK._T_SUPPAE.
+NOTE: SAS sort was used.
+NOTE: The data set WORK._T_SUPPAE has 100 observations and 5 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   data sdtmae;
+SYMBOLGEN:  Macro variable DS resolves to ae
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   merge _temp_ae(in=a) _t_suppae;
+SYMBOLGEN:  Macro variable DS resolves to ae
+MLOGIC(PARENTSUPP):  %IF condition &ds ne dm is TRUE
+SYMBOLGEN:  Macro variable DS resolves to ae
+MPRINT(PARENTSUPP):   by usubjid aeseq;
+MPRINT(PARENTSUPP):   if a;
+MPRINT(PARENTSUPP):   run;
+
+NOTE: There were 101 observations read from the data set WORK._TEMP_AE.
+NOTE: There were 100 observations read from the data set WORK._T_SUPPAE.
+NOTE: The data set WORK.SDTMAE has 101 observations and 39 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(PARENTSUPP):   proc datasets nolist;
+MPRINT(PARENTSUPP):   delete _temp_ _t:;
+MPRINT(PARENTSUPP):   run;
+
+NOTE: The file WORK._TEMP_ (memtype=DATA) was not found, but appears on a DELETE statement.
+NOTE: Deleting WORK._TEMP_AE (memtype=DATA).
+NOTE: Deleting WORK._TEMP_SUPPAE (memtype=DATA).
+NOTE: Deleting WORK._T_SUPPAE (memtype=DATA).
+MPRINT(PARENTSUPP):   quit;
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+14                                                                   The SAS System
+
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MLOGIC(PARENTSUPP):  Ending execution.
+824        
+825        
+826        data sdtmae;
+827        	set sdtmae;
+828        	/***to test imputation
+829        	if aestdtc='2019-12-10' then aestdtc='2019-12';
+830        	if aeendtc='2020-01-27' then aeendtc='2020';remove later***/
+831        	format _all_;
+832        	informat _all_;
+833        run;
+
+NOTE: There were 101 observations read from the data set WORK.SDTMAE.
+NOTE: The data set WORK.SDTMAE has 101 observations and 39 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+834        proc sort data=sdtmae;
+835        	by studyid usubjid aeseq;
+836        run;
+
+NOTE: There were 101 observations read from the data set WORK.SDTMAE.
+NOTE: SAS sort was used.
+NOTE: The data set WORK.SDTMAE has 101 observations and 39 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+837        
+838        
+839        ***adsl;
+840        proc sort data=adam.adsl out=adsl;
+841        	by studyid usubjid;
+842        run;
+
+NOTE: There were 359 observations read from the data set ADAM.ADSL.
+NOTE: SAS sort was used.
+NOTE: The data set WORK.ADSL has 359 observations and 98 variables.
+15                                                                   The SAS System
+
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+843        
+844        
+845        
+846        ***to check comp disc from ds;
+847        proc sort data=sdtm.ds out=stncompdt(keep=studyid usubjid dsdecod dsscat dsstdtc rename=(dsstdtc=compdisc));
+848        	where upcase(dscat)='DISPOSITION EVENT';
+849        	by studyid usubjid dsstdtc;
+850        run;
+
+NOTE: There were 145 observations read from the data set SDTM.DS.
+      WHERE UPCASE(dscat)='DISPOSITION EVENT';
+NOTE: SAS sort was used.
+NOTE: The data set WORK.STNCOMPDT has 145 observations and 5 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+851        data stncompdt;
+852        	set stncompdt;
+853        	by studyid usubjid compdisc;
+854        	if first.usubjid;
+855        	format _all_;
+856        	informat _all_;
+857        run;
+
+NOTE: There were 145 observations read from the data set WORK.STNCOMPDT.
+NOTE: The data set WORK.STNCOMPDT has 76 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+858        
+859        
+860        
+861        ***sdtm.dm;
+862        data sdtmdm;
+863        	set sdtm.dm;
+864        	format _all_;
+16                                                                   The SAS System
+
+865        	informat _all_;
+866        run;
+
+NOTE: There were 359 observations read from the data set SDTM.DM.
+NOTE: The data set WORK.SDTMDM has 359 observations and 27 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+867        proc sort data=sdtmdm;
+868        	by studyid usubjid;
+869        run;
+
+NOTE: There were 359 observations read from the data set WORK.SDTMDM.
+NOTE: SAS sort was used.
+NOTE: The data set WORK.SDTMDM has 359 observations and 27 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+870        
+871        
+872        
+873        
+874        
+875        
+876        
+877        ***to do imputation for partial dates;
+878        data adae1;
+879        
+880        	merge adsl(in=b) sdtmae(in=a) stncompdt ;
+881            by studyid usubjid;
+882        	if a and b;
+883        
+884        
+885        
+886        	length trtp trta $40;
+887        	trtp=trt01p;
+888        	if trt01pn ne . then trtpn=trt01pn;
+889        	trta=trt01a;
+890        	if trt01an ne . then trtan=trt01an;
+891        
+892        	if rficdtc ne '' then rficdt=input(substr(rficdtc,1,10),is8601da.);
+17                                                                   The SAS System
+
+893        
+894        	if rfstdtc ne '' then rfstdtc_dtc=substr(rfstdtc,1,10);
+895        	if rfxendtc ne '' then rfxendtc_dtc=substr(rfxendtc,1,10);
+896        
+897        	if aestdtc ne '' then aestdtc_dtc=substr(aestdtc,1,10);
+898        	if aeendtc ne '' then aeendtc_dtc=substr(aeendtc,1,10);
+899        
+900        	if rfstdtc ne '' then do;
+901        	    rfxstdt=input(substr(rfstdtc,1,10),is8601da.);
+902        		dosy=input(substr(rfstdtc,1,4),best.);
+903        		***dosm=input(substr(rfstdtc,6,2),best.);
+904        		dosm=input(scan(rfstdtc, 2, '-'), best8.);
+905        	end;
+906        	if rfxendtc ne '' then do;
+907        	    rfxendt=input(substr(rfxendtc,1,10),is8601da.);
+908        		rfxendt30c=put((rfxendt+30),is8601da.);
+909        		doey=input(substr(rfxendtc,1,4),best.);
+910        		***doem=input(substr(rfxendtc,6,2),best.);
+911        		doem=input(scan(rfxendtc, 2, '-'), best8.);
+912        		doey30=input(substr(rfxendt30c,1,4),best.);
+913        		***doem30=input(substr(rfxendt30c,6,2),best.);
+914        		doem30=input(scan(rfxendt30c, 2, '-'), best8.);
+915        	end;
+916        	if aestdtc ne '' then do;
+917        		aesy=input(substr(aestdtc,1,4),best.);
+918        		***aesm=input(substr(aestdtc,6,2),best.);
+919        		aesm=input(scan(aestdtc, 2, '-'), best8.);
+920        	end;
+921        	if aeendtc ne '' then do;
+922        		aeey=input(substr(aeendtc,1,4),best.);
+923        		***aeem=input(substr(aeendtc,6,2),best.);
+924        		aeem=input(scan(aeendtc, 2, '-'), best8.);
+925        	end;
+926        run;
+
+NOTE: There were 359 observations read from the data set WORK.ADSL.
+NOTE: There were 101 observations read from the data set WORK.SDTMAE.
+NOTE: There were 76 observations read from the data set WORK.STNCOMPDT.
+NOTE: The data set WORK.ADAE1 has 101 observations and 159 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+927        
+18                                                                   The SAS System
+
+928        
+929        
+930        
+931        
+932        ***derive ASTDT and ASTDTF;
+933        data adae2;
+934        	length aestart1 aestart2 $20;
+935        	set adae1;
+936        	if length(aestdtc_dtc)=10 then astdt=input(aestdtc_dtc, ??is8601da.);
+937        	***if length(aestdtc)>=10 then astdt=input(substr(aestdtc,1,10),??is8601da.);
+938        
+939        	***If Month and Day are missing;
+940        	else do;
+941        		if length(aestdtc_dtc)=4 then do;
+942        			aestart1=strip(aestdtc_dtc)||'-'||'01-01';
+943        			if aesy = dosy then aestart2=rfstdtc_dtc;
+944        			ASTDTF='M';
+945        		end;
+946        
+947        		***If only Day is missing;
+948        		else if length(aestdtc_dtc)=7 then do;
+949        			aestart1=strip(aestdtc_dtc)||'-'||'01';
+950        			if aesy = dosy and aesm =dosm then aestart2=rfstdtc_dtc;
+951        			ASTDTF='D';
+952        		end;
+953        	end;
+954        
+955        	aestart1_ = input(aestart1, ??is8601da.);
+956        	aestart2_ = input(aestart2, ??is8601da.);
+957        
+958        	format aestart1_ aestart2_ e8601da10.;
+959        	drop aestart1 aestart2 ;
+960        run;
+
+NOTE: There were 101 observations read from the data set WORK.ADAE1.
+NOTE: The data set WORK.ADAE2 has 101 observations and 163 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+961        
+962        data adae3;
+963        	length astdtc $10  AperiodC APERIODW $200.;
+964        	set adae2;
+19                                                                   The SAS System
+
+965        	if astdtf ne '' then do;
+966        		if aestart1_ ne . and aestart2_ ne . then astdt = max(aestart1_, aestart2_);
+967        		else astdt =aestart1_;
+968        	end;
+969        
+970        	if astdt eq . then ASTDTC ='';
+971        	else ASTDTC = put(astdt,??is8601da.);
+972        
+973        	***rfxstdt=input(substr(rfstdtc,1,10),is8601da.);
+974        	if (astdt ne . ) and (rfxstdt ne . ) then ASTDY = astdt - rfxstdt +(astdt>=rfxstdt);
+975        
+976        
+977        	/*
+978        The time of first onset of TEAE is calculated as follows:
+979        	start date of TEAE – Date of first dose of study intervention + 1 day.
+980          The Intervention Period is assigned if the time of first onset of TEAE is between Day 1 and 84.
+981        The Safety Follow-Up period is assigned if the time of first onset of TEAE is greater than Day 84.
+982        */
+983        
+984        
+985        	if (astdt ne . ) and (rfxstdt ne . ) then APSTDY = astdt - rfxstdt +1;
+986        
+987        	if 1<=APSTDY<=84  then do;
+988        	   Aperiod=1;
+989        	   APeriodc="Intervention Period";
+990        	end;
+991        	else if APSTDY>84  then do;
+992        	    Aperiod=2;
+993        	    APeriodc="Safety Follow-Up period";
+994        	end;
+995        
+996        
+997        	/*
+998        	The time of first onset of TEAE is calculated as follows: start date of TEAE – Date of first dose of study intervention + 1 day.
+999        	The time of first onset categories are assigned as:
+1000       	Week 1 (Day 1 to 7), Weeks 2 to 4 (day 8 to 28), Weeks 5 to 8 (day 29 to 56), Weeks 9 to 12 (Day 57 to 84) and After Last Dose.
+1001       	
+1002       */
+1003       
+1004       	  if 1<=APSTDY<=7  then do;
+1005       	  APERIODN=1;
+1006       	   APERIODW="Week 1";
+1007       	end;
+1008       	else if 8<=APSTDY<=28  then do;
+1009       	   APERIODN=2;
+20                                                                   The SAS System
+
+1010       	   APeriodw="Weeks 2 to 4";
+1011       	end;
+1012       	else if 29<=APSTDY<=56  then do;
+1013       	   APERIODN=3;
+1014       	   APeriodw="Weeks 5 to 8";
+1015       	end;
+1016       	else if 57<=APSTDY<=84  then do;
+1017       	   APERIODN=4;
+1018       	   APeriodw="Weeks 9 to 12";
+1019       	end;
+1020       	else if APSTDY>84  then do;
+1021       	   APERIODN=5;
+1022       	   APeriodw="After Last Dose";
+1023       	end;
+1024       
+1025       	format astdt e8601da10. ;
+1026       	drop aestart1_ aestart2_ ;
+1027       run;
+
+NOTE: There were 101 observations read from the data set WORK.ADAE2.
+NOTE: The data set WORK.ADAE3 has 101 observations and 168 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+1028       
+1029       
+1030       ***derive AENDT and AENDTF;
+1031       data adae4;
+1032       	set adae3;
+1033       	length  aestop1 /*aestop2*/ $20;
+1034       	if length(aeendtc_dtc)=10 then aendt=input(aeendtc_dtc, ??is8601da.);
+1035       	***if length(aeendtc)>=10 then aendt=input(substr(aeendtc,1,10),??is8601da.);
+1036       
+1037       	***If Month and Day are missing;
+1038       	else do;
+1039       		if length(aeendtc_dtc)=4 then do;
+1040       			aestop1=strip(aeendtc_dtc)||'-'||'12-31';
+1041       			*if aeey = doey then aestop2=put((trtedt +30),yymmdd10.);
+1042       			AENDTF='M';
+1043       		end;
+1044       
+1045       		***If only Day is missing;
+1046       		else if length(aeendtc_dtc)=7 then do;
+21                                                                   The SAS System
+
+1047       			aestop1=strip(aeendtc_dtc)||'-'||put(aeem,mdayf.);
+1048       			if aeem=2 then do;
+1049       				if mod(aeey,4)=0 then aestop1=strip(aeendtc_dtc)||'-29';
+1050       				if mod(aeey,4) ^=0 then aestop1=strip(aeendtc_dtc)||'-28';
+1051       			end;
+1052       
+1053       			/*** use trtedt +30 only when event month = rfxstdtc_dtc;??
+1054       			if aeey = doey and aeem =doem and aeem ne 2 then aestop2=put((rfxendt +30),yymmdd10.);
+1055       			or do the below condition regardless of the condition where event month = rfxstdtc_dtc month;?
+1056       			** aestop2=put((rfxendt +30),yymmdd10.);???*/
+1057       			AENDTF='D';
+1058       		end;
+1059       	end;
+1060       
+1061       	aestop1_ = input(aestop1, ??is8601da.);
+1062       	/*aestop2_ = input(aestop2,yymmdd10.);*/
+1063       
+1064       	format aestop1_ /*aestop2_*/ e8601da10.;
+1065       	drop aestop1 /*aestop2*/;
+1066       run;
+
+NOTE: There were 101 observations read from the data set WORK.ADAE3.
+NOTE: The data set WORK.ADAE4 has 101 observations and 171 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+1067       
+1068       data adae5;
+1069       	length aendtc $10;
+1070       	set adae4;
+1071       	if aendtf ne '' then do;
+1072       		/*if aestop1_ ne . and aestop2_ ne . then
+1073       		aendt = min(aestop1_, aestop2_);
+1074       		else*/ aendt =aestop1_;
+1075       	end;
+1076       
+1077       	if aendt eq . then AENDTC ='';
+1078       	else AENDTC = put(aendt, ??is8601da.);
+1079       
+1080       	***;
+1081       	if (aendt ne . ) and (rfxstdt ne . ) then AENDY = aendt - rfxstdt +(aendt>=rfxstdt);
+1082       	
+1083       	format aendt  e8601da10. ;
+22                                                                   The SAS System
+
+1084       	
+1085       	drop aestop1_ /*aestop2_*/ ;
+1086       run;
+
+NOTE: There were 101 observations read from the data set WORK.ADAE4.
+NOTE: The data set WORK.ADAE5 has 101 observations and 172 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+1087       
+1088       
+1089       
+1090       data adae6;
+1091       	set adae5;
+1092       	***trtemfl;
+1093       ********** TRTEMFL  **********;
+1094         if . < trtsdt <= astdt <= (trtedt+14) then TRTEMFL="Y";
+1095       
+1096       length ASEV $20.;
+1097       if aetoxgr ne "" then do;
+1098       atoxgrn=input(aetoxgr,best.);
+1099        atoxgr='GRADE '||strip(AETOXGR);
+1100       
+1101             if atoxgrn=1 then ASEV="Mild";
+1102        else if atoxgrn=2 then ASEV="Moderate";
+1103        else if atoxgrn=3 then ASEV="Severe";
+1104        else if atoxgrn=4 then ASEV="Life-Threatening";
+1105        else if atoxgrn=4 then ASEV="Fatal";
+1106        ASEVN=atoxgrn;
+1107        end;
+1108       
+1109       
+1110       
+1111       	length arel $16;
+1112       	arel=upcase(aerel);
+1113       
+1114       	if n(astdt, aendt)=2 then do;
+1115       		adurn=aendt-astdt;
+1116         		if adurn >=0 then adurn=adurn+1;
+1117       		aduru='Days';
+1118         	end;
+1119       
+1120       	if atoxgrn in (3 4) then teg34fl='Y';
+23                                                                   The SAS System
+
+1121       
+1122       	length aesityp $200;
+1123       	if upcase(AEDECOD) in ("SOMNOLENCE","COMA","LIMB ATAXIA", "GAIT ATAXIA","POSTURAL ATAXIA",
+1124                                  "DYSARTHRIA","NYSTAGMUS","HEADACHE","DIZZINESS","GAIT DISTURBANCE",
+1125                                  "SLURRED SPEECH","BLURRED VISION","AMNESIA") then AESI='Y';
+1126       	AESITYP='';
+1127       	
+1128           if AESI='Y' then AESITYP=strip(AEDECOD);
+1129       
+1130       	if upcase(aeacn)='DRUG WITHDRAWN'   then aediscon='Y';
+1131       	if upcase(aeacn)='DRUG INTERRUPTED' then aedosint='Y';
+1132       
+1133       
+1134       	label
+1135       	   aediscon="Discontinued from Treatment"
+1136              aedosint="Drug interrupted from Treatment"
+1137       	   AENDY="Analysis End Relative Day"
+1138       	   /*AEACNOSP="Action Other Specify"*/
+1139              ACTARM="Description of Actual Arm"
+1140       	   ACTARMCD="Description of Actual Arm Code"
+1141       	   AESI="Adverse Event of Special Intrest"
+1142       	   AESITYP="Adverse Event of Special Intrest Type"
+1143       	   AESER ="Serious Event"
+1144       	   ;
+1145       run;
+
+NOTE: Missing values were generated as a result of performing an operation on missing values.
+      Each place is given by: (Number of times) at (Line):(Column).
+      5 at 1094:36   
+NOTE: There were 101 observations read from the data set WORK.ADAE5.
+NOTE: The data set WORK.ADAE6 has 101 observations and 185 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+1146       
+1147       
+1148       %*let corevars=STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE SUBJIDL AGESEX AGERASEX
+1148     ! ETHNIC ETHNICN WEIGHTBL
+1149                     HEIGHTBL BMIBL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC RFENDTC ACTARM ACTARMCD ARM ARMCD TRT01P TRT01PN TRT01A TRT01AN TRTSDT
+1150                     TRTEDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL FASFL COMPSFL MFASL PTSDHFL ;
+1151       
+1152       
+1153       
+24                                                                   The SAS System
+
+1154       %*let adaevars=AESEQ TRTP TRTPN TRTA TRTAN AETERM AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD
+1155       			AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD AESTDTC ASTDT ASTDTF AEENDTC AENDT ASTDY AENDY
+1156       			AEENRF AESER AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT
+1157       			AEACN  AEACNOTH  AEOUT AETOXGR ATOXGR ATOXGRN ASEVN ASEV TRTEMFL AESI AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW;
+1158       
+1159       
+1160       data adae7(label="Adverse Events Analysis Dataset");
+1161       	*retain &corevars &adaevars;
+1162       	set adae6;
+1163       	*keep &corevars &adaevars;
+1164        	if asev='' then do; asev='Severe'; ASEVN=3; end;
+1165       
+1166       run;
+
+NOTE: There were 101 observations read from the data set WORK.ADAE6.
+NOTE: The data set WORK.ADAE7 has 101 observations and 185 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+1167       
+1168       
+1169       %global ADAM_SPEC_FILE;
+1170       %let ADAM_SPEC_FILE=%str(ADaM_DEV_SPECS_JZP_150_201.xlsx);
+1171       %jm_read_devspec(jm_domain=ADAE,jm_indsn=adae7,jm_inlib=work, jm_outlib=ADAM );
+MLOGIC:  Beginning compilation of JM_READ_DEVSPEC using the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_read_devspec.sas.
+MLOGIC:  Ending compilation of JM_READ_DEVSPEC.
+MLOGIC(JM_READ_DEVSPEC):  Beginning execution.
+MLOGIC(JM_READ_DEVSPEC):  This macro was compiled from the autocall file C:\SASData\stat\Global Tools\Production\TOOLS\jm_read_devspec.sas
+MLOGIC(JM_READ_DEVSPEC):  Parameter JM_DOMAIN has value ADAE
+MLOGIC(JM_READ_DEVSPEC):  Parameter JM_INDSN has value adae7
+MLOGIC(JM_READ_DEVSPEC):  Parameter JM_INLIB has value work
+MLOGIC(JM_READ_DEVSPEC):  Parameter JM_OUTLIB has value ADAM
+MLOGIC(JM_READ_DEVSPEC):  %GLOBAL  ALLLIST NALLVAR MAINLIST NMAINVAR SUPPLIST NSUPPVAR SUPPLABEL SUPPORIGIN TOTADAMVAR SPECTYPE NSUPPOBS
+MPRINT(JM_READ_DEVSPEC):   *** Document in log what parameter value specified ***;
+MLOGIC(JM_READ_DEVSPEC):  %LET (variable name is _ERR)
+MPRINT(JM_READ_DEVSPEC):   data _null_;
+MPRINT(JM_READ_DEVSPEC):   put ' ';
+MPRINT(JM_READ_DEVSPEC):   put "******************* Parameter Values *******************";
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   PUT "ALERT:I: JM_DOMAIN PROCESSED - ADAE";
+SYMBOLGEN:  Macro variable JM_OUTLIB resolves to ADAM
+MPRINT(JM_READ_DEVSPEC):   PUT "ALERT:I: JM_OUTLIB PROCESSED - ADAM";
+SYMBOLGEN:  Macro variable JM_INLIB resolves to work
+25                                                                   The SAS System
+
+MPRINT(JM_READ_DEVSPEC):   PUT "ALERT:I: JM_INLIB PROCESSED - work";
+SYMBOLGEN:  Macro variable JM_INDSN resolves to adae7
+MPRINT(JM_READ_DEVSPEC):   PUT "ALERT:I: JM_INDSN PROCESSED - adae7";
+MPRINT(JM_READ_DEVSPEC):   put "********************************************************";
+MPRINT(JM_READ_DEVSPEC):   put " ";
+MPRINT(JM_READ_DEVSPEC):   put 'NOTE: [jm_read_devspec] is currently running macro %jm_read_devspec version 1.0.';
+MPRINT(JM_READ_DEVSPEC):   put " ";
+MPRINT(JM_READ_DEVSPEC):   *** Verify if it is ADaM or SDTM domain ***;
+MPRINT(JM_READ_DEVSPEC):   JM_OUTLIB = strip(upcase(symget('JM_OUTLIB')));
+MPRINT(JM_READ_DEVSPEC):   if UPCASE(JM_OUTLIB)=:'SDTM' then spectype = 'SDTM';
+MPRINT(JM_READ_DEVSPEC):   else if UPCASE(JM_OUTLIB)=:'ADAM' then spectype = 'ADAM';
+MPRINT(JM_READ_DEVSPEC):   else do;
+MPRINT(JM_READ_DEVSPEC):   spectype='';
+MPRINT(JM_READ_DEVSPEC):   put " ";
+MPRINT(JM_READ_DEVSPEC):   put "ER" "ROR:[JM_OUTLIB] is invalid. This Parameter value must start with SDTM or ADAM.";
+MPRINT(JM_READ_DEVSPEC):   call symputx('_err','yes');
+MPRINT(JM_READ_DEVSPEC):   end;
+MPRINT(JM_READ_DEVSPEC):   call symputx('spectype',strip(spectype));
+MPRINT(JM_READ_DEVSPEC):   *** 1. Verify the required parameters to ensure it is not missing and is valid. ***;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   if compress("ADAE") = '' then do;
+MPRINT(JM_READ_DEVSPEC):   put;
+MPRINT(JM_READ_DEVSPEC):   put "ER" "ROR:[jm_read_devspec] is missing required " "parameter JM_DOMAIN." ;
+MPRINT(JM_READ_DEVSPEC):   call symputx('_err','yes');
+MPRINT(JM_READ_DEVSPEC):   end;
+SYMBOLGEN:  Macro variable JM_OUTLIB resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&jm_outlib" = "" is FALSE
+SYMBOLGEN:  Macro variable JM_OUTLIB resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&jm_outlib" ne "" is TRUE
+SYMBOLGEN:  Macro variable JM_OUTLIB resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition %sysfunc(libref("&jm_outlib")) = 0 is FALSE
+SYMBOLGEN:  Macro variable JM_INLIB resolves to work
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&jm_inlib" = "" is FALSE
+SYMBOLGEN:  Macro variable JM_INLIB resolves to work
+MLOGIC(JM_READ_DEVSPEC):  %IF condition %sysfunc(libref("&jm_inlib")) = 0 is FALSE
+MPRINT(JM_READ_DEVSPEC):   *** If JM_INDSN parameter value is missing in macro call, then set JM_INDSN=JM_DOMAIN ***;
+SYMBOLGEN:  Macro variable JM_INDSN resolves to adae7
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   if compress("adae7") = "" then call symputx('jm_indsn',"ADAE");
+MPRINT(JM_READ_DEVSPEC):   *2. Verify if the required Global paramters from SETUP.SAS exist or not **;
+MLOGIC(JM_READ_DEVSPEC):  %IF condition %symexist(docpath) is TRUE
+MLOGIC(JM_READ_DEVSPEC):  %PUT DOCPATH Macro variable set to: &docpath.
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+DOCPATH Macro variable set to: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+MPRINT(JM_READ_DEVSPEC):   if spectype = 'SDTM' then do;
+26                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+SYMBOLGEN:  Macro variable SDTM_SPEC_FILE resolves to JZP_150_201_SDTM_Specifications.xlsx
+MPRINT(JM_READ_DEVSPEC):   if fileexist("C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sdtm_specs\JZP_150_201_SDTM_Specifications.xlsx")=0 then 
+do;
+MPRINT(JM_READ_DEVSPEC):   put;
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+SYMBOLGEN:  Macro variable SDTM_SPEC_FILE resolves to JZP_150_201_SDTM_Specifications.xlsx
+MPRINT(JM_READ_DEVSPEC):   put "ER" "ROR:[jm_read_devspec] contains an invalid value " 
+"‘C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\sdtm_specs\JZP_150_201_SDTM_Specifications.xlsx’ for development specifications. " "This is 
+defined thru macro variables: DOCPATH, JM_OUTLIB and SDTM_SPEC_FILE." ;
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+SYMBOLGEN:  Macro variable JM_OUTLIB resolves to ADAM
+SYMBOLGEN:  Macro variable SDTM_SPEC_FILE resolves to JZP_150_201_SDTM_Specifications.xlsx
+MPRINT(JM_READ_DEVSPEC):   put "NOTE: Currently macro variables are defined as: DOCPATH=C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc, 
+JM_OUTLIB=ADAM and SDTM_SPEC_FILE=JZP_150_201_SDTM_Specifications.xlsx.";
+MPRINT(JM_READ_DEVSPEC):   call symputx('_err','yes');
+MPRINT(JM_READ_DEVSPEC):   end;
+MPRINT(JM_READ_DEVSPEC):   end;
+MPRINT(JM_READ_DEVSPEC):   else if spectype = 'ADAM' then do;
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+SYMBOLGEN:  Macro variable ADAM_SPEC_FILE resolves to ADaM_DEV_SPECS_JZP_150_201.xlsx
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have been unquoted for printing.
+MPRINT(JM_READ_DEVSPEC):   if fileexist("C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\adam_specs\ADaM_DEV_SPECS_JZP_150_201.xlsx")=0 then do;
+MPRINT(JM_READ_DEVSPEC):   put;
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+SYMBOLGEN:  Macro variable ADAM_SPEC_FILE resolves to ADaM_DEV_SPECS_JZP_150_201.xlsx
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have been unquoted for printing.
+MPRINT(JM_READ_DEVSPEC):   put "ER" "ROR:[jm_read_devspec] contains an invalid value " 
+"‘C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\adam_specs\ADaM_DEV_SPECS_JZP_150_201.xlsx’ for development specifications. " "This is defined 
+thru macro variables: DOCPATH, JM_OUTLIB and ADAM_SPEC_FILE." ;
+SYMBOLGEN:  Macro variable DOCPATH resolves to C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc
+SYMBOLGEN:  Macro variable JM_OUTLIB resolves to ADAM
+SYMBOLGEN:  Macro variable ADAM_SPEC_FILE resolves to ADaM_DEV_SPECS_JZP_150_201.xlsx
+SYMBOLGEN:  Some characters in the above value which were subject to macro quoting have been unquoted for printing.
+MPRINT(JM_READ_DEVSPEC):   put "NOTE: Currently macro variables are defined as: DOCPATH=C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc, 
+JM_OUTLIB=ADAM and ADAM_SPEC_FILE=ADaM_DEV_SPECS_JZP_150_201.xlsx.";
+MPRINT(JM_READ_DEVSPEC):   call symputx('_err','yes');
+MPRINT(JM_READ_DEVSPEC):   end;
+MPRINT(JM_READ_DEVSPEC):   end;
+MPRINT(JM_READ_DEVSPEC):   else do;
+MPRINT(JM_READ_DEVSPEC):   put " ";
+MPRINT(JM_READ_DEVSPEC):   put "ER" "ROR:The macro Handles SDTM and ADAM dev specs only.";
+MPRINT(JM_READ_DEVSPEC):   call symputx('_err','yes');
+MPRINT(JM_READ_DEVSPEC):   end;
+MPRINT(JM_READ_DEVSPEC):   *** Identify path to SAS WORK area ***;
+27                                                                   The SAS System
+
+MPRINT(JM_READ_DEVSPEC):   workpath=pathname('WORK');
+MPRINT(JM_READ_DEVSPEC):   call symputx('workpath',workpath);
+MPRINT(JM_READ_DEVSPEC):   run;
+
+INFO: Character variables have defaulted to a length of 200 at the places given by: (Line):(Column). Truncation can result.
+      1171:159 JM_OUTLIB
+      1171:23  workpath
+
+******************* Parameter Values *******************
+ALERT:I: JM_DOMAIN PROCESSED - ADAE
+ALERT:I: JM_OUTLIB PROCESSED - ADAM
+ALERT:I: JM_INLIB PROCESSED - work
+ALERT:I: JM_INDSN PROCESSED - adae7
+********************************************************
+
+NOTE: [jm_read_devspec] is currently running macro %jm_read_devspec version 1.0.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable _ERR resolves to no
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&_err" = "yes" is FALSE
+MLOGIC(JM_READ_DEVSPEC):  %PUT NOTE: The current specification type is (SPECTYPE): &spectype
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+NOTE: The current specification type is (SPECTYPE): ADAM
+MPRINT(JM_READ_DEVSPEC):   *** 2. Create a backup the specification Excel file named: TEMP__SPEC.XLSX to facilitate reading attributes. ***;
+MPRINT(JM_READ_DEVSPEC):   data _null_;
+MPRINT(JM_READ_DEVSPEC):   length spectype $10 docpath copycmd delcmd $300;
+MPRINT(JM_READ_DEVSPEC):   docpath = symget('docpath');
+MPRINT(JM_READ_DEVSPEC):   spectype = lowcase(symget('spectype'));
+MPRINT(JM_READ_DEVSPEC):   workpath=pathname('WORK');
+MPRINT(JM_READ_DEVSPEC):   if spectype = "sdtm" then do;
+MPRINT(JM_READ_DEVSPEC):   sdtm_spec_file = symget('sdtm_spec_file');
+MPRINT(JM_READ_DEVSPEC):   copycmd = "systask command '" || 'copy "' || strip(docpath) || '\' || strip(spectype) || '_specs\' || strip(sdtm_spec_file) 
+|| '" "' || strip(workpath) || '\temp__spec.xlsx"' || "' WAIT";
+MPRINT(JM_READ_DEVSPEC):   end;
+MPRINT(JM_READ_DEVSPEC):   else do;
+MPRINT(JM_READ_DEVSPEC):   adam_spec_file = symget('adam_spec_file');
+MPRINT(JM_READ_DEVSPEC):   copycmd = "systask command '" || 'copy "' || strip(docpath) || '\' || strip(spectype) || '_specs\' || strip(adam_spec_file) 
+|| '" "' || strip(workpath) || '\temp__spec.xlsx"' || "' WAIT";
+MPRINT(JM_READ_DEVSPEC):   end;
+MPRINT(JM_READ_DEVSPEC):   call symputx('copycmd',copycmd);
+MPRINT(JM_READ_DEVSPEC):   delcmd = "systask command '" || 'del "' || strip(workpath) || '\temp__spec.xlsx"' || "' WAIT";
+MPRINT(JM_READ_DEVSPEC):   call symputx('delcmd',delcmd);
+28                                                                   The SAS System
+
+MPRINT(JM_READ_DEVSPEC):   run;
+
+INFO: Character variables have defaulted to a length of 200 at the places given by: (Line):(Column). Truncation can result.
+      1171:29  workpath
+      1171:108 sdtm_spec_file
+      1171:145 adam_spec_file
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_READ_DEVSPEC):   option noxwait xsync;
+SYMBOLGEN:  Macro variable COPYCMD resolves to systask command 'copy 
+            "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\adam_specs\ADaM_DEV_SPECS_JZP_150_201.xlsx" "E:\SAS Temporary 
+            Files\sshabadi\_TD57064_JAZZPROD_\temp__spec.xlsx"' WAIT
+MPRINT(JM_READ_DEVSPEC):   systask command 'copy "C:\SASData\JZP-150\150-201\stat\csr_dryrun1\statdoc\adam_specs\ADaM_DEV_SPECS_JZP_150_201.xlsx" 
+"E:\SAS Temporary Files\sshabadi\_TD57064_JAZZPROD_\temp__spec.xlsx"' WAIT;
+NOTE: Task "task0" produced no LOG/Output.
+MPRINT(JM_READ_DEVSPEC):   *** 3. Read the SDTM specification and store information in WORK area dataset. ***;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "SDTM" is FALSE
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "ADAM" is TRUE
+SYMBOLGEN:  Macro variable WORKPATH resolves to E:\SAS Temporary Files\sshabadi\_TD57064_JAZZPROD_
+MPRINT(JM_READ_DEVSPEC):   proc import out=work.ADAEspec (where=(upcase(strip(dataset_name)) in("ADAE","SUPPADAE") or 
+upcase(strip(Core_ADSL_Variables)) = 'Y' ) ) datafile="E:\SAS Temporary Files\sshabadi\_TD57064_JAZZPROD_\temp__spec.xlsx" dbms=excel replace;
+MPRINT(JM_READ_DEVSPEC):   AEXC;
+MPRINT(JM_READ_DEVSPEC):   range="Mapping$";
+MPRINT(JM_READ_DEVSPEC):   getnames=YES;
+MPRINT(JM_READ_DEVSPEC):   mixed=no;
+MPRINT(JM_READ_DEVSPEC):   scantext=yes;
+MPRINT(JM_READ_DEVSPEC):   usedate=yes;
+MPRINT(JM_READ_DEVSPEC):   scantime=yes;
+MPRINT(JM_READ_DEVSPEC):   run;
+
+1                                          The SAS System
+
+SYMBOLGEN:  Macro variable _IMEXSERROR_ resolves to SERROR
+NOTE: WORK.ADAESPEC data set was successfully created.
+NOTE: The data set WORK.ADAESPEC has 108 observations and 18 variables.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           5.28 seconds
+      cpu time            0.29 seconds
+      
+
+29                                                                   The SAS System
+
+MPRINT(JM_READ_DEVSPEC):   *** 4. Read the dataset level attributes from SDTM specifications to obtain dataset label and key variables. ***;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable WORKPATH resolves to E:\SAS Temporary Files\sshabadi\_TD57064_JAZZPROD_
+MPRINT(JM_READ_DEVSPEC):   proc import out=work.DATASETS(WHERE=(upcase(strip(dataset_name))="ADAE")) datafile="E:\SAS Temporary 
+Files\sshabadi\_TD57064_JAZZPROD_\temp__spec.xlsx" dbms=excel replace;
+MPRINT(JM_READ_DEVSPEC):   AEXC;
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MPRINT(JM_READ_DEVSPEC):   range="ADAM Datasets$";
+MPRINT(JM_READ_DEVSPEC):   getnames=YES;
+MPRINT(JM_READ_DEVSPEC):   mixed=no;
+MPRINT(JM_READ_DEVSPEC):   scantext=yes;
+MPRINT(JM_READ_DEVSPEC):   usedate=yes;
+MPRINT(JM_READ_DEVSPEC):   scantime=yes;
+MPRINT(JM_READ_DEVSPEC):   run;
+
+1                                          The SAS System
+
+SYMBOLGEN:  Macro variable _IMEXSERROR_ resolves to SERROR
+NOTE: WORK.DATASETS data set was successfully created.
+NOTE: The data set WORK.DATASETS has 1 observations and 3 variables.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           5.21 seconds
+      cpu time            0.23 seconds
+      
+
+MPRINT(JM_READ_DEVSPEC):   *** 5. Delete temporary Excel file used to read attributes. ***;
+SYMBOLGEN:  Macro variable DELCMD resolves to systask command 'del "E:\SAS Temporary Files\sshabadi\_TD57064_JAZZPROD_\temp__spec.xlsx"' WAIT
+MPRINT(JM_READ_DEVSPEC):   systask command 'del "E:\SAS Temporary Files\sshabadi\_TD57064_JAZZPROD_\temp__spec.xlsx"' WAIT;
+NOTE: Task "task1" produced no LOG/Output.
+MPRINT(JM_READ_DEVSPEC):   *** 6. Identify dataset label and Key variable list for the domain of interest. ***;
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "SDTM" is FALSE
+MPRINT(JM_READ_DEVSPEC):   data _null_;
+MPRINT(JM_READ_DEVSPEC):   set datasets(rename=(dataset_name=ds description=dslabel unique_sort_keys=keys));
+MPRINT(JM_READ_DEVSPEC):   KEEP DS DSLABEL KEYS;
+MPRINT(JM_READ_DEVSPEC):   sort_by=compbl(tranwrd(KEYS,',',' '));
+MPRINT(JM_READ_DEVSPEC):   call symput("jm_dt_label",strip(DSLABEL));
+MPRINT(JM_READ_DEVSPEC):   call symput("jm_dt_keyvar",strip(sort_by));
+MPRINT(JM_READ_DEVSPEC):   run;
+
+INFO: Character variables have defaulted to a length of 200 at the places given by: (Line):(Column). Truncation can result.
+      1171:152 sort_by
+NOTE: There were 1 observations read from the data set WORK.DATASETS.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+30                                                                   The SAS System
+
+MLOGIC(JM_READ_DEVSPEC):  %PUT NOTE: The dataset label (JM_DT_LABEL) is ‘&jm_dt_label’.
+SYMBOLGEN:  Macro variable JM_DT_LABEL resolves to Adverse Events Analysis Dataset
+NOTE: The dataset label (JM_DT_LABEL) is ‘Adverse Events Analysis Dataset’.
+MLOGIC(JM_READ_DEVSPEC):  %PUT NOTE: The dataset key variables (JM_DT_KEYVAR) is ‘&jm_dt_keyvar’.
+SYMBOLGEN:  Macro variable JM_DT_KEYVAR resolves to STUDYID USUBJID AESEQ
+NOTE: The dataset key variables (JM_DT_KEYVAR) is ‘STUDYID USUBJID AESEQ’.
+MPRINT(JM_READ_DEVSPEC):   *** Handle SUPPQUAL if it is SDTM ***;
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "SDTM" is FALSE
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "ADAM" is TRUE
+MPRINT(JM_READ_DEVSPEC):   data specord;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   set ADAEspec(rename=(variable_label=label));
+MPRINT(JM_READ_DEVSPEC):   *** Update Core variables from ADSL ***;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   if upcase(Core_ADSL_Variables) = 'Y' then dataset_name = upcase(strip("ADAE"));
+MPRINT(JM_READ_DEVSPEC):   *** Update the order so that Core ADSL variables shows up first ***;
+MPRINT(JM_READ_DEVSPEC):   if upcase(Core_ADSL_Variables) = 'Y' then coreord=1;
+MPRINT(JM_READ_DEVSPEC):   else coreord=2;
+MPRINT(JM_READ_DEVSPEC):   varorder=_n_;
+MPRINT(JM_READ_DEVSPEC):   keep variable label type length origin Core_ADSL_Variables dataset_name varorder coreord;
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 108 observations read from the data set WORK.ADAESPEC.
+NOTE: The data set WORK.SPECORD has 108 observations and 9 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   proc sort data = specord out=ADAEspec(drop=coreord varorder);
+MPRINT(JM_READ_DEVSPEC):   by coreord varorder;
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 108 observations read from the data set WORK.SPECORD.
+NOTE: SAS sort was used.
+NOTE: The data set WORK.ADAESPEC has 108 observations and 7 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(JM_READ_DEVSPEC):   *** 8. Retain the variable order from how it was defined in specifications. ***;
+31                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   data ADAEspec;
+MPRINT(JM_READ_DEVSPEC):   length variable $20 label $200 type $20;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   set ADAEspec(rename=(type=_type) where=(compress(variable) not in('','.'))) end=eos;
+MPRINT(JM_READ_DEVSPEC):   *** Update length of variable TYPE to handle varying lengths in Excel Spec ***;
+MPRINT(JM_READ_DEVSPEC):   type=trim(_type);
+MPRINT(JM_READ_DEVSPEC):   drop _type;
+MPRINT(JM_READ_DEVSPEC):   varorder=_n_;
+MPRINT(JM_READ_DEVSPEC):   if variable ne '' then variable=upcase(variable);
+MPRINT(JM_READ_DEVSPEC):   rename variable=name;
+MPRINT(JM_READ_DEVSPEC):   if eos then call symputx("totadamvar",strip(put(_n_,best.)));
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 108 observations read from the data set WORK.ADAESPEC.
+      WHERE COMPRESS(variable) not in (' ', '.');
+NOTE: The data set WORK.ADAESPEC has 108 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_READ_DEVSPEC):   *** Initialize variables ***;
+MLOGIC(JM_READ_DEVSPEC):  %LET (variable name is NSUPPVAR)
+MPRINT(JM_READ_DEVSPEC):   *** 9. Define variable attributes as a list of macro variables. ***;
+MPRINT(JM_READ_DEVSPEC):   proc sql noprint;
+MPRINT(JM_READ_DEVSPEC):   **All Variables**;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   select distinct varorder,upcase(name) into : allvarord, :alllist separated by ' ' from ADAEspec where name ne '' order by 
+varorder;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   select count(distinct upcase(name)) into : nallvar from ADAEspec where name ne '';
+MPRINT(JM_READ_DEVSPEC):   **Main variables**;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "SDTM" is FALSE
+MPRINT(JM_READ_DEVSPEC):   select distinct varorder,upcase(name) into : mainord, :mainlist separated by ' ' from ADAEspec where name ne '' order by 
+varorder;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "SDTM" is FALSE
+MPRINT(JM_READ_DEVSPEC):   select count(distinct upcase(name)) into : nmainvar from ADAEspec where name ne '' ;
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "SDTM" is FALSE
+MPRINT(JM_READ_DEVSPEC):   quit;
+32                                                                   The SAS System
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MLOGIC(JM_READ_DEVSPEC):  %PUT NOTE: Macro variable (ALLLIST) is ‘&alllist’.
+SYMBOLGEN:  Macro variable ALLLIST resolves to STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE ARACE 
+            ARACEN SUBJIDL AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC RFENDTC 
+            ACTARM ACTARMCD ARM ARMCD TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL PTSDHFL 
+            AESEQ TRTP TRTPN TRTA TRTAN AETERM AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD AESTDTC ASTDT 
+            ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT AEACN AEACNOTH 
+            AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW
+NOTE: Macro variable (ALLLIST) is ‘STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE ARACE ARACEN 
+SUBJIDL AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC RFENDTC ACTARM ACTARMCD ARM 
+ARMCD TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL PTSDHFL AESEQ TRTP TRTPN TRTA TRTAN AETERM 
+AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD AESTDTC ASTDT ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER 
+AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT AEACN AEACNOTH AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI 
+AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW’.
+MLOGIC(JM_READ_DEVSPEC):  %PUT NOTE: Macro variable (NALLVAR) is ‘&nallvar’.
+SYMBOLGEN:  Macro variable NALLVAR resolves to      108
+NOTE: Macro variable (NALLVAR) is ‘     108’.
+MLOGIC(JM_READ_DEVSPEC):  %PUT NOTE: Macro variable (MAINLIST) is ‘&mainlist’.
+SYMBOLGEN:  Macro variable MAINLIST resolves to STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE 
+            ARACE ARACEN SUBJIDL AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC 
+            RFENDTC ACTARM ACTARMCD ARM ARMCD TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL 
+            PTSDHFL AESEQ TRTP TRTPN TRTA TRTAN AETERM AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD 
+            AESTDTC ASTDT ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT 
+            AEACN AEACNOTH AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW
+NOTE: Macro variable (MAINLIST) is ‘STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE ARACE ARACEN 
+SUBJIDL AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC RFENDTC ACTARM ACTARMCD ARM 
+ARMCD TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL PTSDHFL AESEQ TRTP TRTPN TRTA TRTAN AETERM 
+AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD AESTDTC ASTDT ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER 
+AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT AEACN AEACNOTH AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI 
+AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW’.
+MLOGIC(JM_READ_DEVSPEC):  %PUT NOTE: Macro variable (NMAINVAR) is ‘&nmainvar’.
+SYMBOLGEN:  Macro variable NMAINVAR resolves to      108
+NOTE: Macro variable (NMAINVAR) is ‘     108’.
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "SDTM" is FALSE
+MPRINT(JM_READ_DEVSPEC):   *** 10. Identify variables defined in specifications that were not found in data. ***;
+MPRINT(JM_READ_DEVSPEC):   proc sql;
+SYMBOLGEN:  Macro variable JM_INLIB resolves to work
+SYMBOLGEN:  Macro variable JM_INDSN resolves to adae7
+MPRINT(JM_READ_DEVSPEC):   create table datalist as select distinct upcase(name) as name,length,type,label,varnum as varorder from dictionary.columns 
+where upcase(libname)="WORK" and upcase(memname)="ADAE7" order by name;
+33                                                                   The SAS System
+
+NOTE: Table WORK.DATALIST created, with 185 rows and 5 columns.
+
+MPRINT(JM_READ_DEVSPEC):   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   proc sort data=ADAEspec;
+MPRINT(JM_READ_DEVSPEC):   by name;
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 108 observations read from the data set WORK.ADAESPEC.
+NOTE: SAS sort was used.
+NOTE: The data set WORK.ADAESPEC has 108 observations and 8 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_READ_DEVSPEC):   data varchk;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   merge datalist(in=a rename=(length=d_len type=d_type label=d_label varorder=d_order)) ADAEspec(in=b rename=(length=s_len 
+type=s_type label=s_label varorder=s_order));
+MPRINT(JM_READ_DEVSPEC):   by name;
+MPRINT(JM_READ_DEVSPEC):   if a then source='DATA';
+MPRINT(JM_READ_DEVSPEC):   if b then source1='SPEC';
+MPRINT(JM_READ_DEVSPEC):   if lowcase(s_type)='text' then s_type='char';
+MPRINT(JM_READ_DEVSPEC):   else if lowcase(s_type) in('datetime','date') and upcase(substr(name,length(name)-2,3))='DTC' then s_type='char';
+MPRINT(JM_READ_DEVSPEC):   else s_type='num';
+MPRINT(JM_READ_DEVSPEC):   if not (a and b) then uncommonvar='Y';
+MPRINT(JM_READ_DEVSPEC):   if d_len ne s_len then len_chk='Y';
+MPRINT(JM_READ_DEVSPEC):   if d_type ne s_type then type_chk='Y';
+MPRINT(JM_READ_DEVSPEC):   if d_label ne s_label then label_chk='Y';
+MPRINT(JM_READ_DEVSPEC):   if d_order ne s_order then order_chk='Y';
+MPRINT(JM_READ_DEVSPEC):   if length(strip(s_label)) gt 40 then define_len_chk='Y';
+MPRINT(JM_READ_DEVSPEC):   if length(strip(name)) gt 8 then var_name_len_chk='Y';
+MPRINT(JM_READ_DEVSPEC):   if cmiss(uncommonvar,len_chk,type_chk,label_chk,order_chk,define_len_chk) ne 6;
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 185 observations read from the data set WORK.DATALIST.
+NOTE: There were 108 observations read from the data set WORK.ADAESPEC.
+NOTE: The data set WORK.VARCHK has 185 observations and 21 variables.
+NOTE: DATA statement used (Total process time):
+34                                                                   The SAS System
+
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_READ_DEVSPEC):   *** 11. List out findings from specification mismatch with data. ***;
+MPRINT(JM_READ_DEVSPEC):   footnote;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   title1 "Domain= ADAE ";
+MPRINT(JM_READ_DEVSPEC):   title2 "ERR" "OR: List of Variables that are in Spec but not in Data";
+MPRINT(JM_READ_DEVSPEC):   PROC PRINT data=varchk label;
+MPRINT(JM_READ_DEVSPEC):   var name;
+MPRINT(JM_READ_DEVSPEC):   where uncommonvar='Y' and source1='SPEC';
+MPRINT(JM_READ_DEVSPEC):   label name= 'Variable';
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: No observations were selected from data set WORK.VARCHK.
+NOTE: There were 0 observations read from the data set WORK.VARCHK.
+      WHERE (uncommonvar='Y') and (source1='SPEC');
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   title1 "Domain= ADAE ";
+MPRINT(JM_READ_DEVSPEC):   title2 "NOTE: List of Variables that are not in Spec but in Data. These variables are deleted from final SDTM dataset";
+MPRINT(JM_READ_DEVSPEC):   PROC PRINT data=varchk label;
+MPRINT(JM_READ_DEVSPEC):   var name;
+MPRINT(JM_READ_DEVSPEC):   where uncommonvar='Y' and source='DATA';
+MPRINT(JM_READ_DEVSPEC):   label name= 'Variable';
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 77 observations read from the data set WORK.VARCHK.
+      WHERE (uncommonvar='Y') and (source='DATA');
+NOTE: The PROCEDURE PRINT printed pages 1-2.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   title1 "Domain= ADAE ";
+MPRINT(JM_READ_DEVSPEC):   title2 "WAR" "NING: List of Common Variables with Different Lengths";
+MPRINT(JM_READ_DEVSPEC):   PROC PRINT data=varchk label;
+MPRINT(JM_READ_DEVSPEC):   var name d_len s_len;
+35                                                                   The SAS System
+
+MPRINT(JM_READ_DEVSPEC):   where uncommonvar ne 'Y' and d_len ne s_len;
+MPRINT(JM_READ_DEVSPEC):   label d_len= 'Length in dataset' s_len= 'Length in Spec file' name= 'Variable';
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 7 observations read from the data set WORK.VARCHK.
+      WHERE (uncommonvar not = 'Y') and (d_len not = s_len);
+NOTE: The PROCEDURE PRINT printed page 3.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   title1 "Domain= ADAE ";
+MPRINT(JM_READ_DEVSPEC):   title2 "WAR" "NING: List of Common Variables with Different Data Types";
+MPRINT(JM_READ_DEVSPEC):   PROC PRINT data=varchk label;
+MPRINT(JM_READ_DEVSPEC):   var name d_type s_type;
+MPRINT(JM_READ_DEVSPEC):   where uncommonvar ne 'Y' and d_type ne s_type;
+MPRINT(JM_READ_DEVSPEC):   label d_type= 'Type in dataset' s_type= 'Type in Spec file' name= 'Variable';
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: No observations were selected from data set WORK.VARCHK.
+NOTE: There were 0 observations read from the data set WORK.VARCHK.
+      WHERE (uncommonvar not = 'Y') and (d_type not = s_type);
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   title1 "Domain= ADAE ";
+MPRINT(JM_READ_DEVSPEC):   title2 "WAR" "NING: List of Variables with Label length >40. Please update SPEC";
+MPRINT(JM_READ_DEVSPEC):   PROC PRINT data=varchk label;
+MPRINT(JM_READ_DEVSPEC):   var name s_label;
+MPRINT(JM_READ_DEVSPEC):   where uncommonvar ne 'Y' and define_len_chk eq 'Y';
+MPRINT(JM_READ_DEVSPEC):   label s_label= 'Label as per Spec' name= 'Variable';
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: No observations were selected from data set WORK.VARCHK.
+NOTE: There were 0 observations read from the data set WORK.VARCHK.
+      WHERE (uncommonvar not = 'Y') and (define_len_chk='Y');
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+36                                                                   The SAS System
+
+
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   title1 "Domain= ADAE ";
+MPRINT(JM_READ_DEVSPEC):   title2 "WAR" "NING: List of Variables with Variable name >8. Please update to restrict variable name to 8 char";
+MPRINT(JM_READ_DEVSPEC):   PROC PRINT data=varchk label;
+MPRINT(JM_READ_DEVSPEC):   var name;
+MPRINT(JM_READ_DEVSPEC):   where var_name_len_chk='Y';
+MPRINT(JM_READ_DEVSPEC):   label name= 'Variable';
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 5 observations read from the data set WORK.VARCHK.
+      WHERE var_name_len_chk='Y';
+NOTE: The PROCEDURE PRINT printed page 4.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_READ_DEVSPEC):   title;
+MPRINT(JM_READ_DEVSPEC):   *** 12. Identify the variable order and label and then assign these attributes. ***;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   proc sort data=ADAEspec;
+MPRINT(JM_READ_DEVSPEC):   by varorder;
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 108 observations read from the data set WORK.ADAESPEC.
+NOTE: SAS sort was used.
+NOTE: The data set WORK.ADAESPEC has 108 observations and 8 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "SDTM" is FALSE
+MPRINT(JM_READ_DEVSPEC):   data _null_;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   set ADAEspec;
+MPRINT(JM_READ_DEVSPEC):   length labtxt attribtxt $200;
+MPRINT(JM_READ_DEVSPEC):   if strip(lowcase(type))='text' or ( lowcase(type) in('datetime','date') and upcase(substr(name,length(name)-2,3))='DTC') 
+then do;
+MPRINT(JM_READ_DEVSPEC):   if compress(put(length,best.)) in ('.','') then do;
+MPRINT(JM_READ_DEVSPEC):   length = 200;
+MPRINT(JM_READ_DEVSPEC):   put " ";
+MPRINT(JM_READ_DEVSPEC):   put "WAR" "NING: [jm_read_devspec] contains missing variable length definition in " "specification for variable ‘" name 
+37                                                                   The SAS System
+
++(-1) "’. A default length of $200 will be assigned.";
+MPRINT(JM_READ_DEVSPEC):   put " ";
+MPRINT(JM_READ_DEVSPEC):   end;
+MPRINT(JM_READ_DEVSPEC):   attribtxt=strip(name)||' label="'||strip(label)||'" length=$'||strip(put(length,best.));
+MPRINT(JM_READ_DEVSPEC):   end;
+MPRINT(JM_READ_DEVSPEC):   else attribtxt=strip(name)||' label="'||strip(label)||'"';
+MPRINT(JM_READ_DEVSPEC):   call symput("varattr"||strip(put(varorder,best.)),strip(attribtxt));
+MPRINT(JM_READ_DEVSPEC):   labtxt=strip(name)||'="'||strip(label)||'"';
+MPRINT(JM_READ_DEVSPEC):   call symput("varlab"||strip(put(varorder,best.)),strip(labtxt));
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 108 observations read from the data set WORK.ADAESPEC.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+MPRINT(JM_READ_DEVSPEC):   **Read Input dataset from INLIB**;
+MPRINT(JM_READ_DEVSPEC):   **Keep only required variabels from Input dataset and apply labels **;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   data ADAEall;
+SYMBOLGEN:  Macro variable ALLLIST resolves to STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE ARACE 
+            ARACEN SUBJIDL AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC RFENDTC 
+            ACTARM ACTARMCD ARM ARMCD TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL PTSDHFL 
+            AESEQ TRTP TRTPN TRTA TRTAN AETERM AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD AESTDTC ASTDT 
+            ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT AEACN AEACNOTH 
+            AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW
+MPRINT(JM_READ_DEVSPEC):   retain STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE ARACE ARACEN 
+SUBJIDL AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC RFENDTC ACTARM ACTARMCD ARM 
+ARMCD TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL PTSDHFL AESEQ TRTP TRTPN TRTA TRTAN AETERM 
+AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD AESTDTC ASTDT ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER 
+AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT AEACN AEACNOTH AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI 
+AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW;
+SYMBOLGEN:  Macro variable NALLVAR resolves to      108
+MLOGIC(JM_READ_DEVSPEC):  %DO loop beginning; index variable I; start value is 1; stop value is 108; by value is 1.  
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 1
+SYMBOLGEN:  Macro variable VARATTR1 resolves to STUDYID label="Study Identifier" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 2; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 2
+38                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable VARATTR2 resolves to USUBJID label="Unique Subject Identifier" length=$25
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 3; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 3
+SYMBOLGEN:  Macro variable VARATTR3 resolves to SUBJID label="Subject Identifier for the Study" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 4; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 4
+SYMBOLGEN:  Macro variable VARATTR4 resolves to SITEID label="Study Site Identifier" length=$5
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 5; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 5
+SYMBOLGEN:  Macro variable VARATTR5 resolves to COUNTRY label="Country" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 6; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 6
+SYMBOLGEN:  Macro variable VARATTR6 resolves to BRTHDTC label="Date/Time of Birth" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 7; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 7
+SYMBOLGEN:  Macro variable VARATTR7 resolves to AGE label="Age"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 8; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 8
+SYMBOLGEN:  Macro variable VARATTR8 resolves to AGEU label="Age Units" length=$6
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 9; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 9
+SYMBOLGEN:  Macro variable VARATTR9 resolves to AGEGR1 label="Pooled Age Group 1" length=$50
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 10; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+39                                                                   The SAS System
+
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 10
+SYMBOLGEN:  Macro variable VARATTR10 resolves to AGEGR1N label="Pooled Age Group 1 (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 11; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 11
+SYMBOLGEN:  Macro variable VARATTR11 resolves to AGEGR2 label="Pooled Age Group 2" length=$50
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 12; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 12
+SYMBOLGEN:  Macro variable VARATTR12 resolves to AGEGR2N label="Pooled Age Group 2 (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 13; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 13
+SYMBOLGEN:  Macro variable VARATTR13 resolves to SEX label="Sex" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 14; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 14
+SYMBOLGEN:  Macro variable VARATTR14 resolves to SEXN label="Sex (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 15; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 15
+SYMBOLGEN:  Macro variable VARATTR15 resolves to RACE label="Race" length=$100
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 16; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 16
+SYMBOLGEN:  Macro variable VARATTR16 resolves to ARACE label="Analysis Race" length=$100
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 17; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 17
+40                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable VARATTR17 resolves to ARACEN label="Analysis Race (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 18; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 18
+SYMBOLGEN:  Macro variable VARATTR18 resolves to SUBJIDL label="Subject Identifier for Study for Listing" length=$100
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 19; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 19
+SYMBOLGEN:  Macro variable VARATTR19 resolves to AGESEXRA label="Age/Sex/Race" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 20; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 20
+SYMBOLGEN:  Macro variable VARATTR20 resolves to ETHNIC label="Ethnicity" length=$25
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 21; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 21
+SYMBOLGEN:  Macro variable VARATTR21 resolves to ETHNICN label="Ethnicity (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 22; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 22
+SYMBOLGEN:  Macro variable VARATTR22 resolves to WEIGHTBL label="Baseline Weight (kg)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 23; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 23
+SYMBOLGEN:  Macro variable VARATTR23 resolves to HEIGHTBL label="Baseline Height (cm)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 24; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 24
+SYMBOLGEN:  Macro variable VARATTR24 resolves to BMIBL label="Baseline Body Mass Index (kg/m^2)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 25; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+41                                                                   The SAS System
+
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 25
+SYMBOLGEN:  Macro variable VARATTR25 resolves to CAPS5BL label="Baseline CAPS-5 Total Score"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 26; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 26
+SYMBOLGEN:  Macro variable VARATTR26 resolves to PGIBL label="Baseline PGI-S"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 27; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 27
+SYMBOLGEN:  Macro variable VARATTR27 resolves to CGIBL label="Baseline CGI-S"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 28; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 28
+SYMBOLGEN:  Macro variable VARATTR28 resolves to PCL5BL label="Baseline PCL-5"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 29; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 29
+SYMBOLGEN:  Macro variable VARATTR29 resolves to RFICDTC label="Date/Time of Informed Consent" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 30; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 30
+SYMBOLGEN:  Macro variable VARATTR30 resolves to RFICDT label="Date of Informed Consent"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 31; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 31
+SYMBOLGEN:  Macro variable VARATTR31 resolves to RFXSTDTC label="Date/Time of First Study Treatment" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 32; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 32
+42                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable VARATTR32 resolves to RFXENDTC label="Date/Time of Last Study Treatment" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 33; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 33
+SYMBOLGEN:  Macro variable VARATTR33 resolves to RFSTDTC label="Subject Reference Start Date/Time" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 34; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 34
+SYMBOLGEN:  Macro variable VARATTR34 resolves to RFENDTC label="Subject Reference Stop Date/Time" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 35; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 35
+SYMBOLGEN:  Macro variable VARATTR35 resolves to ACTARM label="Description of Actual Arm" length=$100
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 36; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 36
+SYMBOLGEN:  Macro variable VARATTR36 resolves to ACTARMCD label="Description of Actual Arm Code" length=$8
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 37; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 37
+SYMBOLGEN:  Macro variable VARATTR37 resolves to ARM label="Description of Planned Arm" length=$100
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 38; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 38
+SYMBOLGEN:  Macro variable VARATTR38 resolves to ARMCD label="Description of Planned Arm Code" length=$8
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 39; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 39
+SYMBOLGEN:  Macro variable VARATTR39 resolves to TRTSDT label="Date of First Exposure to Treatment"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 40; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+43                                                                   The SAS System
+
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 40
+SYMBOLGEN:  Macro variable VARATTR40 resolves to TRTEDT label="Date of Last Exposure to Treatment"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 41; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 41
+SYMBOLGEN:  Macro variable VARATTR41 resolves to RANDDT label="Randamization Date"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 42; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 42
+SYMBOLGEN:  Macro variable VARATTR42 resolves to SAFFL label="Safety Population Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 43; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 43
+SYMBOLGEN:  Macro variable VARATTR43 resolves to ENRLFL label="Enrolled Population Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 44; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 44
+SYMBOLGEN:  Macro variable VARATTR44 resolves to PKFL label="PK Population Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 45; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 45
+SYMBOLGEN:  Macro variable VARATTR45 resolves to PDFL label="PD Population Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 46; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 46
+SYMBOLGEN:  Macro variable VARATTR46 resolves to RANDFL label="RAND Population Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 47; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 47
+44                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable VARATTR47 resolves to SCRFL label="Screened Population Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 48; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 48
+SYMBOLGEN:  Macro variable VARATTR48 resolves to SCRFAFL label="Screen Fail Population Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 49; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 49
+SYMBOLGEN:  Macro variable VARATTR49 resolves to FASFL label="Full Analysis set Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 50; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 50
+SYMBOLGEN:  Macro variable VARATTR50 resolves to MFASFL label="Modified Full Analysis Set" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 51; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 51
+SYMBOLGEN:  Macro variable VARATTR51 resolves to COMPSFL label="Completed Safety Follow-up Flg" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 52; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 52
+SYMBOLGEN:  Macro variable VARATTR52 resolves to COMPLFL label="Completers Population Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 53; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 53
+SYMBOLGEN:  Macro variable VARATTR53 resolves to COMPTRFL label="Completed Study Trt. Flg" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 54; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 54
+SYMBOLGEN:  Macro variable VARATTR54 resolves to PTSDHFL label="PTSD Diagnosis History Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 55; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+45                                                                   The SAS System
+
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 55
+SYMBOLGEN:  Macro variable VARATTR55 resolves to AESEQ label="Sequence Number"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 56; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 56
+SYMBOLGEN:  Macro variable VARATTR56 resolves to TRTP label="Planned Treatment" length=$40
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 57; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 57
+SYMBOLGEN:  Macro variable VARATTR57 resolves to TRTPN label="Planned Treatment (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 58; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 58
+SYMBOLGEN:  Macro variable VARATTR58 resolves to TRTA label="Actual Treatment" length=$40
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 59; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 59
+SYMBOLGEN:  Macro variable VARATTR59 resolves to TRTAN label="Actual Treatment (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 60; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 60
+SYMBOLGEN:  Macro variable VARATTR60 resolves to AETERM label="Reported Term for the Adverse Event" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 61; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 61
+SYMBOLGEN:  Macro variable VARATTR61 resolves to AEDECOD label="Dictionary-Derived Term" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 62; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 62
+46                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable VARATTR62 resolves to AEBODSYS label="Body System or Organ Class" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 63; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 63
+SYMBOLGEN:  Macro variable VARATTR63 resolves to AEBDSYCD label="Body System or Organ Class Code"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 64; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 64
+SYMBOLGEN:  Macro variable VARATTR64 resolves to AELLTCD label="Lowest Level Term Code"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 65; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 65
+SYMBOLGEN:  Macro variable VARATTR65 resolves to AELLT label="Lowest Level Term" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 66; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 66
+SYMBOLGEN:  Macro variable VARATTR66 resolves to AEPTCD label="Preferred Term Code"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 67; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 67
+SYMBOLGEN:  Macro variable VARATTR67 resolves to AEHLT label="High Level Term" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 68; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 68
+SYMBOLGEN:  Macro variable VARATTR68 resolves to AEHLTCD label="High Level Term Code"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 69; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 69
+SYMBOLGEN:  Macro variable VARATTR69 resolves to AEHLGT label="High Level Group Term" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 70; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+47                                                                   The SAS System
+
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 70
+SYMBOLGEN:  Macro variable VARATTR70 resolves to AEHLGTCD label="High Level Group Term Code"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 71; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 71
+SYMBOLGEN:  Macro variable VARATTR71 resolves to AESOC label="Primary System Organ Class" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 72; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 72
+SYMBOLGEN:  Macro variable VARATTR72 resolves to AESOCCD label="Primary System Organ Class Code"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 73; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 73
+SYMBOLGEN:  Macro variable VARATTR73 resolves to AESTDTC label="Start Date/Time of Adverse Event" length=$10
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 74; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 74
+SYMBOLGEN:  Macro variable VARATTR74 resolves to ASTDT label="Analysis Start Date"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 75; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 75
+SYMBOLGEN:  Macro variable VARATTR75 resolves to ASTDTF label="Analysis Start Date Imputation
+Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 76; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 76
+SYMBOLGEN:  Macro variable VARATTR76 resolves to AEENDTC label="End Date/Time of Adverse Event" length=$10
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 77; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 77
+48                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable VARATTR77 resolves to AENDT label="Analysis End Date"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 78; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 78
+SYMBOLGEN:  Macro variable VARATTR78 resolves to ASTDY label="Analysis Start Relative Day"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 79; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 79
+SYMBOLGEN:  Macro variable VARATTR79 resolves to AENDY label="Analysis End Relative Day"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 80; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 80
+SYMBOLGEN:  Macro variable VARATTR80 resolves to AEENRF label="End Relative to Reference Period" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 81; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 81
+SYMBOLGEN:  Macro variable VARATTR81 resolves to AESER label="Serious Event" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 82; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 82
+SYMBOLGEN:  Macro variable VARATTR82 resolves to AESCONG label="Congenital Anomaly or Birth Defect" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 83; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 83
+SYMBOLGEN:  Macro variable VARATTR83 resolves to AESDISAB label="Persist or Signif Disability/Incapacity" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 84; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 84
+SYMBOLGEN:  Macro variable VARATTR84 resolves to AESDTH label="Results in Death" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 85; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+49                                                                   The SAS System
+
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 85
+SYMBOLGEN:  Macro variable VARATTR85 resolves to AESHOSP label="Requires or Prolongs Hospitalization" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 86; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 86
+SYMBOLGEN:  Macro variable VARATTR86 resolves to AESLIFE label="Is Life Threatening" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 87; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 87
+SYMBOLGEN:  Macro variable VARATTR87 resolves to AESMIE label="Other Medically Important Serious Event" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 88; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 88
+SYMBOLGEN:  Macro variable VARATTR88 resolves to AEREL label="Causality" length=$40
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 89; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 89
+SYMBOLGEN:  Macro variable VARATTR89 resolves to VMEDDRA label="Meddra Version" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 90; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 90
+SYMBOLGEN:  Macro variable VARATTR90 resolves to AEDISCON label="Discontinued from Treatment" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 91; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 91
+SYMBOLGEN:  Macro variable VARATTR91 resolves to AEDOSINT label="Drug  interrupted from Treatment" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 92; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 92
+50                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable VARATTR92 resolves to AEACN label="Action Taken with Study Treatment" length=$50
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 93; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 93
+SYMBOLGEN:  Macro variable VARATTR93 resolves to AEACNOTH label="Other Action Taken" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 94; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 94
+SYMBOLGEN:  Macro variable VARATTR94 resolves to AEOUT label="Outcome of Adverse Event" length=$50
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 95; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 95
+SYMBOLGEN:  Macro variable VARATTR95 resolves to AETOXGR label="Standard Toxicity Grade" length=$100
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 96; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 96
+SYMBOLGEN:  Macro variable VARATTR96 resolves to ATOXGR label="Analysis Toxicity Grade" length=$100
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 97; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 97
+SYMBOLGEN:  Macro variable VARATTR97 resolves to ATOXGRN label="Analysis Toxicity Grade (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 98; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 98
+SYMBOLGEN:  Macro variable VARATTR98 resolves to ASEV label="Analysis Severity Grade" length=$20
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 99; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 99
+SYMBOLGEN:  Macro variable VARATTR99 resolves to ASEVN label="Analysis Severity Grade (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 100; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+51                                                                   The SAS System
+
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 100
+SYMBOLGEN:  Macro variable VARATTR100 resolves to TRTEMFL label="Treatment Emergent Analysis Flag" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 101; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 101
+SYMBOLGEN:  Macro variable VARATTR101 resolves to AESI label="Adverse Event of Special Intrest" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 102; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 102
+SYMBOLGEN:  Macro variable VARATTR102 resolves to AESITYP label="Adverse Event of Special Intrest Type" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 103; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 103
+SYMBOLGEN:  Macro variable VARATTR103 resolves to TEG34FL label="Grade 3-4 TEAE" length=$1
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 104; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 104
+SYMBOLGEN:  Macro variable VARATTR104 resolves to APSTDY label="Analysis Period Start Relative Day"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 105; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 105
+SYMBOLGEN:  Macro variable VARATTR105 resolves to APERIOD label="Analysis Study Period (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 106; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 106
+SYMBOLGEN:  Macro variable VARATTR106 resolves to APERIODC label="Analysis Study Period" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 107; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 107
+52                                                                   The SAS System
+
+SYMBOLGEN:  Macro variable VARATTR107 resolves to APERIODN label="Analysis Study Period 1st onset time (N)"
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 108; loop will iterate again.
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Unable to resolve the macro variable reference &varattr
+SYMBOLGEN:  && resolves to &.
+SYMBOLGEN:  Macro variable I resolves to 108
+SYMBOLGEN:  Macro variable VARATTR108 resolves to APERIODW label="Analysis Study Period 1st onset time" length=$200
+MLOGIC(JM_READ_DEVSPEC):  %DO loop index variable I is now 109; loop will not iterate again.
+MPRINT(JM_READ_DEVSPEC):   attrib STUDYID label="Study Identifier" length=$20 USUBJID label="Unique Subject Identifier" length=$25 SUBJID 
+label="Subject Identifier for the Study" length=$20 SITEID label="Study Site Identifier" length=$5 COUNTRY label="Country" length=$20 BRTHDTC 
+label="Date/Time of Birth" length=$20 AGE label="Age" AGEU label="Age Units" length=$6 AGEGR1 label="Pooled Age Group 1" length=$50 AGEGR1N 
+label="Pooled Age Group 1 (N)" AGEGR2 label="Pooled Age Group 2" length=$50 AGEGR2N label="Pooled Age Group 2 (N)" SEX label="Sex" length=$1 SEXN 
+label="Sex (N)" RACE label="Race" length=$100 ARACE label="Analysis Race" length=$100 ARACEN label="Analysis Race (N)" SUBJIDL label="Subject 
+Identifier for Study for Listing" length=$100 AGESEXRA label="Age/Sex/Race" length=$200 ETHNIC label="Ethnicity" length=$25 ETHNICN label="Ethnicity 
+(N)" WEIGHTBL label="Baseline Weight (kg)" HEIGHTBL label="Baseline Height (cm)" BMIBL label="Baseline Body Mass Index (kg/m^2)" CAPS5BL 
+label="Baseline CAPS-5 Total Score" PGIBL label="Baseline PGI-S" CGIBL label="Baseline CGI-S" PCL5BL label="Baseline PCL-5" RFICDTC label="Date/Time of 
+Informed Consent" length=$20 RFICDT label="Date of Informed Consent" RFXSTDTC label="Date/Time of First Study Treatment" length=$20 RFXENDTC 
+label="Date/Time of Last Study Treatment" length=$20 RFSTDTC label="Subject Reference Start Date/Time" length=$20 RFENDTC label="Subject Reference Stop 
+Date/Time" length=$20 ACTARM label="Description of Actual Arm" length=$100 ACTARMCD label="Description of Actual Arm Code" length=$8 ARM 
+label="Description of Planned Arm" length=$100 ARMCD label="Description of Planned Arm Code" length=$8 TRTSDT label="Date of First Exposure to 
+Treatment" TRTEDT label="Date of Last Exposure to Treatment" RANDDT label="Randamization Date" SAFFL label="Safety Population Flag" length=$1 ENRLFL 
+label="Enrolled Population Flag" length=$1 PKFL label="PK Population Flag" length=$1 PDFL label="PD Population Flag" length=$1 RANDFL label="RAND 
+Population Flag" length=$1 SCRFL label="Screened Population Flag" length=$1 SCRFAFL label="Screen Fail Population Flag" length=$1 FASFL label="Full 
+Analysis set Flag" length=$1 MFASFL label="Modified Full Analysis Set" length=$1 COMPSFL label="Completed Safety Follow-up Flg" length=$1 COMPLFL 
+label="Completers Population Flag" length=$1 COMPTRFL label="Completed Study Trt. Flg" length=$1 PTSDHFL label="PTSD Diagnosis History Flag" length=$1 
+AESEQ label="Sequence Number" TRTP label="Planned Treatment" length=$40 TRTPN label="Planned Treatment (N)" TRTA label="Actual Treatment" length=$40 
+TRTAN label="Actual Treatment (N)" AETERM label="Reported Term for the Adverse Event" length=$200 AEDECOD label="Dictionary-Derived Term" length=$200 
+AEBODSYS label="Body System or Organ Class" length=$200 AEBDSYCD label="Body System or Organ Class Code" AELLTCD label="Lowest Level Term Code" AELLT 
+label="Lowest Level Term" length=$200 AEPTCD label="Preferred Term Code" AEHLT label="High Level Term" length=$200 AEHLTCD label="High Level Term Code" 
+AEHLGT label="High Level Group Term" length=$200 AEHLGTCD label="High Level Group Term Code" AESOC label="Primary System Organ Class" length=$200 
+AESOCCD label="Primary System Organ Class Code" AESTDTC label="Start Date/Time of Adverse Event" length=$10 ASTDT label="Analysis Start Date" ASTDTF 
+label="Analysis Start Date Imputation
+Flag" length=$1 AEENDTC label="End Date/Time of Adverse Event" length=$10 AENDT label="Analysis End Date" ASTDY 
+label="Analysis Start Relative Day" AENDY label="Analysis End Relative Day" AEENRF label="End Relative to Reference Period" length=$20 AESER 
+label="Serious Event" length=$1 AESCONG label="Congenital Anomaly or Birth Defect" length=$1 AESDISAB label="Persist or Signif Disability/Incapacity" 
+length=$1 AESDTH label="Results in Death" length=$1 AESHOSP label="Requires or Prolongs Hospitalization" length=$1 AESLIFE label="Is Life Threatening" 
+length=$1 AESMIE label="Other Medically Important Serious Event" length=$1 AEREL label="Causality" length=$40 VMEDDRA label="Meddra Version" 
+length=$200 AEDISCON label="Discontinued from Treatment" length=$200 AEDOSINT label="Drug  interrupted from Treatment" length=$1 AEACN label="Action 
+Taken with Study Treatment" length=$50 AEACNOTH label="Other Action Taken" length=$200 AEOUT label="Outcome of Adverse Event" length=$50 AETOXGR 
+label="Standard Toxicity Grade" length=$100 ATOXGR label="Analysis Toxicity Grade" length=$100 ATOXGRN label="Analysis Toxicity Grade (N)" ASEV 
+label="Analysis Severity Grade" length=$20 ASEVN label="Analysis Severity Grade (N)" TRTEMFL label="Treatment Emergent Analysis Flag" length=$1 AESI 
+label="Adverse Event of Special Intrest" length=$1 AESITYP label="Adverse Event of Special Intrest Type" length=$200 TEG34FL label="Grade 3-4 TEAE" 
+length=$1 APSTDY label="Analysis Period Start Relative Day" APERIOD label="Analysis Study Period (N)" APERIODC label="Analysis Study Period" 
+length=$200 APERIODN label="Analysis Study Period 1st onset time (N)" APERIODW label="Analysis Study Period 1st onset time" length=$200 ;
+SYMBOLGEN:  Macro variable JM_INLIB resolves to work
+SYMBOLGEN:  Macro variable JM_INDSN resolves to adae7
+53                                                                   The SAS System
+
+MPRINT(JM_READ_DEVSPEC):   set work.adae7;
+SYMBOLGEN:  Macro variable ALLLIST resolves to STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE ARACE 
+            ARACEN SUBJIDL AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC RFENDTC 
+            ACTARM ACTARMCD ARM ARMCD TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL PTSDHFL 
+            AESEQ TRTP TRTPN TRTA TRTAN AETERM AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD AESTDTC ASTDT 
+            ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT AEACN AEACNOTH 
+            AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW
+MPRINT(JM_READ_DEVSPEC):   keep STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE ARACE ARACEN SUBJIDL 
+AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC RFENDTC ACTARM ACTARMCD ARM ARMCD 
+TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL PTSDHFL AESEQ TRTP TRTPN TRTA TRTAN AETERM 
+AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD AESTDTC ASTDT ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER 
+AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT AEACN AEACNOTH AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI 
+AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW;
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 101 observations read from the data set WORK.ADAE7.
+NOTE: The data set WORK.ADAEALL has 101 observations and 108 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+MPRINT(JM_READ_DEVSPEC):   *** Sort data by key variable list ***;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   proc sort data=ADAEall;
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MLOGIC(JM_READ_DEVSPEC):  %IF condition "&spectype" = "SDTM" and (&jm_domain.=TA or &jm_domain.=TE or &jm_domain.=TV or &jm_domain.=TI or 
+      &jm_domain.=TS) is FALSE
+SYMBOLGEN:  Macro variable JM_DT_KEYVAR resolves to STUDYID USUBJID AESEQ
+MPRINT(JM_READ_DEVSPEC):   by STUDYID USUBJID AESEQ;
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 101 observations read from the data set WORK.ADAEALL.
+NOTE: SAS sort was used.
+NOTE: The data set WORK.ADAEALL has 101 observations and 108 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+54                                                                   The SAS System
+
+MPRINT(JM_READ_DEVSPEC):   *** 13. Split the main SDTM domain with the corresponding SUPPQUAL domain into separate datasets. ***;
+SYMBOLGEN:  Macro variable JM_OUTLIB resolves to ADAM
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+SYMBOLGEN:  Macro variable JM_DT_LABEL resolves to Adverse Events Analysis Dataset
+MPRINT(JM_READ_DEVSPEC):   data ADAM.ADAE(label="Adverse Events Analysis Dataset");
+MPRINT(JM_READ_DEVSPEC):   *** data sdtm.&jm_domain(label="&jm_dt_label.");
+SYMBOLGEN:  Macro variable MAINLIST resolves to STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE 
+            ARACE ARACEN SUBJIDL AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC 
+            RFENDTC ACTARM ACTARMCD ARM ARMCD TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL 
+            PTSDHFL AESEQ TRTP TRTPN TRTA TRTAN AETERM AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD 
+            AESTDTC ASTDT ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT 
+            AEACN AEACNOTH AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW
+MPRINT(JM_READ_DEVSPEC):   retain STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE ARACE ARACEN 
+SUBJIDL AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC RFENDTC ACTARM ACTARMCD ARM 
+ARMCD TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL PTSDHFL AESEQ TRTP TRTPN TRTA TRTAN AETERM 
+AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD AESTDTC ASTDT ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER 
+AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT AEACN AEACNOTH AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI 
+AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW;
+SYMBOLGEN:  Macro variable JM_DOMAIN resolves to ADAE
+MPRINT(JM_READ_DEVSPEC):   set ADAEall;
+SYMBOLGEN:  Macro variable MAINLIST resolves to STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE 
+            ARACE ARACEN SUBJIDL AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC 
+            RFENDTC ACTARM ACTARMCD ARM ARMCD TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL 
+            PTSDHFL AESEQ TRTP TRTPN TRTA TRTAN AETERM AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD 
+            AESTDTC ASTDT ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT 
+            AEACN AEACNOTH AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW
+MPRINT(JM_READ_DEVSPEC):   keep STUDYID USUBJID SUBJID SITEID COUNTRY BRTHDTC AGE AGEU AGEGR1 AGEGR1N AGEGR2 AGEGR2N SEX SEXN RACE ARACE ARACEN SUBJIDL 
+AGESEXRA ETHNIC ETHNICN WEIGHTBL HEIGHTBL BMIBL CAPS5BL PGIBL CGIBL PCL5BL RFICDTC RFICDT RFXSTDTC RFXENDTC RFSTDTC RFENDTC ACTARM ACTARMCD ARM ARMCD 
+TRTSDT TRTEDT RANDDT SAFFL ENRLFL PKFL PDFL RANDFL SCRFL SCRFAFL FASFL MFASFL COMPSFL COMPLFL COMPTRFL PTSDHFL AESEQ TRTP TRTPN TRTA TRTAN AETERM 
+AEDECOD AEBODSYS AEBDSYCD AELLTCD AELLT AEPTCD AEHLT AEHLTCD AEHLGT AEHLGTCD AESOC AESOCCD AESTDTC ASTDT ASTDTF AEENDTC AENDT ASTDY AENDY AEENRF AESER 
+AESCONG AESDISAB AESDTH AESHOSP AESLIFE AESMIE AEREL VMEDDRA AEDISCON AEDOSINT AEACN AEACNOTH AEOUT AETOXGR ATOXGR ATOXGRN ASEV ASEVN TRTEMFL AESI 
+AESITYP TEG34FL APSTDY APERIOD APERIODC APERIODN APERIODW;
+MPRINT(JM_READ_DEVSPEC):   run;
+
+NOTE: There were 101 observations read from the data set WORK.ADAEALL.
+NOTE: The data set ADAM.ADAE has 101 observations and 108 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+SYMBOLGEN:  Macro variable NSUPPVAR resolves to 0
+SYMBOLGEN:  Macro variable SPECTYPE resolves to ADAM
+MLOGIC(JM_READ_DEVSPEC):  %IF condition &nsuppvar. gt 0 and "&spectype" = "SDTM" is FALSE
+MPRINT(JM_READ_DEVSPEC):   *** Mark the end of parameter checking ***;
+55                                                                   The SAS System
+
+MLOGIC(JM_READ_DEVSPEC):  Ending execution.
+1172       
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           14.89 seconds
+      cpu time            0.92 seconds
+      

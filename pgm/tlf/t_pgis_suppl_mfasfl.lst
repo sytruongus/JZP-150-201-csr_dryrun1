@@ -1,0 +1,1558 @@
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Model Information
+
+     Data Set                     WORK.TARGET_1            
+     Dependent Variable           CHG                      
+     Covariance Structure         Unstructured             
+     Subject Effect               id                       
+     Estimation Method            REML                     
+     Residual Variance Method     None                     
+     Fixed Effects SE Method      Kenward-Roger            
+     Degrees of Freedom Method    Kenward-Roger            
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                    Class Level Information
+ 
+      Class      Levels    Values
+
+      id             39    10631001 10631002 10631003    
+                           11601002 11601006 11601007    
+                           13031001 13031004 13581001    
+                           13581010 13581014 13991001    
+                           13991002 13991004 13991007    
+                           13991009 13991010 16591001    
+                           16591003 16591006 17601002    
+                           17601003 17601005 17601007    
+                           17601012 17601014 17601025    
+                           17661002 17661004 17661006    
+                           19691001 19731001 19731002    
+                           19731004 19731006 19831001    
+                           19831005 19831008 19901003    
+      AVISITN         4    1 4 8 12                      
+      SSNRISN         2    1 2                           
+      trtn            3    1 2 3                         
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                          Dimensions
+
+              Covariance Parameters            10
+              Columns in X                     35
+              Columns in Z                      0
+              Subjects                         39
+              Max Obs per Subject               4
+
+
+                    Number of Observations
+
+          Number of Observations Read             124
+          Number of Observations Used             124
+          Number of Observations Not Used           0
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                       Iteration History
+ 
+  Iteration    Evaluations    -2 Res Log Like       Criterion
+
+          0              1       301.70634179                
+          1              2       253.00784514      0.00612121
+          2              1       252.79715858      0.00025008
+          3              1       252.78920556      0.00000062
+          4              1       252.78918648      0.00000000
+
+
+                   Convergence criteria met.                    
+
+
+                Covariance Parameter Estimates
+ 
+                Cov Parm    Subject    Estimate
+
+                UN(1,1)     id           0.5774
+                UN(2,1)     id           0.2791
+                UN(2,2)     id           0.6289
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                Covariance Parameter Estimates
+ 
+                Cov Parm    Subject    Estimate
+
+                UN(3,1)     id           0.3284
+                UN(3,2)     id           0.5746
+                UN(3,3)     id           1.0126
+                UN(4,1)     id           0.3932
+                UN(4,2)     id           0.2982
+                UN(4,3)     id           0.5275
+                UN(4,4)     id           0.5815
+
+
+                        Fit Statistics
+
+             -2 Res Log Likelihood           252.8
+             AIC (Smaller is Better)         272.8
+             AICC (Smaller is Better)        275.2
+             BIC (Smaller is Better)         289.4
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                Null Model Likelihood Ratio Test
+ 
+                  DF    Chi-Square      Pr > ChiSq
+
+                   9         48.92          <.0001
+
+
+                 Type 3 Tests of Fixed Effects
+ 
+                          Num     Den
+      Effect               DF      DF    F Value    Pr > F
+
+      BASE                  1      31      52.20    <.0001
+      trtn                  2    30.3       0.08    0.9263
+      AVISITN               3    24.8       0.58    0.6329
+      AVISITN*trtn          6    29.2       0.76    0.6085
+      BASE*AVISITN          3    24.4       0.47    0.7040
+      SSNRISN               1      30       1.43    0.2409
+      AVISITN*SSNRISN       3    24.6       0.52    0.6710
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                      Least Squares Means
+ 
+                Analysis                       Standard
+ Effect         Visit (N)    trtn   Estimate      Error     DF
+
+ AVISITN*trtn            1   1       -0.5614     0.2736     34
+ AVISITN*trtn            1   2       -0.3583     0.2287     34
+ AVISITN*trtn            1   3       -0.2502     0.2398     34
+ AVISITN*trtn            4   1       -0.4499     0.2984   27.5
+ AVISITN*trtn            4   2       -0.5206     0.2467   27.3
+ AVISITN*trtn            4   3       -0.4149     0.2722   28.2
+ AVISITN*trtn            8   1       -0.6652     0.3827   27.1
+ AVISITN*trtn            8   2       -0.7832     0.3391   29.8
+ AVISITN*trtn            8   3       -0.5078     0.3508   27.9
+ AVISITN*trtn           12   1       -0.7554     0.3144   26.2
+ AVISITN*trtn           12   2       -0.9197     0.2906   28.3
+ AVISITN*trtn           12   3       -0.9805     0.2795   26.4
+
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                      Least Squares Means
+ 
+                Analysis
+ Effect         Visit (N)    trtn   t Value   Pr > |t|    Alpha
+
+ AVISITN*trtn            1   1        -2.05     0.0479     0.05
+ AVISITN*trtn            1   2        -1.57     0.1263     0.05
+ AVISITN*trtn            1   3        -1.04     0.3040     0.05
+ AVISITN*trtn            4   1        -1.51     0.1431     0.05
+ AVISITN*trtn            4   2        -2.11     0.0442     0.05
+ AVISITN*trtn            4   3        -1.52     0.1385     0.05
+ AVISITN*trtn            8   1        -1.74     0.0936     0.05
+ AVISITN*trtn            8   2        -2.31     0.0280     0.05
+ AVISITN*trtn            8   3        -1.45     0.1589     0.05
+ AVISITN*trtn           12   1        -2.40     0.0237     0.05
+ AVISITN*trtn           12   2        -3.16     0.0037     0.05
+ AVISITN*trtn           12   3        -3.51     0.0016     0.05
+
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+                      Least Squares Means
+ 
+                   Analysis
+    Effect         Visit (N)    trtn      Lower       Upper
+
+    AVISITN*trtn            1   1       -1.1175    -0.00537
+    AVISITN*trtn            1   2       -0.8230      0.1063
+    AVISITN*trtn            1   3       -0.7375      0.2370
+    AVISITN*trtn            4   1       -1.0616      0.1619
+    AVISITN*trtn            4   2       -1.0266    -0.01463
+    AVISITN*trtn            4   3       -0.9723      0.1424
+    AVISITN*trtn            8   1       -1.4503      0.1200
+    AVISITN*trtn            8   2       -1.4760    -0.09043
+    AVISITN*trtn            8   3       -1.2265      0.2109
+    AVISITN*trtn           12   1       -1.4016     -0.1093
+    AVISITN*trtn           12   2       -1.5147     -0.3247
+    AVISITN*trtn           12   3       -1.5547     -0.4063
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn  Estimate
+
+  AVISITN*trtn           1  1              1  2       -0.2031
+  AVISITN*trtn           1  1              1  3       -0.3112
+  AVISITN*trtn           1  1              4  1       -0.1115
+  AVISITN*trtn           1  1              4  2      -0.04080
+  AVISITN*trtn           1  1              4  3       -0.1465
+  AVISITN*trtn           1  1              8  1        0.1037
+  AVISITN*trtn           1  1              8  2        0.2218
+  AVISITN*trtn           1  1              8  3      -0.05364
+  AVISITN*trtn           1  1             12  1        0.1940
+  AVISITN*trtn           1  1             12  2        0.3583
+  AVISITN*trtn           1  1             12  3        0.4191
+  AVISITN*trtn           1  2              1  3       -0.1081
+  AVISITN*trtn           1  2              4  1       0.09154
+  AVISITN*trtn           1  2              4  2        0.1623
+  AVISITN*trtn           1  2              4  3       0.05659
+  AVISITN*trtn           1  2              8  1        0.3068
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis           Standard
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Error
+
+  AVISITN*trtn           1  1              1  2        0.3218
+  AVISITN*trtn           1  1              1  3        0.3258
+  AVISITN*trtn           1  1              4  1        0.3026
+  AVISITN*trtn           1  1              4  2        0.3526
+  AVISITN*trtn           1  1              4  3        0.3692
+  AVISITN*trtn           1  1              8  1        0.3690
+  AVISITN*trtn           1  1              8  2        0.4200
+  AVISITN*trtn           1  1              8  3        0.4278
+  AVISITN*trtn           1  1             12  1        0.2679
+  AVISITN*trtn           1  1             12  2        0.3785
+  AVISITN*trtn           1  1             12  3        0.3676
+  AVISITN*trtn           1  2              1  3        0.2816
+  AVISITN*trtn           1  2              4  1        0.3605
+  AVISITN*trtn           1  2              4  2        0.2502
+  AVISITN*trtn           1  2              4  3        0.3341
+  AVISITN*trtn           1  2              8  1        0.4305
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+               Differences of Least Squares Means
+ 
+              Analysis          Analysis
+Effect        Visit (N)   trtn  Visit (N)   _trtn    DF  t Value
+
+AVISITN*trtn           1  1              1  2        34    -0.63
+AVISITN*trtn           1  1              1  3        34    -0.96
+AVISITN*trtn           1  1              4  1      27.6    -0.37
+AVISITN*trtn           1  1              4  2      57.5    -0.12
+AVISITN*trtn           1  1              4  3      58.2    -0.40
+AVISITN*trtn           1  1              8  1      25.5     0.28
+AVISITN*trtn           1  1              8  2      57.1     0.53
+AVISITN*trtn           1  1              8  3      53.1    -0.13
+AVISITN*trtn           1  1             12  1      24.2     0.72
+AVISITN*trtn           1  1             12  2        52     0.95
+AVISITN*trtn           1  1             12  3      49.9     1.14
+AVISITN*trtn           1  2              1  3        34    -0.38
+AVISITN*trtn           1  2              4  1      51.1     0.25
+AVISITN*trtn           1  2              4  2      27.4     0.65
+AVISITN*trtn           1  2              4  3      55.9     0.17
+AVISITN*trtn           1  2              8  1      43.8     0.71
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn  Pr > |t|
+
+  AVISITN*trtn           1  1              1  2        0.5322
+  AVISITN*trtn           1  1              1  3        0.3462
+  AVISITN*trtn           1  1              4  1        0.7152
+  AVISITN*trtn           1  1              4  2        0.9083
+  AVISITN*trtn           1  1              4  3        0.6930
+  AVISITN*trtn           1  1              8  1        0.7809
+  AVISITN*trtn           1  1              8  2        0.5995
+  AVISITN*trtn           1  1              8  3        0.9007
+  AVISITN*trtn           1  1             12  1        0.4759
+  AVISITN*trtn           1  1             12  2        0.3482
+  AVISITN*trtn           1  1             12  3        0.2598
+  AVISITN*trtn           1  2              1  3        0.7034
+  AVISITN*trtn           1  2              4  1        0.8005
+  AVISITN*trtn           1  2              4  2        0.5221
+  AVISITN*trtn           1  2              4  3        0.8661
+  AVISITN*trtn           1  2              8  1        0.4798
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                 Analysis          Analysis
+   Effect        Visit (N)   trtn  Visit (N)   _trtn   Alpha
+
+   AVISITN*trtn           1  1              1  2        0.05
+   AVISITN*trtn           1  1              1  3        0.05
+   AVISITN*trtn           1  1              4  1        0.05
+   AVISITN*trtn           1  1              4  2        0.05
+   AVISITN*trtn           1  1              4  3        0.05
+   AVISITN*trtn           1  1              8  1        0.05
+   AVISITN*trtn           1  1              8  2        0.05
+   AVISITN*trtn           1  1              8  3        0.05
+   AVISITN*trtn           1  1             12  1        0.05
+   AVISITN*trtn           1  1             12  2        0.05
+   AVISITN*trtn           1  1             12  3        0.05
+   AVISITN*trtn           1  2              1  3        0.05
+   AVISITN*trtn           1  2              4  1        0.05
+   AVISITN*trtn           1  2              4  2        0.05
+   AVISITN*trtn           1  2              4  3        0.05
+   AVISITN*trtn           1  2              8  1        0.05
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Lower
+
+  AVISITN*trtn           1  1              1  2       -0.8570
+  AVISITN*trtn           1  1              1  3       -0.9733
+  AVISITN*trtn           1  1              4  1       -0.7317
+  AVISITN*trtn           1  1              4  2       -0.7467
+  AVISITN*trtn           1  1              4  3       -0.8854
+  AVISITN*trtn           1  1              8  1       -0.6555
+  AVISITN*trtn           1  1              8  2       -0.6193
+  AVISITN*trtn           1  1              8  3       -0.9116
+  AVISITN*trtn           1  1             12  1       -0.3586
+  AVISITN*trtn           1  1             12  2       -0.4012
+  AVISITN*trtn           1  1             12  3       -0.3194
+  AVISITN*trtn           1  2              1  3       -0.6803
+  AVISITN*trtn           1  2              4  1       -0.6320
+  AVISITN*trtn           1  2              4  2       -0.3508
+  AVISITN*trtn           1  2              4  3       -0.6128
+  AVISITN*trtn           1  2              8  1       -0.5610
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Upper
+
+  AVISITN*trtn           1  1              1  2        0.4509
+  AVISITN*trtn           1  1              1  3        0.3509
+  AVISITN*trtn           1  1              4  1        0.5086
+  AVISITN*trtn           1  1              4  2        0.6651
+  AVISITN*trtn           1  1              4  3        0.5924
+  AVISITN*trtn           1  1              8  1        0.8630
+  AVISITN*trtn           1  1              8  2        1.0629
+  AVISITN*trtn           1  1              8  3        0.8044
+  AVISITN*trtn           1  1             12  1        0.7467
+  AVISITN*trtn           1  1             12  2        1.1178
+  AVISITN*trtn           1  1             12  3        1.1575
+  AVISITN*trtn           1  2              1  3        0.4641
+  AVISITN*trtn           1  2              4  1        0.8151
+  AVISITN*trtn           1  2              4  2        0.6754
+  AVISITN*trtn           1  2              4  3        0.7259
+  AVISITN*trtn           1  2              8  1        1.1746
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn  Estimate
+
+  AVISITN*trtn           1  2              8  2        0.4249
+  AVISITN*trtn           1  2              8  3        0.1494
+  AVISITN*trtn           1  2             12  1        0.3971
+  AVISITN*trtn           1  2             12  2        0.5614
+  AVISITN*trtn           1  2             12  3        0.6221
+  AVISITN*trtn           1  3              4  1        0.1997
+  AVISITN*trtn           1  3              4  2        0.2704
+  AVISITN*trtn           1  3              4  3        0.1647
+  AVISITN*trtn           1  3              8  1        0.4149
+  AVISITN*trtn           1  3              8  2        0.5330
+  AVISITN*trtn           1  3              8  3        0.2575
+  AVISITN*trtn           1  3             12  1        0.5052
+  AVISITN*trtn           1  3             12  2        0.6695
+  AVISITN*trtn           1  3             12  3        0.7303
+  AVISITN*trtn           4  1              4  2       0.07073
+  AVISITN*trtn           4  1              4  3      -0.03495
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis           Standard
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Error
+
+  AVISITN*trtn           1  2              8  2        0.3283
+  AVISITN*trtn           1  2              8  3        0.3975
+  AVISITN*trtn           1  2             12  1        0.3675
+  AVISITN*trtn           1  2             12  2        0.2560
+  AVISITN*trtn           1  2             12  3        0.3312
+  AVISITN*trtn           1  3              4  1        0.3659
+  AVISITN*trtn           1  3              4  2        0.3219
+  AVISITN*trtn           1  3              4  3        0.2757
+  AVISITN*trtn           1  3              8  1        0.4348
+  AVISITN*trtn           1  3              8  2        0.3939
+  AVISITN*trtn           1  3              8  3        0.3393
+  AVISITN*trtn           1  3             12  1        0.3722
+  AVISITN*trtn           1  3             12  2        0.3481
+  AVISITN*trtn           1  3             12  3        0.2394
+  AVISITN*trtn           4  1              4  2        0.3554
+  AVISITN*trtn           4  1              4  3        0.3718
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+               Differences of Least Squares Means
+ 
+              Analysis          Analysis
+Effect        Visit (N)   trtn  Visit (N)   _trtn    DF  t Value
+
+AVISITN*trtn           1  2              8  2      28.2     1.29
+AVISITN*trtn           1  2              8  3      47.7     0.38
+AVISITN*trtn           1  2             12  1      43.4     1.08
+AVISITN*trtn           1  2             12  2      25.1     2.19
+AVISITN*trtn           1  2             12  3        48     1.88
+AVISITN*trtn           1  3              4  1      52.7     0.55
+AVISITN*trtn           1  3              4  2      58.6     0.84
+AVISITN*trtn           1  3              4  3      28.4     0.60
+AVISITN*trtn           1  3              8  1      45.2     0.95
+AVISITN*trtn           1  3              8  2      53.9     1.35
+AVISITN*trtn           1  3              8  3      26.1     0.76
+AVISITN*trtn           1  3             12  1      44.7     1.36
+AVISITN*trtn           1  3             12  2        51     1.92
+AVISITN*trtn           1  3             12  3      24.1     3.05
+AVISITN*trtn           4  1              4  2      27.8     0.20
+AVISITN*trtn           4  1              4  3      28.3    -0.09
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn  Pr > |t|
+
+  AVISITN*trtn           1  2              8  2        0.2062
+  AVISITN*trtn           1  2              8  3        0.7086
+  AVISITN*trtn           1  2             12  1        0.2859
+  AVISITN*trtn           1  2             12  2        0.0378
+  AVISITN*trtn           1  2             12  3        0.0664
+  AVISITN*trtn           1  3              4  1        0.5876
+  AVISITN*trtn           1  3              4  2        0.4044
+  AVISITN*trtn           1  3              4  3        0.5549
+  AVISITN*trtn           1  3              8  1        0.3450
+  AVISITN*trtn           1  3              8  2        0.1817
+  AVISITN*trtn           1  3              8  3        0.4546
+  AVISITN*trtn           1  3             12  1        0.1814
+  AVISITN*trtn           1  3             12  2        0.0601
+  AVISITN*trtn           1  3             12  3        0.0055
+  AVISITN*trtn           4  1              4  2        0.8437
+  AVISITN*trtn           4  1              4  3        0.9258
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                 Analysis          Analysis
+   Effect        Visit (N)   trtn  Visit (N)   _trtn   Alpha
+
+   AVISITN*trtn           1  2              8  2        0.05
+   AVISITN*trtn           1  2              8  3        0.05
+   AVISITN*trtn           1  2             12  1        0.05
+   AVISITN*trtn           1  2             12  2        0.05
+   AVISITN*trtn           1  2             12  3        0.05
+   AVISITN*trtn           1  3              4  1        0.05
+   AVISITN*trtn           1  3              4  2        0.05
+   AVISITN*trtn           1  3              4  3        0.05
+   AVISITN*trtn           1  3              8  1        0.05
+   AVISITN*trtn           1  3              8  2        0.05
+   AVISITN*trtn           1  3              8  3        0.05
+   AVISITN*trtn           1  3             12  1        0.05
+   AVISITN*trtn           1  3             12  2        0.05
+   AVISITN*trtn           1  3             12  3        0.05
+   AVISITN*trtn           4  1              4  2        0.05
+   AVISITN*trtn           4  1              4  3        0.05
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Lower
+
+  AVISITN*trtn           1  2              8  2       -0.2475
+  AVISITN*trtn           1  2              8  3       -0.6499
+  AVISITN*trtn           1  2             12  1       -0.3439
+  AVISITN*trtn           1  2             12  2       0.03421
+  AVISITN*trtn           1  2             12  3      -0.04369
+  AVISITN*trtn           1  3              4  1       -0.5343
+  AVISITN*trtn           1  3              4  2       -0.3739
+  AVISITN*trtn           1  3              4  3       -0.3997
+  AVISITN*trtn           1  3              8  1       -0.4607
+  AVISITN*trtn           1  3              8  2       -0.2567
+  AVISITN*trtn           1  3              8  3       -0.4398
+  AVISITN*trtn           1  3             12  1       -0.2445
+  AVISITN*trtn           1  3             12  2      -0.02940
+  AVISITN*trtn           1  3             12  3        0.2362
+  AVISITN*trtn           4  1              4  2       -0.6576
+  AVISITN*trtn           4  1              4  3       -0.7962
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Upper
+
+  AVISITN*trtn           1  2              8  2        1.0972
+  AVISITN*trtn           1  2              8  3        0.9488
+  AVISITN*trtn           1  2             12  1        1.1381
+  AVISITN*trtn           1  2             12  2        1.0886
+  AVISITN*trtn           1  2             12  3        1.2880
+  AVISITN*trtn           1  3              4  1        0.9336
+  AVISITN*trtn           1  3              4  2        0.9146
+  AVISITN*trtn           1  3              4  3        0.7291
+  AVISITN*trtn           1  3              8  1        1.2905
+  AVISITN*trtn           1  3              8  2        1.3227
+  AVISITN*trtn           1  3              8  3        0.9549
+  AVISITN*trtn           1  3             12  1        1.2549
+  AVISITN*trtn           1  3             12  2        1.3684
+  AVISITN*trtn           1  3             12  3        1.2243
+  AVISITN*trtn           4  1              4  2        0.7991
+  AVISITN*trtn           4  1              4  3        0.7263
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn  Estimate
+
+  AVISITN*trtn           4  1              8  1        0.2153
+  AVISITN*trtn           4  1              8  2        0.3333
+  AVISITN*trtn           4  1              8  3       0.05789
+  AVISITN*trtn           4  1             12  1        0.3055
+  AVISITN*trtn           4  1             12  2        0.4698
+  AVISITN*trtn           4  1             12  3        0.5306
+  AVISITN*trtn           4  2              4  3       -0.1057
+  AVISITN*trtn           4  2              8  1        0.1445
+  AVISITN*trtn           4  2              8  2        0.2626
+  AVISITN*trtn           4  2              8  3      -0.01284
+  AVISITN*trtn           4  2             12  1        0.2348
+  AVISITN*trtn           4  2             12  2        0.3991
+  AVISITN*trtn           4  2             12  3        0.4599
+  AVISITN*trtn           4  3              8  1        0.2502
+  AVISITN*trtn           4  3              8  2        0.3683
+  AVISITN*trtn           4  3              8  3       0.09284
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis           Standard
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Error
+
+  AVISITN*trtn           4  1              8  1        0.2718
+  AVISITN*trtn           4  1              8  2        0.4270
+  AVISITN*trtn           4  1              8  3        0.4348
+  AVISITN*trtn           4  1             12  1        0.3276
+  AVISITN*trtn           4  1             12  2        0.4022
+  AVISITN*trtn           4  1             12  3        0.3930
+  AVISITN*trtn           4  2              4  3        0.3259
+  AVISITN*trtn           4  2              8  1        0.4309
+  AVISITN*trtn           4  2              8  2        0.2553
+  AVISITN*trtn           4  2              8  3        0.3967
+  AVISITN*trtn           4  2             12  1        0.3847
+  AVISITN*trtn           4  2             12  2        0.2994
+  AVISITN*trtn           4  2             12  3        0.3525
+  AVISITN*trtn           4  3              8  1        0.4445
+  AVISITN*trtn           4  3              8  2        0.4031
+  AVISITN*trtn           4  3              8  3        0.2518
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+               Differences of Least Squares Means
+ 
+              Analysis          Analysis
+Effect        Visit (N)   trtn  Visit (N)   _trtn    DF  t Value
+
+AVISITN*trtn           4  1              8  1        25     0.79
+AVISITN*trtn           4  1              8  2      42.6     0.78
+AVISITN*trtn           4  1              8  3      40.3     0.13
+AVISITN*trtn           4  1             12  1        27     0.93
+AVISITN*trtn           4  1             12  2        52     1.17
+AVISITN*trtn           4  1             12  3      50.3     1.35
+AVISITN*trtn           4  2              4  3      28.5    -0.32
+AVISITN*trtn           4  2              8  1      36.5     0.34
+AVISITN*trtn           4  2              8  2      25.3     1.03
+AVISITN*trtn           4  2              8  3      39.7    -0.03
+AVISITN*trtn           4  2             12  1        47     0.61
+AVISITN*trtn           4  2             12  2      29.6     1.33
+AVISITN*trtn           4  2             12  3      50.9     1.30
+AVISITN*trtn           4  3              8  1      38.1     0.56
+AVISITN*trtn           4  3              8  2      44.1     0.91
+AVISITN*trtn           4  3              8  3      25.1     0.37
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn  Pr > |t|
+
+  AVISITN*trtn           4  1              8  1        0.4359
+  AVISITN*trtn           4  1              8  2        0.4394
+  AVISITN*trtn           4  1              8  3        0.8947
+  AVISITN*trtn           4  1             12  1        0.3593
+  AVISITN*trtn           4  1             12  2        0.2481
+  AVISITN*trtn           4  1             12  3        0.1830
+  AVISITN*trtn           4  2              4  3        0.7481
+  AVISITN*trtn           4  2              8  1        0.7392
+  AVISITN*trtn           4  2              8  2        0.3135
+  AVISITN*trtn           4  2              8  3        0.9743
+  AVISITN*trtn           4  2             12  1        0.5446
+  AVISITN*trtn           4  2             12  2        0.1927
+  AVISITN*trtn           4  2             12  3        0.1979
+  AVISITN*trtn           4  3              8  1        0.5768
+  AVISITN*trtn           4  3              8  2        0.3659
+  AVISITN*trtn           4  3              8  3        0.7154
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                 Analysis          Analysis
+   Effect        Visit (N)   trtn  Visit (N)   _trtn   Alpha
+
+   AVISITN*trtn           4  1              8  1        0.05
+   AVISITN*trtn           4  1              8  2        0.05
+   AVISITN*trtn           4  1              8  3        0.05
+   AVISITN*trtn           4  1             12  1        0.05
+   AVISITN*trtn           4  1             12  2        0.05
+   AVISITN*trtn           4  1             12  3        0.05
+   AVISITN*trtn           4  2              4  3        0.05
+   AVISITN*trtn           4  2              8  1        0.05
+   AVISITN*trtn           4  2              8  2        0.05
+   AVISITN*trtn           4  2              8  3        0.05
+   AVISITN*trtn           4  2             12  1        0.05
+   AVISITN*trtn           4  2             12  2        0.05
+   AVISITN*trtn           4  2             12  3        0.05
+   AVISITN*trtn           4  3              8  1        0.05
+   AVISITN*trtn           4  3              8  2        0.05
+   AVISITN*trtn           4  3              8  3        0.05
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Lower
+
+  AVISITN*trtn           4  1              8  1       -0.3446
+  AVISITN*trtn           4  1              8  2       -0.5280
+  AVISITN*trtn           4  1              8  3       -0.8208
+  AVISITN*trtn           4  1             12  1       -0.3667
+  AVISITN*trtn           4  1             12  2       -0.3373
+  AVISITN*trtn           4  1             12  3       -0.2587
+  AVISITN*trtn           4  2              4  3       -0.7728
+  AVISITN*trtn           4  2              8  1       -0.7289
+  AVISITN*trtn           4  2              8  2       -0.2630
+  AVISITN*trtn           4  2              8  3       -0.8148
+  AVISITN*trtn           4  2             12  1       -0.5392
+  AVISITN*trtn           4  2             12  2       -0.2127
+  AVISITN*trtn           4  2             12  3       -0.2478
+  AVISITN*trtn           4  3              8  1       -0.6495
+  AVISITN*trtn           4  3              8  2       -0.4441
+  AVISITN*trtn           4  3              8  3       -0.4257
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Upper
+
+  AVISITN*trtn           4  1              8  1        0.7751
+  AVISITN*trtn           4  1              8  2        1.1947
+  AVISITN*trtn           4  1              8  3        0.9365
+  AVISITN*trtn           4  1             12  1        0.9777
+  AVISITN*trtn           4  1             12  2        1.2770
+  AVISITN*trtn           4  1             12  3        1.3199
+  AVISITN*trtn           4  2              4  3        0.5615
+  AVISITN*trtn           4  2              8  1        1.0180
+  AVISITN*trtn           4  2              8  2        0.7882
+  AVISITN*trtn           4  2              8  3        0.7891
+  AVISITN*trtn           4  2             12  1        1.0088
+  AVISITN*trtn           4  2             12  2        1.0109
+  AVISITN*trtn           4  2             12  3        1.1676
+  AVISITN*trtn           4  3              8  1        1.1499
+  AVISITN*trtn           4  3              8  2        1.1807
+  AVISITN*trtn           4  3              8  3        0.6114
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn  Estimate
+
+  AVISITN*trtn           4  3             12  1        0.3405
+  AVISITN*trtn           4  3             12  2        0.5048
+  AVISITN*trtn           4  3             12  3        0.5656
+  AVISITN*trtn           8  1              8  2        0.1181
+  AVISITN*trtn           8  1              8  3       -0.1574
+  AVISITN*trtn           8  1             12  1       0.09027
+  AVISITN*trtn           8  1             12  2        0.2546
+  AVISITN*trtn           8  1             12  3        0.3153
+  AVISITN*trtn           8  2              8  3       -0.2754
+  AVISITN*trtn           8  2             12  1      -0.02779
+  AVISITN*trtn           8  2             12  2        0.1365
+  AVISITN*trtn           8  2             12  3        0.1973
+  AVISITN*trtn           8  3             12  1        0.2476
+  AVISITN*trtn           8  3             12  2        0.4119
+  AVISITN*trtn           8  3             12  3        0.4727
+  AVISITN*trtn          12  1             12  2        0.1643
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis           Standard
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Error
+
+  AVISITN*trtn           4  3             12  1        0.4003
+  AVISITN*trtn           4  3             12  2        0.3792
+  AVISITN*trtn           4  3             12  3        0.2963
+  AVISITN*trtn           8  1              8  2        0.4602
+  AVISITN*trtn           8  1              8  3        0.4736
+  AVISITN*trtn           8  1             12  1        0.3114
+  AVISITN*trtn           8  1             12  2        0.4532
+  AVISITN*trtn           8  1             12  3        0.4478
+  AVISITN*trtn           8  2              8  3        0.4239
+  AVISITN*trtn           8  2             12  1        0.4340
+  AVISITN*trtn           8  2             12  2        0.2900
+  AVISITN*trtn           8  2             12  3        0.4031
+  AVISITN*trtn           8  3             12  1        0.4448
+  AVISITN*trtn           8  3             12  2        0.4206
+  AVISITN*trtn           8  3             12  3        0.2816
+  AVISITN*trtn          12  1             12  2        0.3678
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+               Differences of Least Squares Means
+ 
+              Analysis          Analysis
+Effect        Visit (N)   trtn  Visit (N)   _trtn    DF  t Value
+
+AVISITN*trtn           4  3             12  1      49.5     0.85
+AVISITN*trtn           4  3             12  2      54.1     1.33
+AVISITN*trtn           4  3             12  3      26.5     1.91
+AVISITN*trtn           8  1              8  2      27.7     0.26
+AVISITN*trtn           8  1              8  3      27.4    -0.33
+AVISITN*trtn           8  1             12  1      26.4     0.29
+AVISITN*trtn           8  1             12  2      41.5     0.56
+AVISITN*trtn           8  1             12  3      40.1     0.70
+AVISITN*trtn           8  2              8  3      28.5    -0.65
+AVISITN*trtn           8  2             12  1      44.4    -0.06
+AVISITN*trtn           8  2             12  2      28.5     0.47
+AVISITN*trtn           8  2             12  3      45.9     0.49
+AVISITN*trtn           8  3             12  1        43     0.56
+AVISITN*trtn           8  3             12  2      45.2     0.98
+AVISITN*trtn           8  3             12  3      25.9     1.68
+AVISITN*trtn          12  1             12  2      25.9     0.45
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn  Pr > |t|
+
+  AVISITN*trtn           4  3             12  1        0.3991
+  AVISITN*trtn           4  3             12  2        0.1887
+  AVISITN*trtn           4  3             12  3        0.0672
+  AVISITN*trtn           8  1              8  2        0.7994
+  AVISITN*trtn           8  1              8  3        0.7422
+  AVISITN*trtn           8  1             12  1        0.7742
+  AVISITN*trtn           8  1             12  2        0.5773
+  AVISITN*trtn           8  1             12  3        0.4854
+  AVISITN*trtn           8  2              8  3        0.5211
+  AVISITN*trtn           8  2             12  1        0.9492
+  AVISITN*trtn           8  2             12  2        0.6415
+  AVISITN*trtn           8  2             12  3        0.6269
+  AVISITN*trtn           8  3             12  1        0.5806
+  AVISITN*trtn           8  3             12  2        0.3326
+  AVISITN*trtn           8  3             12  3        0.1053
+  AVISITN*trtn          12  1             12  2        0.6588
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                 Analysis          Analysis
+   Effect        Visit (N)   trtn  Visit (N)   _trtn   Alpha
+
+   AVISITN*trtn           4  3             12  1        0.05
+   AVISITN*trtn           4  3             12  2        0.05
+   AVISITN*trtn           4  3             12  3        0.05
+   AVISITN*trtn           8  1              8  2        0.05
+   AVISITN*trtn           8  1              8  3        0.05
+   AVISITN*trtn           8  1             12  1        0.05
+   AVISITN*trtn           8  1             12  2        0.05
+   AVISITN*trtn           8  1             12  3        0.05
+   AVISITN*trtn           8  2              8  3        0.05
+   AVISITN*trtn           8  2             12  1        0.05
+   AVISITN*trtn           8  2             12  2        0.05
+   AVISITN*trtn           8  2             12  3        0.05
+   AVISITN*trtn           8  3             12  1        0.05
+   AVISITN*trtn           8  3             12  2        0.05
+   AVISITN*trtn           8  3             12  3        0.05
+   AVISITN*trtn          12  1             12  2        0.05
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Lower
+
+  AVISITN*trtn           4  3             12  1       -0.4637
+  AVISITN*trtn           4  3             12  2       -0.2554
+  AVISITN*trtn           4  3             12  3      -0.04304
+  AVISITN*trtn           8  1              8  2       -0.8251
+  AVISITN*trtn           8  1              8  3       -1.1284
+  AVISITN*trtn           8  1             12  1       -0.5493
+  AVISITN*trtn           8  1             12  2       -0.6603
+  AVISITN*trtn           8  1             12  3       -0.5897
+  AVISITN*trtn           8  2              8  3       -1.1431
+  AVISITN*trtn           8  2             12  1       -0.9022
+  AVISITN*trtn           8  2             12  2       -0.4571
+  AVISITN*trtn           8  2             12  3       -0.6142
+  AVISITN*trtn           8  3             12  1       -0.6493
+  AVISITN*trtn           8  3             12  2       -0.4350
+  AVISITN*trtn           8  3             12  3       -0.1063
+  AVISITN*trtn          12  1             12  2       -0.5918
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Upper
+
+  AVISITN*trtn           4  3             12  1        1.1446
+  AVISITN*trtn           4  3             12  2        1.2650
+  AVISITN*trtn           4  3             12  3        1.1741
+  AVISITN*trtn           8  1              8  2        1.0612
+  AVISITN*trtn           8  1              8  3        0.8137
+  AVISITN*trtn           8  1             12  1        0.7299
+  AVISITN*trtn           8  1             12  2        1.1695
+  AVISITN*trtn           8  1             12  3        1.2203
+  AVISITN*trtn           8  2              8  3        0.5923
+  AVISITN*trtn           8  2             12  1        0.8466
+  AVISITN*trtn           8  2             12  2        0.7302
+  AVISITN*trtn           8  2             12  3        1.0088
+  AVISITN*trtn           8  3             12  1        1.1446
+  AVISITN*trtn           8  3             12  2        1.2589
+  AVISITN*trtn           8  3             12  3        1.0517
+  AVISITN*trtn          12  1             12  2        0.9204
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn  Estimate
+
+  AVISITN*trtn          12  1             12  3        0.2251
+  AVISITN*trtn          12  2             12  3       0.06076
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis           Standard
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Error
+
+  AVISITN*trtn          12  1             12  3        0.3641
+  AVISITN*trtn          12  2             12  3        0.3398
+
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+               Differences of Least Squares Means
+ 
+              Analysis          Analysis
+Effect        Visit (N)   trtn  Visit (N)   _trtn    DF  t Value
+
+AVISITN*trtn          12  1             12  3      25.1     0.62
+AVISITN*trtn          12  2             12  3      27.2     0.18
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn  Pr > |t|
+
+  AVISITN*trtn          12  1             12  3        0.5421
+  AVISITN*trtn          12  2             12  3        0.8594
+
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                 Analysis          Analysis
+   Effect        Visit (N)   trtn  Visit (N)   _trtn   Alpha
+
+   AVISITN*trtn          12  1             12  3        0.05
+   AVISITN*trtn          12  2             12  3        0.05
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Lower
+
+  AVISITN*trtn          12  1             12  3       -0.5247
+  AVISITN*trtn          12  2             12  3       -0.6361
+
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Jazz Pharmace
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Protocol 150-
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}Table 9.2.3.4
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}
+Key Seconda
+^S={fontstyle=ROMAN fontsize=10pt font_weight=bold}(Modified Ful
+
+                      The Mixed Procedure
+
+              Differences of Least Squares Means
+ 
+                Analysis          Analysis
+  Effect        Visit (N)   trtn  Visit (N)   _trtn     Upper
+
+  AVISITN*trtn          12  1             12  3        0.9748
+  AVISITN*trtn          12  2             12  3        0.7577
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+^S={}PGI-S: Patient Global Impression of Severity; SD: Standard 
+^S={}Note:The Modified Full Analysis Set includes all participan
+^S={}Note: The baseline (Day -1) value is generally defined as t
+^S={}Note: In this supplemental analysis, the main ICE of treatm
+^S={}Note: PGI-S is a 5-point Likert-type rating scale used to a
+^S={}Note: The LS means, SEs, LS Mean Diff, 95% CI and p-value h
+^S={}PROGRAM NAME: C:\SASData\JZP-150\150-201\stat\csr_dryrun1\p
