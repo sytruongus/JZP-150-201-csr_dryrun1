@@ -10,9 +10,9 @@
 ***************************************************************************
 PROGRAM MODIFICATION LOG
 ***************************************************************************
-Programmer:    
+Programmer:     
 Date:          
-Description:   
+Description:            Update changes.
 *************************************************************************/
 options fmtsearch=(work);
 options validvarname = upcase;
