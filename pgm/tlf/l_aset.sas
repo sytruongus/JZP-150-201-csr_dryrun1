@@ -11,7 +11,7 @@ PROGRAM MODIFICATION LOG
 ***************************************************************************
 Programmer:    
 Date:          
-Description:   
+Description:   Test update
 *************************************************************************/
 options missing ='' MPRINT NONUMBER validvarname = upcase fmtsearch=(work); 
 %let sepvar=/^n;
